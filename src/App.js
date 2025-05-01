@@ -4,20 +4,20 @@ import EarlierJobs from "./Pages/EarlierJobs";
 import Education from "./Pages/Education";
 import AboutMe from "./Pages/AboutMe";
 import MyWork from "./Pages/MyWork";
+import Home from "./Pages/Home";
 import { Route, Routes } from "react-router-dom";
 
-function App() {    
+function App() {
     return (
         <>
             <Navbar />
             <div className="container">
                 <Routes>
-                    {/* <Route path="/Home" element={<Home />} /> */}
+                    <Route path="/" element={<Home />} />
                     <Route path="/AboutMe" element={<AboutMe />} />
                     <Route path="/EarlierJobs" element={<EarlierJobs />} />
                     <Route path="/Education" element={<Education />} />
                     <Route path="/Mywork" element={<MyWork />} />
-                    
                 </Routes>
             </div>
         </>
