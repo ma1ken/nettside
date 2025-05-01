@@ -1,5 +1,4 @@
 import "./App.css";
-import Header from "./components/Header/Header";
 import Navbar from "./components/Navbar/Navbar";
 import EarlierJobs from "./Pages/EarlierJobs";
 import Education from "./Pages/Education";
@@ -11,7 +10,6 @@ function App() {
     return (
         <>
             <Navbar />
-            {/* <Header /> */}
             <div className="container">
                 <Routes>
                     {/* <Route path="/Home" element={<Home />} /> */}
