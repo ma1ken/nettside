@@ -6,6 +6,14 @@ body {
     margin: 0;
 }
 
+/* Sjekk om denne er nødvendig senere, da vi kanskje ikke behøver container css pga headercss. */
+.container {
+    margin: 1rem;
+    text-align: center;
+    align-items: center;
+
+}
+
 .nav {
     background-color: #333;
     color: white;

@@ -1,29 +1,28 @@
-
 import "./App.css";
 import Header from "./components/Header/Header";
 import Navbar from "./components/Navbar/Navbar";
+import EarlierJobs from "./Pages/EarlierJobs";
+import Education from "./Pages/Education";
+import AboutMe from "./Pages/AboutMe";
+import MyWork from "./Pages/MyWork";
+import { Route, Routes } from "react-router-dom";
 
-
-function App() {
+function App() {    
     return (
-        <div className="App">
+        <>
             <Navbar />
-            <Header />
-            {/* <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                <p>
-                    Edit <code>src/App.js</code> and save to reload.
-                </p>
-                <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn React
-                </a>
-            </header> */}
-        </div>
+            {/* <Header /> */}
+            <div className="container">
+                <Routes>
+                    {/* <Route path="/Home" element={<Home />} /> */}
+                    <Route path="/AboutMe" element={<AboutMe />} />
+                    <Route path="/EarlierJobs" element={<EarlierJobs />} />
+                    <Route path="/Education" element={<Education />} />
+                    <Route path="/Mywork" element={<MyWork />} />
+                    
+                </Routes>
+            </div>
+        </>
     );
 }
 
