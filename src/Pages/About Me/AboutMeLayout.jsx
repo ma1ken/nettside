@@ -1,4 +1,4 @@
-export default function AboutMe() {
+export default function AboutMeLayout() {
     return (
         <div>
             <h1>About Me</h1>
@@ -9,7 +9,5 @@ export default function AboutMe() {
                 lenge.
             </p>
         </div>
-
-        
     );
 }
