@@ -1,0 +1,34 @@
+import { NavLink, Outlet } from "react-router-dom";
+import "../../Styles/Sidebar.css";
+
+export default function EarlierJobsLayout() {
+    return (
+        <div className="layout-container">
+            {/* Her bygger jeg på sidebaren og kobler til lenkene jeg begynte å legge inn for sidebar i app.jsx */}
+            <aside className="sidebar">
+                <ul>
+                    <li>
+                        <NavLink to="/EarlierJobs/Ikea">IKEA</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/EarlierJobs/FredrikLouisa">
+                            Fredrik og Louisa
+                        </NavLink>
+                    </li>
+                </ul>
+            </aside>
+
+            <main className="content">
+                <h1>Earlier Jobs</h1>
+                <p>
+                    Her skal jeg samle litt mer informasjon om ulike yrker jeg
+                    har jobbet i, om erfaringen jeg har fått. På venstre side
+                    vil det dukke opp en bar på venstre side der man kan
+                    filtrere de ulike yrkene.
+                </p>
+                <Outlet />
+            </main>
+        </div>
+    );
+}
+// teste kommentar pushe
