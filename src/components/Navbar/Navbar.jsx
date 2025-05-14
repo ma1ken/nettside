@@ -6,7 +6,7 @@ export default function Navbar() {
     return (
         <nav className="nav">
             <Link to="/" className="site-title">
-                Site Name
+                Maikens Portfolio
             </Link>
             <ul>
                 <CustomLink to="/">Home</CustomLink>

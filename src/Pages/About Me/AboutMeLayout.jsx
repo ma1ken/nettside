@@ -1,3 +1,5 @@
+import "../../Styles/Pages.css"
+
 export default function AboutMeLayout() {
     return (
         <div>

@@ -1,3 +1,4 @@
+import "../../Styles/Pages.css"
 
 export default function EldPage() {
     return (

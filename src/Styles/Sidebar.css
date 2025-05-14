@@ -1,4 +1,4 @@
-/* Felles for begge layouts */
+
 .layout-container {
   display: flex;
 }
@@ -45,12 +45,6 @@
   background-color: #444;
 }
 
-/* Felles styling for content som vises til høyre for sidebar */
-.content {
-  margin-left: 270px;  /* Sørger for at innholdet ikke blir skjult bak sidebar */
-  padding: 20px;
-}
-
 /* Spesifik sidebar for Earlier Jobs */
 .earlier-jobs-sidebar {
   background-color: #444;  /* Spesifikk farge for EarlierJobs */
@@ -59,14 +53,4 @@
 /* Spesifik sidebar for My Work */
 .mywork-sidebar {
   background-color: #555;  /* Spesifikk farge for MyWork */
-}
-
-/* Felles styling for tekstinnhold */
-.content h1 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-.content p {
-  font-size: 18px;
 }

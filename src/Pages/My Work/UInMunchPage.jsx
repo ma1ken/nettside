@@ -1,3 +1,4 @@
+import "../../Styles/Pages.css"
 export default function UInMunchPage() {
     return (
         <div>

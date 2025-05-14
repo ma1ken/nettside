@@ -1,31 +1,38 @@
-import { NavLink, Outlet } from "react-router-dom";
+import "../../Styles/Pages.css";
+import { NavLink, Outlet, useLocation } from "react-router-dom";
 import "../../Styles/Sidebar.css";
 
 export default function EducationLayout() {
+    const location = useLocation();
+    const onMainPage = location.pathname === "/Education";
+
     return (
-         <div className="layout-container">
-                    {/* Her bygger jeg på sidebaren og kobler til lenkene jeg begynte å legge inn for sidebar i app.jsx */}
-                    <aside className="sidebar">
-                        <ul>
-                            <li>
-                                <NavLink to="/Education/Bachelor">Bachelor</NavLink>
-                            </li>
-                            <li>
-                                <NavLink to="/Education/MakeupDegree">Makeup Degree</NavLink>
-                            </li>
-                        </ul>
-                    </aside>
-        
-                    <main className="content">
-                        <h1>Earlier Jobs</h1>
+        <div className="layout-container">
+            <aside className="sidebar">
+                <ul>
+                    <li>
+                        <NavLink to="/Education/Bachelor">Bachelor</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/Education/MakeupDegree">Makeup Degree</NavLink>
+                    </li>
+                </ul>
+            </aside>
+
+            <main className="content">
+                {onMainPage ? (
+                    <>
+                        <h1>Education</h1>
                         <p>
-                            Her skal jeg samle litt mer informasjon om ulike yrker jeg
-                            har jobbet i, om erfaringen jeg har fått. På venstre side
-                            vil det dukke opp en bar på venstre side der man kan
-                            filtrere de ulike yrkene.
+                            Her kan du finne informasjon om min utdanning og de ulike kursene
+                            jeg har tatt. Velg et emne fra menyen til venstre for mer detaljer.
                         </p>
-                        <Outlet />
-                    </main>
-                </div>
+                    </>
+                ) : (
+                    <Outlet />
+                )}
+            </main>
+        </div>
     );
 }
+

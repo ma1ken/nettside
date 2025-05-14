@@ -1,0 +1,24 @@
+body {
+    background-color:  #121212;
+}
+
+main {
+    margin-left: 250px; 
+    padding: 100px;
+    transition: all 0.3s ease-in-out;
+  }
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 50;
+    padding: 0;
+    color: #f698bf;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  }
+
+p {
+    color: #fcc5da;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+
+    
+}
