@@ -1,4 +1,4 @@
-import "./Styles/App.css";
+
 import Navbar from "./components/Navbar/Navbar";
 
 import EarlierJobsLayout from "./Pages/Earlier Jobs/EarlierJobsLayout";

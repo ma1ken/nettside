@@ -9,86 +9,81 @@
 }
 
 .nav {
-    background-color: #282828;
+    background-color: #2A2A3F;
     display: flex;
     justify-content: space-between;
-    align-items: stretch;
     gap: 0.5rem;
-    padding: 0.5rem;
+    padding: 0px;
     margin: 10px;
     border-radius: 10px;
-    border: 3px groove #f388b7;  
+    border: 2px solid #F698BF;  
     padding: 10px;
 }
 
+/* TITTELEN PÅ FORSIDEN (MAIKENS PORTFOLIO) */
 .site-title {
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: bold;
-    color: #f8a7c8; /* Standard farge for site-title */
     text-decoration: none;
     font-family:'Courier New', Courier, monospace;
     padding: 1rem;
 }
 
-/* Fargeendring på site-title når den er aktiv (ikke hover) */
+/* FARGE IKKE HOVER */
 .site-title:focus,
 .site-title:visited {
-    color: #f8a7c8; /* En annen farge når site-title er valgt eller aktiv */
+    color: #FFFFFF ; 
 }
 
-/* Hindrer hover-effekten på site-title */
+/* HOVER OVER TITTEL */
 .site-title:hover {
-    color: #fcc5da; /* Fargen beholdes på hover */
-    background: none; /* Ingen bakgrunn ved hover */
-    box-shadow: none; /* Ingen skygge ved hover */
+    color: #F698BF; 
 }
 
+
+/* OMRÅDET RUNDT ALLE ELEMENTENE */
 .nav ul {
     padding: 0;
     margin: 0;
     list-style: none;
     display: flex;
-    gap: 5rem;
+    gap: 1rem;
 }
 
+/* STYLING AV ALLE ELEMENTER */
 .nav a {
     color: #ffffff;
     text-decoration: none;
     height: 100%;
     display: flex;
-    align-items: center;
-    padding: 1rem;
+    padding: 0.75rem;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 40px;
+    font-size: 1.75rem;
 }
 
+/* NÅR MAN TRYKKER PÅ EN AV BOKSENE, SÅ VIL UTSEENDET FORBLI SLIK (BAKGRUNSSKYGGE BORDER RADIUS OSV, IKKE FIRKANTET) */
 .nav li {
     border-radius: 20px;
-    transition: box-shadow 0.3s ease;
+    transition: box-shadow 1s ease;
 }
 
-/* Hover på vanlige (ikke-aktive) elementer */
+
+/* NÅR MAN HOVRER OVER VALGT ELEMENT */
 .nav li:hover {
-    box-shadow: 0 0 10px #282828;
-    background-color: #575757;
+    background-color: transparent;
 }
 
-/* Hover på aktive elementer */
-.nav li.active:hover {
-    box-shadow: 0 0 15px #282828;
-}
-
-/* Aktivt element (når valgt) */
+/* FARGE PÅ VALGT ELEMENT*/
 .nav li.active a {
     color: #f698bf;
 }
 
-/* Hover-effekt på teksten */
+/* HOVER OVER IKKE AKTIVT ELEMENT BAKGRUNN */
 .nav li:not(.active):hover {
-    background-color: #575757;
+    background-color: none;
     border-radius: 20px;
 }
-
+/* HOVER OVER IKKE VALGT ELEMENT TEKST */
 .nav li:not(.active):hover a {
-    color: #ffffff;
+    color: #f698bf;
 }

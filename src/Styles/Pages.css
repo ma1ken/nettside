@@ -1,24 +1,79 @@
 body {
-    background-color:  #121212;
+    background-color:  #1E1E2F;
 }
 
 main {
-    margin-left: 250px; 
-    padding: 100px;
+    margin: 5rem; 
+    padding: 5rem;
     transition: all 0.3s ease-in-out;
   }
 
-h1 {
-    font-size: 50px;
+  h1 {
+    font-size:  3rem;
     margin-bottom: 50;
     padding: 0;
-    color: #f698bf;
+    color: #fcc5da;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  }
+
+  h2 {
+    font-size:  2.25rem;
+    margin-bottom: 50;
+    padding: 0;
+    color: #fcc5da;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  }
+
+  h3 {
+    font-size:  1.75rem;
+    margin-bottom: 50;
+    padding: 0;
+    color: #fcc5da;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
   }
 
 p {
-    color: #fcc5da;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-
+    color: #E0E0E0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.25rem;
     
 }
+
+  /* DIV RUNDT HVER ENESTE TEMA */
+  .content-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start; 
+    gap: 2rem; 
+    padding: 2rem;
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    
+  }
+
+  /* TEXT OG BILDET FELLES CSS */
+  .about-text,
+  .about-image {
+    flex: 1 1 400px; 
+    max-width: 600px;
+  }
+
+  /* TEXT */
+  .about-text {
+    flex: 1; /* tar opp så mye plass som mulig */
+    text-align: left;
+    min-width: 250px; /* unngår at den blir for smal */
+  }
+
+  /* BILDET */
+.about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+  
+
