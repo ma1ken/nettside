@@ -27,7 +27,7 @@ export default function AboutMeLayout() {
             </div>
 
             <div className="about-image">
-            <img src={Gammelt} alt="An old picture of me from around ten years ago." />
+            <img src={Gammelt} alt="Me around ten years ago." />
             </div>
 
             <div className="about text">
