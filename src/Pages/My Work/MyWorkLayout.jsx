@@ -25,9 +25,9 @@ export default function MyWorkLayout() {
                             </NavLink>
 
                             <NavLink to="/MyWork/Eld" className="card">
-                                <img src="/images/eld.jpg" alt="Fredrik og Louisa" />
-                                <h2>Fredrik og Louisa</h2>
-                                <p>Et designprosjekt for en skjønnhetsforhandler med moderne uttrykk.</p>
+                                <img src="/images/eld.jpg" alt="Eld" />
+                                <h2>Eld</h2>
+                                <p>Exam in the subject "Designproject".</p>
                             </NavLink>
                         </div>
                     </>

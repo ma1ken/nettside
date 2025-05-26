@@ -1,9 +1,23 @@
-import "../../Styles/Pages.css"
+import "../../Styles/Pages.css";
 export default function MakeupDegreePage() {
     return (
         <div>
-            <h2>Hei, her skal jeg skrive om arbeidet jeg gjorde på min tredje arbeidsplass</h2>        
-        </div>
+            <h2>
+                <div className="content-container">
+                    <div className="about-text">
+                        <h1>ELD</h1>
+                        <p></p>
+                    </div>
 
-    )
-};
+                    <div className="about-image">
+                        {/* <img src={Gammelt} alt="Me around ten years ago." /> */}
+                    </div>
+
+                    <div className="about text">
+                        <p></p>
+                    </div>
+                </div>
+            </h2>
+        </div>
+    );
+}

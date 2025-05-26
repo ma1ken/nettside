@@ -1,79 +1,120 @@
 body {
-    background-color:  #1E1E2F;
+    background-color: #1e1e2f;
 }
 
 main {
-    margin: 5rem; 
-    padding: 5rem;
+    margin: 0rem;
+    padding: 0rem;
     transition: all 0.3s ease-in-out;
-  }
-
-  h1 {
-    font-size:  3rem;
-    margin-bottom: 50;
-    padding: 0;
-    color: #fcc5da;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-  }
-
-  h2 {
-    font-size:  2.25rem;
-    margin-bottom: 50;
-    padding: 0;
-    color: #fcc5da;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-  }
-
-  h3 {
-    font-size:  1.75rem;
-    margin-bottom: 50;
-    padding: 0;
-    color: #fcc5da;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-  }
-
-p {
-    color: #E0E0E0;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1.25rem;
-    
 }
 
-  /* DIV RUNDT HVER ENESTE TEMA */
-  .content-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start; 
-    gap: 2rem; 
-    padding: 2rem;
+h1 {
+    font-size: 3rem;
+    margin-bottom: 50;
+    padding: 0;
+    color: #fcc5da;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
 
-    max-width: 1200px;
+h2 {
+    font-size: 1.75rem;
+    margin-bottom: 50;
+    padding: 0;
+    color: #fcc5da;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h3 {
+    font-size: 1.25rem;
+    margin-bottom: 50;
+    padding: 0;
+    color: #fcc5da;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+    color: #e0e0e0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.25rem;
+}
+
+ul {
+    list-style-type: disc;
+    list-style-position: inside; /* flytter prikken nærmere teksten */
+    padding: 0;
     margin: 0 auto;
-    padding: 2rem 1rem;
-    
-  }
-
-  /* TEXT OG BILDET FELLES CSS */
-  .about-text,
-  .about-image {
-    flex: 1 1 400px; 
     max-width: 600px;
-  }
+}
 
-  /* TEXT */
-  .about-text {
+li {
+    font-size: 1.25rem;
+    margin-left: -1rem;
+}
+
+
+.content-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.content-container > div {
+  flex-basis: calc(50% - 1rem); /* to elementer per rad */
+  max-width: 600px;
+  box-sizing: border-box;
+}
+
+/* TEXT OG BILDET FELLES CSS */
+.about-text,
+.about-image,
+.special-image {
+    flex: 1 1 45%; /* maks 2 elementer per rad */
+    max-width: 600px;
+    min-width: 280px; /* hindrer for smal */
+    box-sizing: border-box; /* inkluder padding og border */
+    word-break: break-word; /* hindrer tekstflyt ut av boks */
+    white-space: normal; /* tillater linjeskift */
+}
+
+/* profil-image skal fortsatt kunne ha annen bredde */
+.profil-image {
+    flex: 1 1px;
+    max-width: 700px;
+    min-width: 300px; /* sikrer minimum bredde */
+    box-sizing: border-box;
+}
+
+/* TEXT */
+.about-text {
     flex: 1; /* tar opp så mye plass som mulig */
     text-align: left;
     min-width: 250px; /* unngår at den blir for smal */
-  }
-
-  /* BILDET */
-.about-image img {
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-  
+
+/* BILDET */
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.special-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 0px;
+    clip-path: inset(0 0 5px 0);
+}
+
+.profil-image img {
+    width: auto;
+    height: 35rem;
+    object-fit: cover;
+    border-radius: 1rem;
+    gap: 50px;
+}
 

@@ -1,5 +1,5 @@
 import "../../Styles/Pages.css";
-import  Gammelt from "../../Images/Gammelt.png";
+import Gammelt from "../../Images/Gammelt.png";
 
 export default function AboutMeLayout() {
     return (
@@ -27,7 +27,7 @@ export default function AboutMeLayout() {
             </div>
 
             <div className="about-image">
-            <img src={Gammelt} alt="Me around ten years ago." />
+                <img src={Gammelt} alt="Me around ten years ago." />
             </div>
 
             <div className="about text">
