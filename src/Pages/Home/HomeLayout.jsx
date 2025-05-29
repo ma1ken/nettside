@@ -2,8 +2,7 @@ import "../../Styles/Pages.css";
 export default function HomeLayout() {
     return (
         <div className="content-container">
-            <h1>Home</h1>
-            <h2>Welcome to Maikens Portfolio</h2>
+            <h1>Welcome to Maikens Portfolio</h1>
             <p>
                 On this website you will be able to learn more about me, aka
                 Maiken. On the navigation bar on top, you have different options

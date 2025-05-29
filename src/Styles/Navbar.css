@@ -1,9 +1,9 @@
 * {
     box-sizing: border-box;
 }
-/* Sjekk om denne er nødvendig senere, da vi kanskje ikke behøver container css pga headercss. */
+
 .container {
-    margin: rem;
+    margin: 0rem; /* rettet fra 'rem' */
     text-align: center;
     align-items: center;
 }
@@ -11,85 +11,116 @@
 .nav {
     background-color: #2a2a3f;
     display: flex;
+    flex-wrap: nowrap; /* Forhindrer wrapping og dermed ingen vertikal utvidelse */
+    justify-content: space-between;
+    align-items: center;
     gap: 0.5rem;
     padding: 1rem;
     margin: 1rem;
     border-radius: 10px;
     border: 2px solid #f698bf;
-    padding: 1rem;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    white-space: nowrap;
-    overflow-x: auto;
-    align-items: center;
+    /* Fjernet overflow-x: auto for å fjerne scrollbar */
+    white-space: nowrap; /* Hindrer linjebryting */
+    position: relative;
+    z-index: 10;
+    height: 60px; /* Sikrer høyde slik at tekst ikke skjules */
+    box-sizing: border-box;
 }
 
-/* TITTELEN PÅ FORSIDEN (MAIKENS PORTFOLIO) */
 .site-title {
     font-size: 3rem;
     font-weight: bold;
     text-decoration: none;
     font-family: "Courier New", Courier, monospace;
     padding: 0rem;
+    line-height: 60px; /* Vertikal sentrering */
+    white-space: nowrap;
+    flex-shrink: 1; /* Tillater at tittelen skaleres ned for plass */
+    overflow: hidden; /* Skjuler overflødig tekst */
+    text-overflow: ellipsis; /* Viser ... hvis teksten er for lang */
 }
 
-/* FARGE IKKE HOVER */
-.site-title:focus,
-.site-title:visited {
-    color: #ffffff;
-}
-
-/* HOVER OVER TITTEL */
-.site-title:hover {
-    color: #f698bf;
-}
-
-/* OMRÅDET RUNDT ALLE ELEMENTENE */
 .nav ul {
     padding: 0rem;
     margin: 0rem;
     list-style: none;
     display: flex;
+    flex-wrap: nowrap; /* Holder elementer på én linje */
     gap: 1rem;
+    justify-content: flex-end;
+    width: 100%;
+    /* Fjernet overflow-x: auto for å fjerne scrollbar */
+    align-items: center;
 }
 
-/* STYLING AV ALLE ELEMENTER */
 .nav a {
     color: #ffffff;
     text-decoration: none;
-    height: 100%;
-    display: flex;
     padding: 0.5rem 1rem;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     font-size: 1.5rem;
-    gap: 2rem;
-    justify-content: center;
     display: inline-block;
     white-space: nowrap;
+    line-height: 60px; /* Vertikal sentrering */
+    flex-shrink: 0; /* Hindrer at lenkene krymper for mye */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Hvis teksten blir for lang */
+    max-width: 150px; /* Maks bredde for hver lenke for å unngå at navbar blir for bred */
 }
 
-/* NÅR MAN TRYKKER PÅ EN AV BOKSENE, SÅ VIL UTSEENDET FORBLI SLIK (BAKGRUNSSKYGGE BORDER RADIUS OSV, IKKE FIRKANTET) */
 .nav li {
     border-radius: 20px;
     transition: box-shadow 1s ease;
 }
 
-/* NÅR MAN HOVRER OVER VALGT ELEMENT */
 .nav li:hover {
     background-color: transparent;
 }
 
-/* FARGE PÅ VALGT ELEMENT*/
 .nav li.active a {
     color: #f698bf;
 }
 
-/* HOVER OVER IKKE AKTIVT ELEMENT BAKGRUNN */
 .nav li:not(.active):hover {
-    background-color: none;
+    background-color: transparent;
     border-radius: 20px;
 }
-/* HOVER OVER IKKE VALGT ELEMENT TEKST */
+
 .nav li:not(.active):hover a {
     color: #f698bf;
+}
+
+/* Responsivt for små skjermer */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column; /* Stabler elementer vertikalt */
+        align-items: center;
+        height: auto; /* Fjerner fast høyde for å tilpasse layout */
+        white-space: normal; /* Tillater tekst å brytes på små skjermer */
+    }
+
+    .nav ul {
+        flex-wrap: wrap; /* Tillater wrapping */
+        justify-content: center;
+        gap: 0.5rem;
+        width: auto; /* Tillater fleksibilitet */
+    }
+
+    .site-title {
+        font-size: 2rem;
+        text-align: center;
+        line-height: normal; /* Normal linjehøyde på små skjermer */
+        max-width: 100%; /* Sikrer at den ikke overskrider skjermbredde */
+        overflow: visible;
+        text-overflow: clip;
+        flex-shrink: 0; /* Ikke krymp */
+    }
+
+    .nav a {
+        font-size: 1.2rem;
+        line-height: normal;
+        padding: 0.5rem;
+        max-width: none; /* Fjern begrensning på bredde */
+        flex-shrink: 0;
+    }
 }
