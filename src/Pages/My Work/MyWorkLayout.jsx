@@ -19,13 +19,13 @@ export default function MyWorkLayout() {
 
                         <div className="cards-container">
                             <NavLink to="/MyWork/UInMunch" className="card">
-                                <img src="/images/uinmunch.jpg" alt="UInMunch" />
+                                {/* <img src="/images/uinmunch.jpg" alt="UInMunch" /> */}
                                 <h2>UInMunch</h2>
                                 <p>Et prosjekt med fokus på brukergrensesnitt inspirert av Munch.</p>
                             </NavLink>
 
                             <NavLink to="/MyWork/Eld" className="card">
-                                <img src="/images/eld.jpg" alt="Eld" />
+                                {/* <img src="/images/eld.jpg" alt="Eld" /> */}
                                 <h2>Eld</h2>
                                 <p>Exam in the subject "Designproject".</p>
                             </NavLink>

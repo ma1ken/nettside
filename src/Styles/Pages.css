@@ -3,7 +3,7 @@ body {
 }
 
 main {
-    padding-top: 5rem; /* gir plass under navbar */
+    padding-top: 0rem; /* gir plass under navbar */
     transition: all 0.3s ease-in-out;
 }
 

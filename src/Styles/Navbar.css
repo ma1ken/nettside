@@ -65,7 +65,6 @@
     flex-shrink: 0; /* Hindrer at lenkene krymper for mye */
     overflow: hidden;
     text-overflow: ellipsis; /* Hvis teksten blir for lang */
-    max-width: 150px; /* Maks bredde for hver lenke for å unngå at navbar blir for bred */
 }
 
 .nav li {
