@@ -13,7 +13,7 @@ export default function EarlierJobsLayout() {
                     <>
                         <h1>Earlier Jobs</h1>
                         <p>
-                            Her samler jeg informasjon om de ulike jobbene jeg har hatt. Klikk på et kort for å lese mer om erfaringene mine.
+                            Click on a card to read more about one of the jobs I've had in my life
                         </p>
 
                         {/* HER SER VI KORTENE */}
@@ -21,13 +21,13 @@ export default function EarlierJobsLayout() {
                             <NavLink to="/EarlierJobs/Ikea" className="card">
                                 {/* <img src="/images/ikea.jpg" alt="IKEA" /> */}
                                 <h2>IKEA</h2>
-                                <p>Kundeservice og logistikkarbeid i varehus.</p>
+                                <p>Costumerservice, play-area for children and order-pickup coordination and logistics </p>
                             </NavLink>
 
                             <NavLink to="/EarlierJobs/FredrikLouisa" className="card">
                                 {/* <img src="/images/fredriklouisa.jpg" alt="Fredrik og Louisa" /> */}
                                 <h2>Fredrik & Louisa</h2>
-                                <p>Salg, rådgivning og kundeopplevelse innen skjønnhet.</p>
+                                <p>Counter Manager and performing perfonalized beauty services for costumers</p>
                             </NavLink>
                         </div>
                     </>
