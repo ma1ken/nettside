@@ -7,7 +7,7 @@
 }
 
 .card {
-  background-color: #1b1631;
+  background-color: #201f35;
   border: 2px solid #f698bf;
   border-radius: 15px;
   width: 280px;
@@ -29,6 +29,7 @@
 .card h2 {
   margin: 0.5rem 0;
   color: #f388b7;
+  text-align: center;
 }
 
 .card:hover {

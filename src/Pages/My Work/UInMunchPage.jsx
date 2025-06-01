@@ -5,8 +5,9 @@ export default function UInMunchPage() {
             <h2>
                 <div className="content-container">
             <div className="about-text">
-                <h1>ELD</h1>
+                <h1>UInMunch</h1>
                 <p>
+                    .. coming asap, check out Eld first!
                 </p>
             </div>
 
