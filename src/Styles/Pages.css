@@ -25,7 +25,14 @@ h3 {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-p,
+p {
+    color: #e0e0e0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.25rem;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
 li {
     color: #e0e0e0;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -64,7 +71,7 @@ img {
     padding: 1rem;
 }
 
-/* 📦 Ytre container for hele siden */
+/* HELE SIDEN */
 .content-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -80,7 +87,16 @@ img {
     box-sizing: border-;
 }
 
-/* 🔷 Seksjon med tekst og bilde ved siden av hverandre */
+.double-text-section {
+    display: flex;
+    gap: 2vw;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 1rem;
+    flex-direction: row;
+}
+
+/* Seksjon med tekst og bilde ved siden av hverandre */
 .text-image-section {
     display: flex;
     flex-wrap: nowrap; /* IKKE la innholdet wrappe til ny linje */
@@ -88,6 +104,7 @@ img {
     align-items: stretch; /* Fyll høyden likt */
 }
 
+.double-text-section > .text,
 .text-image-section > .text,
 .text-image-section > .image {
     flex: 1 1 50%;
@@ -100,7 +117,6 @@ img {
     height: auto;
     border-radius: 12px;
     object-fit: cover;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .double-image-section {
@@ -119,6 +135,7 @@ img {
     object-fit: cover; /* Beskjær bildet til å passe rammen pent */
     margin: 0;
 }
+
 .five-image-section {
     display: flex;
     gap: 2vw;
@@ -158,6 +175,7 @@ img {
         font-size: 1rem;
     }
 
+    .double-text-section,
     .text-image-section {
         flex-direction: column-reverse;
     }
@@ -167,9 +185,8 @@ img {
         gap: 5vw;
     }
 
-  
-
     /* textclass som er inni en textimgsection */
+    .double-text-section > .text,
     .text-image-section > img .text,
     .text-image-section > .image,
     .double-image-section > img,
