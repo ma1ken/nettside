@@ -1,14 +1,15 @@
 import "../../Styles/Pages.css";
-import hkLogoFull from "../../Images/hk-logo-full.png";
+// import hkLogoFull from "../../Images/hk-logo-full.png";
+import hkLogo from "../../Images/hk-logo.png";
 export default function BachelorPage() {
     return (
         <div>
             <h2>
                 <div className="content-container">
                     <h1>Bachelor’s Degree in IT – Interactive Design</h1>
-                    <h2>Høyskolen Kristiania, 2021–2024</h2>
                     <div className="text-image-section">
                         <div className="text">
+                    <h2>Høyskolen Kristiania, 2021–2024</h2>
                             <p>
                                 I completed a three-year Bachelor at Høyskolen
                                 Kristiania, in the program "IT-Interactive
@@ -27,7 +28,7 @@ export default function BachelorPage() {
 
                         <div className="image">
                             <img
-                                src={hkLogoFull}
+                                src={hkLogo}
                                 alt="College Kristiania Full Logo"
                             />
                         </div>
