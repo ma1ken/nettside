@@ -11,11 +11,8 @@
   border: 2px solid #f698bf;
   border-radius: 15px;
   width: 280px;
-  padding: 1rem;
+  padding: 2rem;
   text-decoration: none;
-  color: #333;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card img {
@@ -29,6 +26,10 @@
 .card h2 {
   margin: 0.5rem 0;
   color: #f388b7;
+  text-align: center;
+}
+
+.card p {
   text-align: center;
 }
 
