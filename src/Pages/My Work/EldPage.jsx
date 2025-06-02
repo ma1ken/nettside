@@ -12,10 +12,10 @@ import eld5 from "../../Images/eld5.png";
 export default function EldPage() {
     return (
         <div className="content-container">
-            <div className="text-image-section">
-                <div className="about-text">
                     <h1>ELD</h1>
                     <h2 className="grade">GRADE: A</h2>
+            <div className="text-image-section">
+                <div className="about-text">
                     <p>
                         A group project I worked on in the subject "Design
                         Project". This was during the fifth semester of my
@@ -37,8 +37,8 @@ export default function EldPage() {
                         process.
                     </p>
                 </div>
-                <div className="special-image">
-                    <img
+                <div>
+                    <img className="image-crop"
                         src={eld1}
                         alt="Two people holding a tablet with the eld logo in the center."
                     />

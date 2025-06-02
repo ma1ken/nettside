@@ -44,6 +44,10 @@ img {
     border-radius: 10px;
 }
 
+.image-crop {
+    clip-path: inset(0 0 1% 0); /* top right bottom left */
+}
+
 .grade {
     margin: 0;
 }
