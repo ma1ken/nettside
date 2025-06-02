@@ -55,7 +55,7 @@ img {
     text-align: center;
 }
 .gap {
-  padding: 2rem;
+    padding: 2rem;
 }
 
 .section-color {
@@ -105,10 +105,11 @@ img {
 
 .double-image-section {
     display: flex;
-    gap: 5%;
+    gap: 2vw;
     justify-content: center;
     align-items: flex-start;
     margin: 1rem;
+    flex-direction: row;
 }
 
 .double-image-section img {
@@ -120,10 +121,11 @@ img {
 }
 .five-image-section {
     display: flex;
-    gap: 5%;
+    gap: 2vw;
     justify-content: center;
     align-items: flex-start;
     margin: 20px;
+    flex-direction: row;
 }
 
 .five-image-section img {
@@ -156,38 +158,31 @@ img {
         font-size: 1rem;
     }
 
-    .text-image-section,
-    .double-image-section > img,
-    .five-image-section > img  {
+    .text-image-section {
         flex-direction: column-reverse;
     }
+    .double-image-section,
+    .five-image-section {
+        flex-direction: column-reverse;
+        gap: 5vw;
+    }
+
+  
 
     /* textclass som er inni en textimgsection */
-    .text-image-section > .text,
+    .text-image-section > img .text,
     .text-image-section > .image,
-    .double-image-section > img
+    .double-image-section > img,
     .five-image-section > img {
         flex-basis: 100%; /* 1 element per rad på små skjermer */
         max-width: 100%;
         min-width: auto;
     }
 
-    .content-container > div,
-    .special-image {
+    .content-container > div {
         flex-basis: 100%; /* 1 element per rad på små skjermer */
         max-width: 100%;
         min-width: auto;
-    }
-
-    .profil-image {
-        max-width: 100%;
-        min-width: auto;
-        height: auto;
-    }
-
-    .profil-image img {
-        height: auto;
-        max-width: 100%;
     }
 }
 
