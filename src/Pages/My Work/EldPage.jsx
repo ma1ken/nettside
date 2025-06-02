@@ -18,9 +18,10 @@ export default function EldPage() {
     return (
         <div className="content-container">
             <h1>ELD</h1>
-            <h2 className="grade">GRADE: A</h2>
+           
             <div className="text-image-section">
                 <div className="about-text">
+            <h2 className="grade">GRADE: A</h2>
                     <p>
                         A group project I worked on in the subject "Design
                         Project". This was during the fifth semester of my
