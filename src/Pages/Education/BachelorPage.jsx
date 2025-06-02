@@ -1,124 +1,115 @@
 import "../../Styles/Pages.css";
 export default function BachelorPage() {
-  return (
-    <div>
-      <h2>
-        <div className="content-container">
-          <div className="about-text">
-            <h1>Bachelor’s Degree in IT – Interactive Design</h1>
-            <h2>Høyskolen Kristiania, 2021–2024</h2>
-            <p>
-              I completed a comprehensive three-year Bachelor’s program in IT –
-              Interactive Design at Høyskolen Kristiania, where I developed a
-              strong interdisciplinary skill set that merges technical expertise
-              with creative problem-solving. The program was designed to prepare
-              students for the evolving digital landscape by focusing on
-              creating engaging, user-centered digital experiences through both
-              design and development.
-            </p>
-          </div>
+    return (
+        <div>
+            <h2>
+                <div className="content-container">
+                    <div className="about-text">
+                        <h1>Bachelor’s Degree in IT – Interactive Design</h1>
+                        <h2>Høyskolen Kristiania, 2021–2024</h2>
+                        <p>
+                            I completed a three-year Bachelor at Høyskolen
+                            Kristiania, in the program "IT-Interactive Design"
+                            One of my motivations for this program was that I
+                            used to edit my own CSS at my blog when I was 12,
+                            and wanted to work with it after I learned more
+                            about IT. During this time, I developed a set of
+                            skills that makes me an exellent problem solver,
+                            with technical expertise. The course allowed me and
+                            other students to find creative ways to engange in
+                            current and future problems, when it comes to UX and
+                            technology.
+                        </p>
+                    </div>
 
-          <div className="about-image">
-            {/* <img src={Gammelt} alt="Me around ten years ago." /> */}
-          </div>
-          <div className="about-text">
-            <h2>Core Curriculum and Skills</h2>
-            <h3>Programming and Web Technologies:</h3>
-            <p>
-              I gained proficiency in front-end programming languages including
-              JavaScript, HTML5, and CSS3, enabling me to build responsive,
-              accessible, and interactive web applications. The courses
-              emphasized modern web standards and frameworks, preparing me to
-              translate design concepts into functional digital products.
-            </p>
-            <h3>User Experience (UX) Design:</h3>
-            <p>
-              Through courses focused on UX methodologies, I learned to conduct
-              thorough user research, develop user personas, map user journeys,
-              and apply usability testing to validate design decisions. I
-              mastered tools such as Figma and Adobe XD for wireframing and
-              prototyping, helping to create user flows that enhance
-              satisfaction and accessibility.
-            </p>
-            <h3>User Interface (UI) Design and Visual Communication:</h3>
-            <p>
-              I studied core principles of visual design, including typography,
-              color theory, layout, and accessibility standards (such as WCAG),
-              which enabled me to create interfaces that are both aesthetically
-              pleasing and easy to navigate. I also worked extensively with
-              Adobe Creative Suite (Photoshop, Illustrator) to produce
-              high-quality graphics and multimedia elements.
-            </p>
-            <h3>Interaction Design and Human-Computer Interaction (HCI):</h3>
-            <p>
-              This part of the program focused on understanding how users
-              interact with digital products. I learned to design meaningful
-              interactions, including animations and micro-interactions, that
-              improve user engagement and feedback.
-            </p>
-            <h3>Project Management and Agile Development:</h3>
-            <p>
-              Collaboration and workflow management were integral to the
-              program. I worked in agile teams, using tools such as Jira and
-              Trello, to manage project timelines and tasks efficiently. This
-              experience honed my ability to work cross-functionally with
-              developers, designers, and stakeholders.
-            </p>
-            <h3>Digital Media Production:</h3>
-            <p>
-              The program included training in producing various digital media
-              formats, equipping me with skills to integrate multimedia content
-              such as video, audio, and graphics into interactive projects.
-            </p>
-          </div>
+                    <div className="about-image">
+                        {/* <img src={Gammelt} alt="Me around ten years ago." /> */}
+                    </div>
+                    <div className="about-text">
+                        <h2>Core Curriculum and Skills</h2>
+                        <h3>Programming and Web Technologies:</h3>
+                        <p>
+                            Even though we specialized in UX, we had a lot of
+                            the same subjects as other IT courses, and we were
+                            tested and evaluated in subjects that could qualify
+                            us as "Fullstack Developers". We learned Javascript,
+                            HTML5, CSS like other Front-end students, but we
+                            worked a lot with react. Some of the other subjects
+                            I learnt about were Java, Informationtechnology +
+                            security, Animation, databases etc. This made us
+                            equipped to jump between specialities and gave us
+                            more options with future work. Gaining knowledge
+                            about other specialities allowed us to understand
+                            the impact of UX design in the field.
+                        </p>
+                        <h3>User Experience (UX) Design:</h3>
+                        <p>
+                            I gained a lot of knowledge in UX and I do feel most
+                            comfortable and wise with my own speciality. Through
+                            the program, I've planned and executed usertests,
+                            learned how to read data, created userstorys and
+                            personas, including targeted products for the right
+                            audience. This has helped me to determine if we have
+                            been on the right path, by creating wireframes and
+                            prototypes in Figma to test our audience, to ensure
+                            their satisfaction with the product.
+                        </p>
+                        <h3>
+                            User Interface (UI) Design and Visual Communication:
+                        </h3>
+                        <p>
+                            I got a sharper eye for colors and shapes, and can
+                            distinguish between a visually pleasing and
+                            userfriendly design, more than before. Our teachers
+                            taught us the importance of WCAG and to ensure
+                            accesibility on the websites/apps.
+                        </p>
+                        <h3>Project Management and Agile Development:</h3>
+                        <p>
+                            I've always enjoyed being responsible and working by
+                            myself, but this program taught me the importance of
+                            collaborating with other studuents, and how we can
+                            use each others strenghts to build our product. We
+                            worked in agile teams and used other programs like
+                            "Miro", which has helped us planning. We also used
+                            scrum to set up tasks withing a timeline.
+                        </p>
+                    </div>
 
-          <div>
-            <h2>Practical Experience</h2>
-            <p>
-              Throughout my studies, I applied these skills in multiple
-              real-world projects, both individually and in teams. These
-              projects involved the entire product development cycle—from
-              initial concept and user research to design, prototyping, testing,
-              and front-end implementation. This hands-on approach helped me to:
-            </p>
-            <ul>
-              <li>
-                Balance technical feasibility with user needs and business goals
-              </li>
-              <li>
-                Iteratively improve digital solutions based on feedback and
-                testing
-              </li>
-              <li>
-                Use version control systems (e.g., Git) to collaborate and
-                manage codebases
-              </li>
-              <li>
-                Present and communicate design ideas clearly to both technical
-                and non-technical audiences
-              </li>
-            </ul>
-          </div>
+                    <div>
+                        <h2>Practical Experience</h2>
+                        <p>
+                            I applied my knowledge in UX with my previous work,
+                            as a Counter Manager in a fragrance store. With user
+                            psychology and segmentation, I learned how to
+                            approach each costumer, what brands are targeted for
+                            their audience and analyzed their needs. I wanted to
+                            become better in react to become a future
+                            Front-end/Fullstack developer, and building this
+                            website with the knowledge I have from previous
+                            subjects has really helped me.
+                        </p>
+                    </div>
 
-          <div>
-            <h2>Summary</h2>
-            <p>
-              This program has equipped me with a versatile skill set that
-              bridges design and technology. I am confident in creating digital
-              experiences that are not only visually appealing but also highly
-              functional, accessible, and user-centered. My education at
-              Høyskolen Kristiania has prepared me for professional roles such
-              as UX/UI Designer, Front-End Developer, and Digital Product
-              Designer, where I can contribute to crafting innovative solutions
-              in a fast-paced digital environment.
-            </p>
-          </div>
+                    <div>
+                        <h2>Summary</h2>
+                        <p>
+                            This program taught me alot about things I
+                            struggeled with earlier, especially coding, but I
+                            learned that I loved it and I kept on learning it
+                            after I was done studying. I proved myself that I am
+                            very skilled in UX design and that I aquire
+                            knowledge about this topic very easily. I am able to
+                            put myself in the users position and continuously
+                            improve my products.
+                        </p>
+                    </div>
 
-          <div className="about text">
-            <p></p>
-          </div>
+                    <div className="about text">
+                        <p></p>
+                    </div>
+                </div>
+            </h2>
         </div>
-      </h2>
-    </div>
-  );
+    );
 }
