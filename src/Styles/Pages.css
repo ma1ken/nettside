@@ -54,6 +54,9 @@ img {
 .center {
     text-align: center;
 }
+.gap {
+  padding: 4rem;
+}
 
 .section-color {
     border: 5px solid rgb(115, 59, 117);
@@ -116,6 +119,21 @@ img {
     object-fit: cover; /* Beskjær bildet til å passe rammen pent */
     margin: 0;
 }
+.five-image-section {
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+.five-image-section img {
+    border-radius: 8px;
+    height: 20vw;
+    width: auto; /* Bredde justeres automatisk etter proporsjoner */
+    object-fit: cover; /* Beskjær bildet til å passe rammen pent */
+    margin: 0;
+}
 
 /* Små skjermer - mobilportrett, under 767px */
 @media (max-width: 767px) {
@@ -146,7 +164,8 @@ img {
     /* textclass som er inni en textimgsection */
     .text-image-section > .text,
     .text-image-section > .image,
-    .double-image-section > img {
+    .double-image-section > img
+    .five-image-section > img {
         flex-basis: 100%; /* 1 element per rad på små skjermer */
         max-width: 100%;
         min-width: auto;
@@ -175,20 +194,8 @@ img {
 @media (min-width: 768px) {
     .content-container > div,
     .about-text,
-    .about-image,
-    .special-image {
+    .about-image {
         flex-basis: calc(50% - 1rem);
         min-width: 280px;
-    }
-
-    .profil-image {
-        max-width: 700px;
-        min-width: 300px;
-        height: 35rem;
-    }
-
-    .profil-image img {
-        height: 35rem;
-        max-width: 100%;
     }
 }

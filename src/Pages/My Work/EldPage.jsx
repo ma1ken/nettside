@@ -8,12 +8,17 @@ import eldprofil4 from "../../Images/eldprofil4.png";
 import eld3 from "../../Images/eld3.png";
 import eld4 from "../../Images/eld4.png";
 import eld5 from "../../Images/eld5.png";
+import eldProto1 from "../../Images/eld-proto-1.png";
+import eldProto2 from "../../Images/eld-proto-2.png";
+import eldProto3 from "../../Images/eld-proto-3.png";
+import eldProto4 from "../../Images/eld-proto-4.png";
+import eldProto5 from "../../Images/eld-proto-5.png";
 
 export default function EldPage() {
     return (
         <div className="content-container">
-                    <h1>ELD</h1>
-                    <h2 className="grade">GRADE: A</h2>
+            <h1>ELD</h1>
+            <h2 className="grade">GRADE: A</h2>
             <div className="text-image-section">
                 <div className="about-text">
                     <p>
@@ -38,12 +43,14 @@ export default function EldPage() {
                     </p>
                 </div>
                 <div>
-                    <img className="image-crop"
+                    <img
+                        className="image-crop"
                         src={eld1}
                         alt="Two people holding a tablet with the eld logo in the center."
                     />
                 </div>
             </div>
+            <div className="gap"></div>
             <h2>
                 PART 1 <br />
                 Idea and Conceptual Model
@@ -76,6 +83,7 @@ export default function EldPage() {
                     </p>
                 </div>
             </div>
+            <div className="gap"></div>
             <div>
                 <h2>
                     PART 2 <br />
@@ -124,7 +132,7 @@ export default function EldPage() {
                     alt="Two people holding a tablet with the eld logo in the center."
                 />
             </div>
-
+            <div className="gap"></div>
             <div>
                 <h2>
                     PART 3 <br />
@@ -199,6 +207,7 @@ export default function EldPage() {
                 </div>
             </div>
 
+            <div className="gap"></div>
             <div className="about text">
                 {/* <div className="section-color"> */}
                 <p>
@@ -231,7 +240,6 @@ export default function EldPage() {
                         understand the challenges of our main user in her case,
                         the need for simple social interaction.
                     </p>
-
                     {/* <h3 className="ddHeader">Define</h3> */}
                     <p>
                         <h3>Define:</h3>
@@ -241,8 +249,8 @@ export default function EldPage() {
                         physical activity, and limited technical competence
                         among seniors.
                     </p>
-
-                    <div className="text-image-section">
+                    {/* TODO: HER MÅ VI FIKSE NAVN TIL DOUBLE-TEXT-SECTION OG FIKSE MEDIA SÅ DET PASSER PÅ ALLE SKJERMER. SER BRA UT FOR NÅ PÅ DATA */}
+                    <div className="double-image-section">
                         {/* <h3 className="ddHeader">Develop</h3> */}
                         <p>
                             <h3>Develop:</h3>
@@ -285,6 +293,28 @@ export default function EldPage() {
                             for users to toggle the visibility of personal
                             information.
                         </p>
+                    </div>
+                    <div className="five-image-section">
+                        <img
+                            src={eldProto1}
+                            alt="Two people holding a tablet with the eld logo in the center."
+                        />
+                        <img
+                            src={eldProto2}
+                            alt="Two people holding a tablet with the eld logo in the center."
+                        />
+                        <img
+                            src={eldprofil3}
+                            alt="Two people holding a tablet with the eld logo in the center."
+                        />
+                        <img
+                            src={eldprofil4}
+                            alt="Two people holding a tablet with the eld logo in the center."
+                        />
+                        <img
+                            src={eldProto5}
+                            alt="Two people holding a tablet with the eld logo in the center."
+                        />
                     </div>
                 </div>
             </div>
