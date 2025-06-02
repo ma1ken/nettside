@@ -7,37 +7,38 @@ export default function MyWorkLayout() {
   const onMainPage = location.pathname === "/MyWork";
 
   return (
-    <div className="layout-container">
-      <main className="content">
-        {onMainPage ? (
-          <>
-            <h1>My Projects</h1>
-            <p>
-              Here you'll find some information about my earlier projects.
-              Choose a card to read more about the chosen project.{" "}
-            </p>
+    <div className="content-container">
+      {onMainPage ? (
+        <>
+          <h1>My Projects</h1>
+          <p className="center">
+            Here you'll find some information about my earlier projects. Choose
+            a card to read more about the chosen project.
+          </p>
 
-            <div className="cards-container">
-              <NavLink to="/MyWork/UInMunch" className="card">
-                {/* <img src="/images/uinmunch.jpg" alt="UInMunch" /> */}
-                <h2>UInMunch</h2>
-                <p>
-                  Developed an Interactive App-Idea and Prototype for the Munch
-                  Museum, In an attempt to attract more teenagers.
-                </p>
-              </NavLink>
+          <div className="cards-container">
+            <NavLink to="/MyWork/UInMunch" className="card">
+              {/* <img src="/images/uinmunch.jpg" alt="UInMunch" /> */}
+              <h2>UInMunch</h2>
+              <p>
+                Developed an Interactive App-Idea and Prototype for the Munch
+                Museum, In an attempt to attract more teenagers.
+              </p>
+            </NavLink>
 
-              <NavLink to="/MyWork/Eld" className="card">
-                {/* <img src="/images/eld.jpg" alt="Eld" /> */}
-                <h2>Eld</h2>
-                <p>Create a Bridge between lonely Teenagers and Elderly. An Exam in the subject "Designproject".</p>
-              </NavLink>
-            </div>
-          </>
-        ) : (
-          <Outlet />
-        )}
-      </main>
+            <NavLink to="/MyWork/Eld" className="card">
+              {/* <img src="/images/eld.jpg" alt="Eld" /> */}
+              <h2>Eld</h2>
+              <p>
+                Create a Bridge between lonely Teenagers and Elderly. An Exam in
+                the subject "Designproject".
+              </p>
+            </NavLink>
+          </div>
+        </>
+      ) : (
+        <Outlet />
+      )}
     </div>
   );
 }

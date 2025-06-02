@@ -1,5 +1,5 @@
 import "../../Styles/Pages.css";
-import "../../Styles/Homelayout.css";
+import "../../Styles/HomeLayout.css";
 export default function HomeLayout() {
   return (
     <div className="content-container">

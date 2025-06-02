@@ -1,163 +1,154 @@
 body {
-    background-color: #1e1e2f;
-}
-
-main {
-    padding-top: 0rem; /* gir plass under navbar */
-    transition: all 0.3s ease-in-out;
+  background-color: #1e1e2f;
 }
 
 h1 {
-    font-size: 3rem;
-    margin-top: 2rem;
-    margin-bottom: 50px;
-    padding: 0;
-    color: #fcc5da;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 50px;
+  padding: 0;
+  color: #fcc5da;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h2 {
-    font-size: 1.75rem;
-    margin-bottom: 50px;
-    padding: 0;
-    color: #fcc5da;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.75rem;
+  margin-bottom: 50px;
+  padding: 0;
+  color: #fcc5da;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h3 {
-    font-size: 1.25rem;
-    margin-bottom: 50px;
-    padding: 0;
-    color: #fcc5da;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.25rem;
+  margin-bottom: 50px;
+  padding: 0;
+  color: #fcc5da;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-p {
-    color: #e0e0e0;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1.25rem;
+p,
+li {
+  color: #e0e0e0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.25rem;
+  text-align: left;
 }
 
-
-/* Små skjermer - mobilportrett, under 480px */
-@media (max-width: 480px) {
-    h1 {
-        font-size: 2rem;
-        margin-bottom: 30px;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-        margin-bottom: 30px;
-    }
-
-    h3 {
-        font-size: 1.1rem;
-        margin-bottom: 30px;
-    }
-
-    p,
-    li {
-        font-size: 1rem;
-    }
-
-    .content-container > div,
-    .about-text,
-    .about-image,
-    .special-image {
-        flex-basis: 100%; /* 1 element per rad på små skjermer */
-        max-width: 100%;
-        min-width: auto;
-    }
-
-    .profil-image {
-        max-width: 100%;
-        min-width: auto;
-        height: auto;
-    }
-
-    .profil-image img {
-        height: auto;
-        max-width: 100%;
-    }
+.center {
+  text-align: center;
 }
 
-/* Mellomstore skjermer - nettbrett og små laptops, 481px - 768px */
-@media (min-width: 481px) and (max-width: 768px) {
-    h1 {
-        font-size: 2.5rem;
-    }
-
-    h2 {
-        font-size: 1.6rem;
-    }
-
-    h3 {
-        font-size: 1.2rem;
-    }
-
-    p,
-    li {
-        font-size: 1.1rem;
-    }
-
-    .content-container > div,
-    .about-text,
-    .about-image,
-    .special-image {
-        flex-basis: 48%; /* to elementer per rad */
-        max-width: 48%;
-        min-width: 280px;
-    }
-
-    .profil-image {
-        max-width: 700px;
-        min-width: 300px;
-        height: 30rem;
-    }
-
-    .profil-image img {
-        height: 30rem;
-        max-width: 100%;
-    }
+/* 📦 Ytre container for hele siden */
+.content-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
 }
 
-/* Store skjermer - desktop, over 769px */
-@media (min-width: 769px) {
-    h1 {
-        font-size: 3rem;
-    }
+.content-container > p {
+  max-width: 1000px;
+  margin: 0 auto;
+  line-height: 1.6;
+  padding: 1rem;
+  box-sizing: border-;
+}
 
-    h2 {
-        font-size: 1.75rem;
-    }
+/* 🔷 Seksjon med tekst og bilde ved siden av hverandre */
+.text-image-section {
+  display: flex;
+  flex-wrap: nowrap; /* IKKE la innholdet wrappe til ny linje */
+  gap: 2rem;
+  align-items: stretch; /* Fyll høyden likt */
+}
 
-    h3 {
-        font-size: 1.25rem;
-    }
+.text-image-section > .text,
+.text-image-section > .image {
+  flex: 1 1 50%;
+  padding: 1rem;
+  box-sizing: border-box;
+}
 
-    p,
-    li {
-        font-size: 1.25rem;
-    }
+.text-image-section > .image img {
+  width: 100%; /* Fyll containerens bredde */
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
 
-    .content-container > div,
-    .about-text,
-    .about-image,
-    .special-image {
-        flex-basis: calc(50% - 1rem);
-        max-width: 600px;
-        min-width: 280px;
-    }
+/* Små skjermer - mobilportrett, under 767px */
+@media (max-width: 767px) {
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
 
-    .profil-image {
-        max-width: 700px;
-        min-width: 300px;
-        height: 35rem;
-    }
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
 
-    .profil-image img {
-        height: 35rem;
-        max-width: 100%;
-    }
-} 
+  h3 {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }
+
+  p,
+  li {
+    font-size: 1rem;
+  }
+
+  .text-image-section {
+    flex-direction: column-reverse;
+  }
+
+  /* textclass som er inni en textimgsection */
+  .text-image-section > .text,
+  .text-image-section > .image {
+    flex-basis: 100%; /* 1 element per rad på små skjermer */
+    max-width: 100%;
+    min-width: auto;
+  }
+
+  .content-container > div,
+  .special-image {
+    flex-basis: 100%; /* 1 element per rad på små skjermer */
+    max-width: 100%;
+    min-width: auto;
+  }
+
+  .profil-image {
+    max-width: 100%;
+    min-width: auto;
+    height: auto;
+  }
+
+  .profil-image img {
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+/* Store skjermer - desktop, over 768px */
+@media (min-width: 768px) {
+  .content-container > div,
+  .about-text,
+  .about-image,
+  .special-image {
+    flex-basis: calc(50% - 1rem);
+    min-width: 280px;
+  }
+
+  .profil-image {
+    max-width: 700px;
+    min-width: 300px;
+    height: 35rem;
+  }
+
+  .profil-image img {
+    height: 35rem;
+    max-width: 100%;
+  }
+}

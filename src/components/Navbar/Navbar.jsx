@@ -10,7 +10,7 @@ export default function Navbar() {
             </Link>
             <ul>
                 <CustomLink to="/">Home</CustomLink>
-                <CustomLink to="/AboutMe">About Me</CustomLink>
+                {/* <CustomLink to="/AboutMe">About Me</CustomLink> */}
                 <CustomLink to="/EarlierJobs">Earlier Jobs</CustomLink>
                 <CustomLink to="/MyWork">My Work </CustomLink>
                 <CustomLink to="/Education">Education</CustomLink>
