@@ -305,11 +305,11 @@ export default function EldPage() {
                             alt="Two people holding a tablet with the eld logo in the center."
                         />
                         <img
-                            src={eldprofil3}
+                            src={eldProto3}
                             alt="Two people holding a tablet with the eld logo in the center."
                         />
                         <img
-                            src={eldprofil4}
+                            src={eldProto4}
                             alt="Two people holding a tablet with the eld logo in the center."
                         />
                         <img
