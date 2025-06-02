@@ -18,10 +18,10 @@ export default function EldPage() {
     return (
         <div className="content-container">
             <h1>ELD</h1>
-           
+
             <div className="text-image-section">
                 <div className="about-text">
-            <h2 className="grade">GRADE: A</h2>
+                    <h2 className="grade">GRADE: A</h2>
                     <p>
                         A group project I worked on in the subject "Design
                         Project". This was during the fifth semester of my
@@ -52,39 +52,43 @@ export default function EldPage() {
                 </div>
             </div>
             <div className="gap"></div>
-            <h2>
-                PART 1 <br />
-                Idea and Conceptual Model
-            </h2>
-            <div className="text-image-section">
-                <div className="about-text">
-                    <h3>Objective</h3>
-                    <p>
-                        We aimed to improve work opportunities and income for
-                        students while also addressing social needs. The
-                        collaboration between young workers/students and the
-                        elderly was meant to enhance the quality of life for
-                        seniors and help society adapt to the growing elderly
-                        population.
-                    </p>
-                </div>
+            <div className="section-color">
+                <h2>
+                    PART 1 <br />
+                    Idea and Conceptual Model
+                </h2>
+                <div className="text-image-section">
+                    <div className="about-text">
+                        <h3>Objective</h3>
+                        <p>
+                            We aimed to improve work opportunities and income
+                            for students while also addressing social needs. The
+                            collaboration between young workers/students and the
+                            elderly was meant to enhance the quality of life for
+                            seniors and help society adapt to the growing
+                            elderly population.
+                        </p>
+                    </div>
 
-                <div className="about-text">
-                    <h3>Problem Understanding:</h3>
-                    <p>
-                        Students faced financial difficulties and declining
-                        health, with 55% of full-time students needing to work
-                        to afford food and housing. Simultaneously, many elderly
-                        individuals experienced loneliness and a lack of social
-                        interaction, with 1 in 3 living alone. Our solution
-                        aimed to bridge these two groups through a digital
-                        platform that facilitated part-time work and social
-                        engagement while also addressing the broader societal
-                        challenge of an aging population.
-                    </p>
+                    <div className="about-text">
+                        <h3>Problem Understanding:</h3>
+                        <p>
+                            Students faced financial difficulties and declining
+                            health, with 55% of full-time students needing to
+                            work to afford food and housing. Simultaneously,
+                            many elderly individuals experienced loneliness and
+                            a lack of social interaction, with 1 in 3 living
+                            alone. Our solution aimed to bridge these two groups
+                            through a digital platform that facilitated
+                            part-time work and social engagement while also
+                            addressing the broader societal challenge of an
+                            aging population.
+                        </p>
+                    </div>
                 </div>
             </div>
             <div className="gap"></div>
+
             <div>
                 <h2>
                     PART 2 <br />
@@ -133,84 +137,88 @@ export default function EldPage() {
                     alt="Two people holding a tablet with the eld logo in the center."
                 />
             </div>
+
+            <div className="gap"></div>
+            <div className="section-color">
+                <div>
+                    <h2>
+                        PART 3 <br />
+                        Usability Test
+                    </h2>
+                    <p>
+                        Before continuing with further development, we conducted
+                        a usability test with our primary audience: elderly
+                        users. It was important for us to gain insight into how
+                        they experienced the interface so we could optimize
+                        typography, button size, colors, and the placement of
+                        elements. Designing for this demographic required a
+                        different approach than we had used in previous
+                        projects. Regardless of the audience, usability testing
+                        proved essential for uncovering real user needs. We
+                        tested four participants aged 65-85 who were relatively
+                        independent and did not require significant healthcare.
+                        To get a broad perspective, we included people with both
+                        low and high levels of digital literacy.
+                        <br />
+                        <br />A moderator guided participants through the test
+                        while two observers watched remotely via webcam. Prior
+                        to testing, we obtained consent to record video and
+                        audio, which helped us later analyze and interpret
+                        responses.
+                    </p>
+                </div>
+
+                <div>
+                    <h3>Observer Sheet</h3>
+                    <p>
+                        To evaluate physical responses and task completion, the
+                        observers used a structured form to document whether
+                        tasks were completed with ease (green), some difficulty
+                        (yellow), or with assistance or failure (red)
+                    </p>
+                </div>
+                <div className="double-image-section">
+                    <img src={eld4} alt="Observer sheet." />
+                    <img src={eld5} alt="Data from the observer sheet." />
+                </div>
+
+                <div className="text-image-section">
+                    <div>
+                        <h3>Findings and Insights</h3>
+                        <p>
+                            Observers recorded key comments and reactions for
+                            each task. We prioritized capturing meaningful
+                            feedback and created short summaries of each
+                            participant's overall competence and comments. While
+                            some feedback overlapped, most participants pointed
+                            out different issues based on their individual
+                            experiences.
+                        </p>
+                    </div>
+                    <div>
+                        <h3>Discussion/Conclusion:</h3>
+                        <p>
+                            The usability test gave us valuable insights into
+                            the specific needs and obstacles faced by this age
+                            group. As we had never worked with elderly users
+                            before, there were several adjustments we realized
+                            we should have made earlier.
+                            <br />
+                            <br />
+                            One of the most critical takeaways was the need for
+                            a screen reader for visually impaired users. One
+                            participant had difficulty reading and identifying
+                            visual contrast. Some button placements and layout
+                            choices confused several users. What seemed logical
+                            to us as designers did not align with the users'
+                            expectations. We received feedback that some
+                            interactions needed to be simplified.
+                        </p>
+                    </div>
+                </div>
+            </div>
             <div className="gap"></div>
             <div>
-                <h2>
-                    PART 3 <br />
-                    Usability Test
-                </h2>
-                <p>
-                    Before continuing with further development, we conducted a
-                    usability test with our primary audience: elderly users. It
-                    was important for us to gain insight into how they
-                    experienced the interface so we could optimize typography,
-                    button size, colors, and the placement of elements.
-                    Designing for this demographic required a different approach
-                    than we had used in previous projects. Regardless of the
-                    audience, usability testing proved essential for uncovering
-                    real user needs. We tested four participants aged 65-85 who
-                    were relatively independent and did not require significant
-                    healthcare. To get a broad perspective, we included people
-                    with both low and high levels of digital literacy.
-                    <br />
-                    <br />A moderator guided participants through the test while
-                    two observers watched remotely via webcam. Prior to testing,
-                    we obtained consent to record video and audio, which helped
-                    us later analyze and interpret responses.
-                </p>
-            </div>
-
-            <div className="about-text">
-                <h3>Observer Sheet</h3>
-                <p>
-                    To evaluate physical responses and task completion, the
-                    observers used a structured form to document whether tasks
-                    were completed with ease (green), some difficulty (yellow),
-                    or with assistance or failure (red)
-                </p>
-            </div>
-            <div className="double-image-section">
-                <img src={eld4} alt="Observer sheet." />
-                <img src={eld5} alt="Data from the observer sheet." />
-            </div>
-
-            <div className="text-image-section">
-                <div>
-                    <h3>Findings and Insights</h3>
-                    <p>
-                        Observers recorded key comments and reactions for each
-                        task. We prioritized capturing meaningful feedback and
-                        created short summaries of each participant's overall
-                        competence and comments. While some feedback overlapped,
-                        most participants pointed out different issues based on
-                        their individual experiences.
-                    </p>
-                </div>
-                <div>
-                    <h3>Discussion/Conclusion:</h3>
-                    <p>
-                        The usability test gave us valuable insights into the
-                        specific needs and obstacles faced by this age group. As
-                        we had never worked with elderly users before, there
-                        were several adjustments we realized we should have made
-                        earlier.
-                        <br />
-                        <br />
-                        One of the most critical takeaways was the need for a
-                        screen reader for visually impaired users. One
-                        participant had difficulty reading and identifying
-                        visual contrast. Some button placements and layout
-                        choices confused several users. What seemed logical to
-                        us as designers did not align with the users'
-                        expectations. We received feedback that some
-                        interactions needed to be simplified.
-                    </p>
-                </div>
-            </div>
-
-            <div className="gap"></div>
-            <div className="about text">
-                {/* <div className="section-color"> */}
                 <p>
                     <h2>
                         PART 4 <br />
@@ -271,52 +279,49 @@ export default function EldPage() {
                             functional needs.
                         </p>
                     </div>
-                    {/* </div> */}
                 </div>
-
-                <div className="section-color">
-                    <div className="text-image-section">
-                        <p>
-                            <h3>Changes After the Usability Test:</h3>
-                            We made several adjustments when moving from
-                            wireframes to a more finished prototype. Based on
-                            user feedback, we changed the navigation structure,
-                            edited text for clarity, and refined the visual
-                            elements to improve readability and reduce
-                            confusion.
-                        </p>
-                        <p>
-                            <h3>Future Improvements:</h3>
-                            We received useful suggestions from test
-                            participants and also identified potential features
-                            for future development. These included a beginner
-                            tutorial, an SOS emergency button, and the ability
-                            for users to toggle the visibility of personal
-                            information.
-                        </p>
-                    </div>
-                    <div className="five-image-section">
-                        <img
-                            src={eldProto1}
-                            alt="Two people holding a tablet with the eld logo in the center."
-                        />
-                        <img
-                            src={eldProto2}
-                            alt="Two people holding a tablet with the eld logo in the center."
-                        />
-                        <img
-                            src={eldProto3}
-                            alt="Two people holding a tablet with the eld logo in the center."
-                        />
-                        <img
-                            src={eldProto4}
-                            alt="Two people holding a tablet with the eld logo in the center."
-                        />
-                        <img
-                            src={eldProto5}
-                            alt="Two people holding a tablet with the eld logo in the center."
-                        />
-                    </div>
+            </div>
+            <div className="gap"></div>
+            <div className="section-color">
+                <div className="text-image-section">
+                    <p>
+                        <h3>Changes After the Usability Test:</h3>
+                        We made several adjustments when moving from wireframes
+                        to a more finished prototype. Based on user feedback, we
+                        changed the navigation structure, edited text for
+                        clarity, and refined the visual elements to improve
+                        readability and reduce confusion.
+                    </p>
+                    <p>
+                        <h3>Future Improvements:</h3>
+                        We received useful suggestions from test participants
+                        and also identified potential features for future
+                        development. These included a beginner tutorial, an SOS
+                        emergency button, and the ability for users to toggle
+                        the visibility of personal information.
+                    </p>
+                </div>
+                <div className="five-image-section">
+                    <img
+                        src={eldProto1}
+                        alt="Two people holding a tablet with the eld logo in the center."
+                    />
+                    <img
+                        src={eldProto2}
+                        alt="Two people holding a tablet with the eld logo in the center."
+                    />
+                    <img
+                        src={eldProto3}
+                        alt="Two people holding a tablet with the eld logo in the center."
+                    />
+                    <img
+                        src={eldProto4}
+                        alt="Two people holding a tablet with the eld logo in the center."
+                    />
+                    <img
+                        src={eldProto5}
+                        alt="Two people holding a tablet with the eld logo in the center."
+                    />
                 </div>
             </div>
         </div>

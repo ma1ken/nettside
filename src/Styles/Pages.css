@@ -55,14 +55,13 @@ img {
     text-align: center;
 }
 .gap {
-  padding: 4rem;
+  padding: 2rem;
 }
 
 .section-color {
-    border: 5px solid rgb(115, 59, 117);
+    border: 3px solid rgb(115, 59, 117);
     border-radius: 10px;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding: 1rem;
 }
 
 /* 📦 Ytre container for hele siden */
