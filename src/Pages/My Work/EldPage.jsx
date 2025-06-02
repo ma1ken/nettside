@@ -230,7 +230,7 @@ export default function EldPage() {
                     problem-solving. The model consists of four stages:
                     Discover, Define, Develop, and Deliver.
                 </p>
-                <div className="double-image-section">
+                <div className="text-image-section">
                     {/* <h3 className="ddHeader">Discover</h3> */}
                     <p>
                         <h3>Discover:</h3>
@@ -251,7 +251,7 @@ export default function EldPage() {
                         among seniors.
                     </p>
                     {/* TODO: HER MÅ VI FIKSE NAVN TIL DOUBLE-TEXT-SECTION OG FIKSE MEDIA SÅ DET PASSER PÅ ALLE SKJERMER. SER BRA UT FOR NÅ PÅ DATA */}
-                    <div className="double-image-section">
+                    <div className="text-image-section">
                         {/* <h3 className="ddHeader">Develop</h3> */}
                         <p>
                             <h3>Develop:</h3>
