@@ -1,5 +1,4 @@
 import "../../Styles/Pages.css";
-import hkLogo from "../../Images/hk-logo.png";
 import hkLogoFull from "../../Images/hk-logo-full.png";
 export default function BachelorPage() {
     return (
