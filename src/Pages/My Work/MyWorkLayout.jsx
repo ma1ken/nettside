@@ -13,7 +13,7 @@ export default function MyWorkLayout() {
           <h1>My Projects</h1>
           <p className="center">
             Here you'll find some information about my earlier projects. Choose
-            a card to read more about the chosen project.
+            a card to read more about the chosen project:
           </p>
 
           <div className="cards-container">

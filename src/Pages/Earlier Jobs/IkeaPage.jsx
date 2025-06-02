@@ -6,8 +6,8 @@ export default function IkeaPage() {
             <h2>
                 <div className="content-container">
                     <div className="about-text">
-                        <h1>ELD</h1>
-                        <p></p>
+                        <h1>Ikea 05/2016 - 07/2019 </h1>
+                        <h2>My First Job during High School</h2>
                     </div>
 
                     <div className="about-image">
@@ -15,7 +15,7 @@ export default function IkeaPage() {
                     </div>
 
                     <div className="about text">
-                        <p></p>
+                        <p>more coming asap.. </p>
                     </div>
                 </div>
             </h2>
