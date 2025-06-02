@@ -12,7 +12,7 @@ import MyWorkLayout from "./Pages/My Work/MyWorkLayout"; // Importer MyWorkLayou
 import EldPage from "./Pages/My Work/EldPage";
 import UInMunchPage from "./Pages/My Work/UInMunchPage";
 
-import HomeLayout from "./Pages/Home/HomeLayout";
+// import HomeLayout from "./Pages/Home/HomeLayout";
 import { Route, Routes } from "react-router-dom";
 import AboutMeLayout from "./Pages/About Me/AboutMeLayout";
 
