@@ -17,7 +17,7 @@ import eldProto5 from "../../Images/eld-proto-5.png";
 export default function EldPage() {
     return (
         <div className="content-container">
-            <h1>ELD</h1>
+            <h1>ELD - A Bridge Connecting the Young with the Elderly</h1>
 
             <div className="text-image-section">
                 <div className="about-text">
