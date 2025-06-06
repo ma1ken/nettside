@@ -39,8 +39,8 @@ export default function MyWorkLayout() {
               {/* <img src="/images/eld.jpg" alt="Eld" /> */}
               <h2>Animations</h2>
               <p>
-                Create a Bridge between lonely Teenagers and Elderly. An Exam in
-                the subject "Designproject".
+                Animations I created during my bachelor for submussions in
+                differnet subjects.
               </p>
             </NavLink>
           </div>
