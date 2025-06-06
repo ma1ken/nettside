@@ -34,6 +34,15 @@ export default function MyWorkLayout() {
                 the subject "Designproject".
               </p>
             </NavLink>
+
+            <NavLink to="/MyWork/Animations" className="card">
+              {/* <img src="/images/eld.jpg" alt="Eld" /> */}
+              <h2>Animations</h2>
+              <p>
+                Create a Bridge between lonely Teenagers and Elderly. An Exam in
+                the subject "Designproject".
+              </p>
+            </NavLink>
           </div>
         </>
       ) : (
