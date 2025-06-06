@@ -71,6 +71,14 @@ img {
     padding: 1rem;
 }
 
+.animations {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
 /* HELE SIDEN */
 .content-container {
     max-width: 1200px;
