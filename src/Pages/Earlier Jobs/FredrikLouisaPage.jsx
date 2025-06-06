@@ -11,7 +11,7 @@ export default function FredrikLouisaPage() {
             <br />
             Coming soon...
           </h1>
-          <h2></h2>
+        
           <p></p>
         </div>
         <div className="image">
