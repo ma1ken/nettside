@@ -19,7 +19,7 @@ export default function MyWorkLayout() {
           <div className="cards-container">
             <NavLink to="/MyWork/UInMunch" className="card">
               {/* <img src="/images/uinmunch.jpg" alt="UInMunch" /> */}
-              <h2>UInMunch</h2>
+              <h2>U In Mnch</h2>
               <p>
                 Developed an Interactive App-Idea and Prototype for the Munch
                 Museum, In an attempt to attract more teenagers.

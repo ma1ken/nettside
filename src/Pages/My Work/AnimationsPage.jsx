@@ -2,7 +2,7 @@ import "../../Styles/Pages.css";
 
 export default function AnimationsPage() {
   return (
-    <div>
+    <div className="content-container">
       <h1>Animations</h1>
       <div className="text-image-section">
         <div className="text">
