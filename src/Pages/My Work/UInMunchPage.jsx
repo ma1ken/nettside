@@ -21,6 +21,7 @@ export default function UInMunchPage() {
           <img src={uinmnchLogo} alt="U In MNCH Logo" />
         </div>
       </div>
+        <h2>Page still under conctruction..</h2>
     </div>
   );
 }
