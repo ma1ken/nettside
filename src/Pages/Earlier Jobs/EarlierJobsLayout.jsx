@@ -35,6 +35,14 @@ export default function EarlierJobsLayout() {
                 costumers
               </p>
             </NavLink>
+
+            <NavLink to="/EarlierJobs/thebodyshop" className="card">
+              {/* <img src="/images/fredriklouisa.jpg" alt="Fredrik og Louisa" /> */}
+              <h2>The Body Shop</h2>
+              <p>
+                A job during the pandemic, after I finished my makeup studies.
+              </p>
+            </NavLink>
           </div>
         </>
       ) : (
