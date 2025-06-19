@@ -18,6 +18,7 @@ export default function EarlierJobsLayout() {
 
           {/* HER SER VI KORTENE */}
           <div className="cards-container">
+            
             <NavLink to="/EarlierJobs/Ikea" className="card">
               {/* <img src="/images/ikea.jpg" alt="IKEA" /> */}
               <h2>IKEA</h2>

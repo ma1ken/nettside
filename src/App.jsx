@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar/Navbar";
 import EarlierJobsLayout from "./Pages/Earlier Jobs/EarlierJobsLayout";
 import IkeaPage from "./Pages/Earlier Jobs/IkeaPage";
 import FredrikLouisaPage from "./Pages/Earlier Jobs/FredrikLouisaPage";
+import BodyShopPage from "./Pages/Earlier Jobs/BodyShopPage";
 
 import EducationLayout from "./Pages/Education/EducationLayout";
 import BachelorPage from "./Pages/Education/BachelorPage";
@@ -13,10 +14,12 @@ import EldPage from "./Pages/My Work/EldPage";
 import UInMunchPage from "./Pages/My Work/UInMunchPage";
 import AnimationsPage from "./Pages/My Work/AnimationsPage";
 
+import GamingPage from "./Pages/About Me/GamingPage";
+import AboutMeLayout from "./Pages/About Me/AboutMeLayout";
+import PlansPage from "./Pages/About Me/PlansPage";
+
 // import HomeLayout from "./Pages/Home/HomeLayout";
 import { Route, Routes } from "react-router-dom";
-import AboutMeLayout from "./Pages/About Me/AboutMeLayout";
-import BodyShopPage from "./Pages/Earlier Jobs/BodyShopPage";
 
 function App() {
   return (
@@ -32,6 +35,12 @@ function App() {
           <Route path="/MyWork" element={<MyWorkLayout />} />
 
           {/* Her kommer flere sidebarer som endrer seg ut fra hva man velger i navigasjonsbaren over */}
+
+          {/*ABOUT ME SIDEBAR/CARDS */}
+          <Route path="/AboutMe" element={<AboutMeLayout />} />
+          <Route path="/AboutMe/Gaming" element={<GamingPage />} />
+          <Route path="/AboutMe/Plans" element={<PlansPage />} />
+
           {/* MY WORK SIDEBAR */}
           <Route path="/MyWork/*" element={<MyWorkLayout />}>
             <Route path="UInMunch" element={<UInMunchPage />} />
@@ -43,7 +52,7 @@ function App() {
           <Route path="/EarlierJobs/*" element={<EarlierJobsLayout />}>
             <Route path="Ikea" element={<IkeaPage />} />
             <Route path="FredrikLouisa" element={<FredrikLouisaPage />} />
-            <Route path="thebodyshop" element={<BodyShopPage/>} />
+            <Route path="thebodyshop" element={<BodyShopPage />} />
           </Route>
 
           {/* EDUCATION SIDEBAR */}
