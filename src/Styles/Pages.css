@@ -138,7 +138,7 @@ img {
 
 .double-image-section img {
     border-radius: 8px;
-    height: 20vw;
+    height: 30vw;
     width: auto; /* Bredde justeres automatisk etter proporsjoner */
     object-fit: cover; /* Beskjær bildet til å passe rammen pent */
     margin: 0;
@@ -155,7 +155,7 @@ img {
 
 .five-image-section img {
     border-radius: 8px;
-    height: 20vw;
+    height: 25vw;
     width: auto; /* Bredde justeres automatisk etter proporsjoner */
     object-fit: cover; /* Beskjær bildet til å passe rammen pent */
     margin: 0;
