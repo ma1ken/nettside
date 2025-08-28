@@ -1,7 +1,7 @@
 import "../../Styles/Pages.css";
 import "../../Styles/AboutMeLayout.css";
 import "../../Styles/Cards.css";
-import Gammelt from "../../Images/Gammelt.png";
+import kobenhavn from "../../Images/kobenhavn.jpg";
 import { NavLink, Outlet, useLocation } from "react-router-dom";
 
 export default function AboutMeLayout() {
@@ -13,27 +13,31 @@ export default function AboutMeLayout() {
         <div className="text">
           <h1>Hi, I'm Maiken!</h1>
           <p>
-            I am a 27 year old girl living in Oslo, Norway, and I've lived here
-            for the past 22 years. My childhood was on an Island called Tjøme,
-            and I loved growing up there surrounded by nature and sea. Ever
-            since I can remember, I've been extremely active, and I started
-            gymnastics at the age of 2. Other sports I've done are handball,
-            taekwondo and drill baton. However, I have not been very active the
-            past ten years, but I want to become sporty again.
+            Hello traveller. Welcome to this extremely messy page where I will
+            show you either how interesting I am, or you're actually here for my
+            portfolio (I am working on it, some is where but more is on its way.
+            It just takes a damn long time to apply for jobs, fix this page,
+            take care of myself and my hobbies ++++ I m currently laying down
+            new floor in my whole apartment and painting all the rooms).
           </p>
           <p>
-            I really enjoy gaming and I've been gaming since I was a kid. My dad
-            had all sorts of games he let my sister and I play. Some of my
-            favorite games from my childhood are Rayman 2 The Great Escape, Red
-            Alert 2, Caesar 3. I still play a lot of videogames, but I mostly
-            play CS2. I love staying at home, but I do enjoy spending time with
-            friends from time to time. We usually go out eating, to concerts and
-            watch movies together.
+            A few facts about me to get started. I am 27 years old and I live in
+            Oslo. You would think that should give me a lot of joboppurtinities,
+            which it does, but not a lot of jobs or interviews. So please, take
+            ur time and appreciate that it takes a while to build this page,
+            though its far from done. I really like to draw, change my home all
+            the time, connect with nature, animals and knitting. Ive been a
+            gamer forever, but I dont have time anymore and I get way to
+            addicted when Im playing, so I think that time has passed. I like to
+            talk about gaming and watch other people play still tho. :D
           </p>
         </div>
 
         <div className="image">
-          <img src={Gammelt} alt="Me around ten years ago." />
+          <img
+            src={kobenhavn}
+            alt="An image of me in Copenhagen this summer 2025."
+          />
         </div>
       </div>
       <p>
@@ -54,11 +58,16 @@ export default function AboutMeLayout() {
       {onMainPage ? (
         <>
           <h1>About Me</h1>
+          <h2>
+            THIS IS NOT DONE, BUT I JUST HAD TO PUSH OUT SOME CHANGES ABOUT ME
+            ON THIS PAGE (IT WAS AN EMERGENCY) AND I REALLY NEED TO PEE AND
+            SLEEP. SO THE BUTTONS UNDERNEATH DOES NOT WORK ATM, BUT THEY WILL
+            SOON.
+          </h2>
           <p className="center">Click on a card to read more about me:</p>
 
           {/* HER SER VI KORTENE */}
           <div className="cards-container">
-
             <NavLink to="AboutMe/Gaming" className="card">
               {/* <img src="/images/ikea.jpg" alt="IKEA" /> */}
               <h2>Gaming</h2>
