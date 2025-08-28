@@ -15,14 +15,14 @@ export default function AboutMeLayout() {
           <p>
             Hello traveller. Welcome to this extremely messy page where I will
             show you either how interesting I am, or you're actually here for my
-            portfolio (I am working on it, some is where but more is on its way.
+            portfolio (I am working on it, some is here but more is on its way.
             It just takes a damn long time to apply for jobs, fix this page,
             take care of myself and my hobbies ++++ I m currently laying down
             new floor in my whole apartment and painting all the rooms).
           </p>
           <p>
             A few facts about me to get started. I am 27 years old and I live in
-            Oslo. You would think that should give me a lot of joboppurtinities,
+            Oslo. You would think that should give me a lot of jobopportunities,
             which it does, but not a lot of jobs or interviews. So please, take
             ur time and appreciate that it takes a while to build this page,
             though its far from done. I really like to draw, change my home all
