@@ -36,7 +36,7 @@ export default function AboutMeLayout() {
         <div className="image">
           <img
             src={kobenhavn}
-            alt="An image of me in Copenhagen this summer 2025."
+            alt="me in Copenhagen this summer 2025."
           />
         </div>
       </div>
