@@ -2,11 +2,8 @@ import "../../Styles/Pages.css";
 import "../../Styles/AboutMeLayout.css";
 import "../../Styles/Cards.css";
 import kobenhavn from "../../Images/kobenhavn.jpg";
-import { NavLink, Outlet, useLocation } from "react-router-dom";
 
 export default function AboutMeLayout() {
-  const location = useLocation();
-  const onMainPage = location.pathname === "/";
   return (
     <div className="content-container">
       <div className="text-image-section">
@@ -54,42 +51,6 @@ export default function AboutMeLayout() {
         once I've started. I thrive when I learn something new everyday, and I
         like to be given responsibility once I'm comfortable.
       </p>
-
-      {onMainPage ? (
-        <>
-          {/* <h1>About Me</h1>
-          <h2>
-            THIS IS NOT DONE, BUT I JUST HAD TO PUSH OUT SOME CHANGES ABOUT ME
-            ON THIS PAGE (IT WAS AN EMERGENCY) AND I REALLY NEED TO PEE AND
-            SLEEP. SO THE BUTTONS UNDERNEATH DOES NOT WORK ATM, BUT THEY WILL
-            SOON.
-          </h2>
-          <p className="center">Click on a card to read more about me:</p> */}
-
-          {/* HER SER VI KORTENE */}
-          {/* <div className="cards-container">
-            <NavLink to="AboutMe/Gaming" className="card">
-              {/* <img src="/images/ikea.jpg" alt="IKEA" /> */}
-              {/* <h2>Gaming</h2>
-              <p>
-                Costumerservice, play-area for children and order-pickup
-                coordination and logistics{" "}
-              </p>
-            </NavLink> */}
-
-            {/* <NavLink to="AboutMe/Plans" className="card">
-              {/* <img src="/images/ikea.jpg" alt="IKEA" /> */}
-              {/* <h2>Plans</h2>
-              <p>
-                Costumerservice, play-area for children and order-pickup
-                coordination and logistics{" "}
-              </p> */}
-            {/* </NavLink> */}
-          {/* </div> */} */
-        // </>
-      ) : (
-        <Outlet />
-      )} 
     </div>
   );
 }
