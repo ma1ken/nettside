@@ -29,6 +29,34 @@ export default function BodyShopPage() {
           <img src={bodyshopLogo} alt="Bodyshop logo" />
         </div>
       </div>
+      <div>
+        <h2>Responsibility</h2>
+        <p>
+          I was kind of an assisting store manager, even though it was not in
+          the title. During the summerholiday, I was the one in charge and had
+          to do weekly reports, keep up with routines and administrative work.
+          This was a lot for me to handle in the beginning, but I got used to
+          it. I opened and closed the shop by myself, cleaned and submintted
+          orders, kept full control over our storage, assisted costumers with
+          finding products suited for their needs and told them about the
+          products.
+        </p>
+      </div>
+      <div>
+        <h2>The Pandemic</h2>
+        <p>
+          This job was temporary and it would be a great way for me to find a
+          way into the beauty industry, in a city where there is a big
+          competition for the best jobs. However, in march 2o20, two weeks after
+          I had started, the pandemic broke out. Norway was one of the countries
+          that took action and made restrictions that affected our jobs. One of
+          the reasons for why I was hired was to raise the makeupsales and do
+          demos on costumers, but that was no longer an option. I had just
+          finised my studies and had a lot of motivation to play with makeup on
+          costumers, but instead I was out of training for over a year, until I
+          started working at Fredrik & Louisa 2021.
+        </p>
+      </div>
       <p>more info coming asap..</p>
     </div>
   );
