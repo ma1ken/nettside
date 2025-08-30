@@ -31,26 +31,28 @@ export default function AboutMeLayout() {
         </div>
 
         <div className="image">
-          <img
-            src={kobenhavn}
-            alt="me in Copenhagen this summer 2025."
-          />
+          <img src={kobenhavn} alt="me in Copenhagen this summer 2025." />
         </div>
       </div>
-      <p>
-        I decided to build and create my own website from scratch, to improve my
-        skills in React and become a better frontend developer. This website is
-        under construction and will improve over time, and I will add more
-        back-end solutions in the future. I am currently looking for a job and I
-        want to work with Frontend and UX. I am interested in improving my
-        Backend skills as well as I want to become a fullstack-developer. I
-        think my UX skills gives me a strong advantage, as I am very good at
-        finding and understanding problems, and look for new and better
-        solutions. Previously I've worked a lot in teams, but I do really enjoy
-        spending time on my own creating new solutions, and I can code for hours
-        once I've started. I thrive when I learn something new everyday, and I
-        like to be given responsibility once I'm comfortable.
-      </p>
+      <div>
+        <h2>What's the purpose of this website?</h2>
+
+        <p>
+          I decided to build and create my own website from scratch, to improve
+          my skills in React and become a better frontend developer. This
+          website is under construction and will improve over time, and I will
+          add more back-end solutions in the future. I am currently looking for
+          a job and I want to work with Frontend and UX. I am interested in
+          improving my Backend skills as well as I want to become a
+          fullstack-developer. I think my UX skills gives me a strong advantage,
+          as I am very good at finding and understanding problems, and look for
+          new and better solutions. Previously I've worked a lot in teams, but I
+          do really enjoy spending time on my own creating new solutions, and I
+          can code for hours once I've started. I thrive when I learn something
+          new everyday, and I like to be given responsibility once I'm
+          comfortable.
+        </p>
+      </div>
     </div>
   );
 }
