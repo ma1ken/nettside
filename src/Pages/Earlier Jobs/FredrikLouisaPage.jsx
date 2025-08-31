@@ -9,7 +9,7 @@ export default function FredrikLouisaPage() {
     <div className="content-container">
       <div className="text-image-section">
         <div className="text">
-          <h1>Fredrik og Louisa</h1>
+          <h1>Fredrik og Louisa 2021-2025</h1>
 
           <p>
             My third job that I started working at after The Bodyshop. This is
@@ -56,6 +56,13 @@ export default function FredrikLouisaPage() {
       <div className="text-image-section">
         <div className="text">
           <h2>L:A Bruket 40% Ambassador</h2>
+          <p>
+            After working for Molton Brown for two years, I was offered a 40%
+            position for L:A Bruket. They also focus on bodycare mainly and
+            natural ingredients, but also skincare. I was able to work as much
+            as possible next to my studies in this position, and I represented
+            the brand for around 9 months.
+          </p>
         </div>
         <div className="image">
           <img src={labruketLogo} alt="Logo of La Bruket." />
@@ -63,24 +70,50 @@ export default function FredrikLouisaPage() {
       </div>
       <div>
         <h2>Gen-Z Area 40%</h2>
+        <p>
+          L:A Bruket was no longer going to have their own large counter at our
+          store anymore, so I was offered a position in the Gen-z Area. This
+          area had brands like Cosrx, Anastasia Beverly Hills, Sol De Janeiro
+          etc. I shared the area and responsibilities with another coworker. The
+          whole area was surrounded by popular makeupbrands for the younger
+          generation, and I was finally able to use my makeupskills daily on
+          clients. It was the most busy area in the whole store, next to brands
+          like Fenty Beauty and Mac Cosmetics.
+        </p>
       </div>
 
       <div className="text-image-section">
         <div className="text">
           <h2>Kiehl's Counter Manager 80%</h2>
-          <p></p>
+          <p> coming soon...</p>
         </div>
         <div className="image">
           <img src={kiehlsLogo} alt="Kiels Logo." />
         </div>
       </div>
 
-      <div>
+      {/* <div>
         <h1>SKills</h1>
-      </div>
+      </div> */}
 
       <div>
         <h2>Other Experience and Appreciation</h2>
+        <p>
+          I gained more experience with skincare and fragrance after I started
+          working there, considering that I am a certified makeup-artist and had
+          previously worked at The Body Shop. I was extremely lucky to be a part
+          of this industry for years. The brands gave us a lot of opportunities
+          for grown and to learn more about their products through trips and
+          courses, for free with meals and gifts. This gave me the change to try
+          products before selling them, so I could give an honest review to the
+          costumers. It also opened my senses to fragrance that I did not like
+          before I started working there. Now, I am able to understand and
+          respect the art of creating perfumes and how its done, and smell how
+          they are build up by different oils and notes. I also worked along
+          side strong and powerful coworkers that showed me how much you can get
+          rewarded for hard work, and I've gained so much knowledge and
+          understanding about humans after working here.
+        </p>
       </div>
     </div>
   );
