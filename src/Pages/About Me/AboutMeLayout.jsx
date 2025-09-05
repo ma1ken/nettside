@@ -10,23 +10,21 @@ export default function AboutMeLayout() {
         <div className="text">
           <h1>Hi, I'm Maiken!</h1>
           <p>
-            Hello traveller. Welcome to this extremely messy page where I will
-            show you either how interesting I am, or you're actually here for my
-            portfolio (I am working on it, some is here but more is on its way.
-            It just takes a damn long time to apply for jobs, fix this page,
-            take care of myself and my hobbies ++++ I m currently laying down
-            new floor in my whole apartment and painting all the rooms).
+            Welcome to my website! It is a bit messy right now, but hopefully
+            you'll find access to my portfolio and learn more about me! I am
+            currently looking for a full time job and constantly applying for
+            jobs, while im fixing this page and renovating my apartment.
           </p>
           <p>
-            A few facts about me to get started. I am 27 years old and I live in
-            Oslo. You would think that should give me a lot of jobopportunities,
-            which it does, but not a lot of jobs or interviews. So please, take
-            ur time and appreciate that it takes a while to build this page,
-            though its far from done. I really like to draw, change my home all
-            the time, connect with nature, animals and knitting. Ive been a
-            gamer forever, but I dont have time anymore and I get way to
-            addicted when Im playing, so I think that time has passed. I like to
-            talk about gaming and watch other people play still tho. :D
+            I am 27 years old and I live in Oslo. You would think that should
+            give me a lot of jobopportunities, which it does, but not a lot of
+            jobs or interviews. So please, take ur time and appreciate that it
+            takes a while to build this page, even though I have a lot to fix. I
+            really like to draw, change my home all the time, connect with
+            nature, animals and knitting. Ive been a gamer forever, but I dont
+            have time anymore and I get way to addicted when Im playing, so I
+            think that time has passed. I like to talk about gaming and watch
+            other people play still tho. :D
           </p>
         </div>
 
