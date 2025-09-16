@@ -43,6 +43,17 @@ export default function MyWorkLayout() {
                 differnet subjects.
               </p>
             </NavLink>
+
+             <NavLink to="/MyWork/Cafe" className="card">
+              {/* <img src="/images/eld.jpg" alt="Eld" /> */}
+              <h2>Cafe App</h2>
+              <p>
+               Cafe App I created the third semester of my bachelor
+              </p>
+            </NavLink>
+
+
+            
           </div>
         </>
       ) : (
