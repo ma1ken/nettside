@@ -1,0 +1,231 @@
+body {
+  background-color: #1e1e2f;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 50px;
+  padding: 0;
+  color: #fcc5da;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  font-size: 1.75rem;
+  text-align: left;
+  color: #fcc5da;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h3 {
+  font-size: 1.25rem;
+  text-align: left;
+  color: #fcc5da;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+  color: #e0e0e0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.25rem;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+li {
+  color: #e0e0e0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.25rem;
+  text-align: left;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+a {
+  color: #e0e0e0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.25rem;
+  text-align: left;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.image-crop {
+  clip-path: inset(0 0 1% 0); /* top right bottom left */
+}
+
+.grade {
+  margin: 0;
+}
+.center {
+  text-align: center;
+}
+.gap {
+  padding: 2rem;
+}
+
+.section-color {
+  border: 3px solid rgb(115, 59, 117);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.animations {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* HELE SIDEN */
+.content-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+}
+
+.content-container > p {
+  max-width: 1000px;
+  margin: 0 auto;
+  line-height: 1.6;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.double-text-section {
+  display: flex;
+  gap: 2vw;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 1rem;
+  flex-direction: row;
+}
+
+/* Seksjon med tekst og bilde ved siden av hverandre */
+.text-image-section {
+  display: flex;
+  flex-wrap: nowrap; /* IKKE la innholdet wrappe til ny linje */
+  gap: 2rem;
+  align-items: stretch; /* Fyll høyden likt */
+}
+
+.double-text-section > .text,
+.text-image-section > .text,
+.text-image-section > .image {
+  flex: 1 1 50%;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.text-image-section > .image img {
+  width: 100%; /* Fyll containerens bredde */
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.double-image-section {
+  display: flex;
+  gap: 2vw;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 1rem;
+  flex-direction: row;
+}
+
+.double-image-section img {
+  border-radius: 8px;
+  height: 30vw;
+  width: auto; /* Bredde justeres automatisk etter proporsjoner */
+  object-fit: cover; /* Beskjær bildet til å passe rammen pent */
+  margin: 0;
+}
+
+.five-image-section {
+  display: flex;
+  gap: 2vw;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 20px;
+  flex-direction: row;
+}
+
+.five-image-section img {
+  border-radius: 8px;
+  height: 25vw;
+  width: auto; /* Bredde justeres automatisk etter proporsjoner */
+  object-fit: cover; /* Beskjær bildet til å passe rammen pent */
+  margin: 0;
+}
+
+/* Små skjermer - mobilportrett, under 767px */
+@media (max-width: 767px) {
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }
+
+  p,
+  li {
+    font-size: 1rem;
+  }
+
+  .double-text-section,
+  .text-image-section {
+    flex-direction: column-reverse;
+  }
+  .double-image-section,
+  .five-image-section {
+    flex-direction: column-reverse;
+    gap: 5vw;
+  }
+
+  /* textclass som er inni en textimgsection */
+  .double-text-section > .text,
+  .text-image-section > img .text,
+  .text-image-section > .image,
+  .double-image-section > img,
+  .five-image-section > img {
+    flex-basis: 100%; /* 1 element per rad på små skjermer */
+    max-width: 100%;
+    min-width: auto;
+  }
+
+  .content-container > div {
+    flex-basis: 100%; /* 1 element per rad på små skjermer */
+    max-width: 100%;
+    min-width: auto;
+  }
+}
+
+/* Store skjermer - desktop, over 768px */
+@media (min-width: 768px) {
+  .content-container > div,
+  .about-text,
+  .about-image {
+    flex-basis: calc(50% - 1rem);
+    min-width: 280px;
+  }
+}

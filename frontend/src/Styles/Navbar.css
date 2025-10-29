@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0rem; /* rettet fra 'rem' */
+    text-align: center;
+    align-items: center;
+}
+
+.nav {
+    background-color: #2a2a3f;
+    display: flex;
+    flex-wrap: nowrap; /* Forhindrer wrapping og dermed ingen vertikal utvidelse */
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+    border: 2px solid #f698bf;
+    /* Fjernet overflow-x: auto for å fjerne scrollbar */
+    white-space: nowrap; /* Hindrer linjebryting */
+    position: relative;
+    z-index: 10;
+    height: 60px; /* Sikrer høyde slik at tekst ikke skjules */
+    box-sizing: border-box;
+}
+
+.site-title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: "Courier New", Courier, monospace;
+    padding: 0rem;
+    line-height: 60px; /* Vertikal sentrering */
+    white-space: nowrap;
+    flex-shrink: 1; /* Tillater at tittelen skaleres ned for plass */
+    overflow: hidden; /* Skjuler overflødig tekst */
+    text-overflow: ellipsis; /* Viser ... hvis teksten er for lang */
+}
+
+.nav ul {
+    padding: 0rem;
+    margin: 0rem;
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap; /* Holder elementer på én linje */
+    gap: 1rem;
+    justify-content: flex-end;
+    width: 100%;
+    /* Fjernet overflow-x: auto for å fjerne scrollbar */
+    align-items: center;
+}
+
+.nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 1.5rem;
+    display: inline-block;
+    white-space: nowrap;
+    line-height: 60px; /* Vertikal sentrering */
+    flex-shrink: 0; /* Hindrer at lenkene krymper for mye */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Hvis teksten blir for lang */
+}
+
+.nav li {
+    border-radius: 20px;
+    transition: box-shadow 1s ease;
+}
+
+.nav li:hover {
+    background-color: transparent;
+}
+
+.nav li.active a {
+    color: #f698bf;
+}
+
+.nav li:not(.active):hover {
+    background-color: transparent;
+    border-radius: 20px;
+}
+
+.nav li:not(.active):hover a {
+    color: #f698bf;
+}
+
+/* Responsivt for små skjermer */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column; /* Stabler elementer vertikalt */
+        align-items: center;
+        height: auto; /* Fjerner fast høyde for å tilpasse layout */
+        white-space: normal; /* Tillater tekst å brytes på små skjermer */
+    }
+
+    .nav ul {
+        flex-wrap: wrap; /* Tillater wrapping */
+        justify-content: center;
+        gap: 0.5rem;
+        width: auto; /* Tillater fleksibilitet */
+    }
+
+    .site-title {
+        font-size: 2rem;
+        text-align: center;
+        line-height: normal; /* Normal linjehøyde på små skjermer */
+        max-width: 100%; /* Sikrer at den ikke overskrider skjermbredde */
+        overflow: visible;
+        text-overflow: clip;
+        flex-shrink: 0; /* Ikke krymp */
+    }
+
+    .nav a {
+        font-size: 1.2rem;
+        line-height: normal;
+        padding: 0.5rem;
+        max-width: none; /* Fjern begrensning på bredde */
+        flex-shrink: 0;
+    }
+}
