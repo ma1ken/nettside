@@ -1,22 +1,29 @@
 ul {
-    list-style-type: disc;
-    list-style-position: inside; /* flytter prikken nærmere teksten */
-    padding: 0;
-    margin: 0 auto;
-    max-width: 100rem;
-    
+  list-style-type: disc;
+  list-style-position: inside; /* flytter prikken nærmere teksten */
+  padding: 0;
+  margin: 0 auto;
+  max-width: 100rem;
 }
 
 li {
-    color: #e0e0e0;
-    font-size: 1.25rem;
-    margin-left: -1rem;
-    position: relative;
-    text-align: left;
-    margin: 1rem;
+  color: #4a4a4a;
+  margin-left: -1rem;
+  position: relative;
+  text-align: left;
+  margin: 1rem;
 }
 
-h2 {
-    margin-top: 5rem;
-    text-align: left;
+/* Responsiv design for hjemme-siden */
+@media (max-width: 479px) {
+  li {
+    margin: 0.75rem 0.5rem;
+    margin-left: -0.8rem;
+  }
+}
+
+@media (max-width: 767px) {
+  li {
+    margin: 0.9rem 0.75rem;
+  }
 }

@@ -1,0 +1,17 @@
+h2 {
+  margin-top: 2.5rem;
+  text-align: left;
+}
+
+/* Responsiv design for about-siden */
+@media (max-width: 479px) {
+  h2 {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  h2 {
+    margin-top: 2rem;
+  }
+}

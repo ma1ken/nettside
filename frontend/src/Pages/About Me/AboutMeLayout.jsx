@@ -1,7 +1,7 @@
 import "../../Styles/Pages.css";
 import "../../Styles/AboutMeLayout.css";
 import "../../Styles/Cards.css";
-import kobenhavn from "../../Images/kobenhavn.jpg";
+import maiken from "../../Images/maiken1_2025.jpg";
 
 export default function AboutMeLayout() {
   return (
@@ -29,7 +29,7 @@ export default function AboutMeLayout() {
         </div>
 
         <div className="image">
-          <img src={kobenhavn} alt="me in Copenhagen this summer 2025." />
+          <img src={maiken} alt="me in Copenhagen this summer 2025." />
         </div>
       </div>
       <div>

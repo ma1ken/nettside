@@ -1,45 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
 body {
-  background-color: #1e1e2f;
+  background-color: #f4eae0;
+  background-image:
+    radial-gradient(
+      circle at 18% 14%,
+      rgba(189, 129, 72, 0.15),
+      transparent 18%
+    ),
+    radial-gradient(
+      circle at 82% 22%,
+      rgba(216, 173, 107, 0.1),
+      transparent 22%
+    );
+  color: #2c231c;
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
 }
 
 h1 {
-  font-size: 3rem;
-  margin-top: 1rem;
-  margin-bottom: 50px;
-  padding: 0;
-  color: #fcc5da;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: clamp(2.6rem, 5vw, 4rem);
+  margin-top: 0;
+  margin-bottom: 2.2rem;
+  color: #5c3d1f;
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.045em;
+  line-height: 1.04;
 }
 
 h2 {
-  font-size: 1.75rem;
-  text-align: left;
-  color: #fcc5da;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: clamp(1.85rem, 3vw, 2.4rem);
+  margin-bottom: 1.8rem;
+  color: #8b5a2b;
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.02em;
 }
 
 h3 {
-  font-size: 1.25rem;
-  text-align: left;
-  color: #fcc5da;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+  color: #6d4c32;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+p,
+li {
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  color: #4a3f37;
+  font-size: 1.05rem;
+  line-height: 1.95;
+}
+
+a {
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  color: #a8642f;
+  font-size: 1.05rem;
+  line-height: 1.95;
+  text-decoration: none;
+  border-bottom: 1.5px solid rgba(168, 100, 47, 0.25);
+  transition:
+    color 0.25s ease,
+    border-color 0.25s ease;
 }
 
 p {
-  color: #e0e0e0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1.25rem;
-  text-align: left;
-  margin-bottom: 50px;
+  margin-top: 0.8rem;
+  margin-bottom: 1.8rem;
+  max-width: 70ch;
+}
+
+h2 + p {
+  margin-top: 0;
 }
 
 li {
-  color: #e0e0e0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1.25rem;
-  text-align: left;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin: 1.25rem 0;
+}
+
+a:hover {
+  color: #7d4d23;
+  border-color: rgba(168, 100, 47, 0.5);
 }
 
 img {
@@ -48,36 +106,50 @@ img {
   height: auto;
   display: block;
   margin: 0 auto;
-  border-radius: 10px;
-}
-
-a {
-  color: #e0e0e0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1.25rem;
-  text-align: left;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  border-radius: 22px;
 }
 
 .image-crop {
-  clip-path: inset(0 0 1% 0); /* top right bottom left */
+  clip-path: inset(0 0 1% 0);
 }
 
 .grade {
   margin: 0;
+  font-weight: 800;
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #a8642f;
+  line-height: 1.4;
 }
+
 .center {
   text-align: center;
 }
+
 .gap {
   padding: 2rem;
 }
 
+@media (max-width: 767px) {
+  .gap {
+    padding: 1.2rem;
+  }
+}
+
 .section-color {
-  border: 3px solid rgb(115, 59, 117);
-  border-radius: 10px;
-  padding: 1rem;
+  border-top: 1.5px solid rgba(145, 100, 61, 0.25);
+  padding-top: 2rem;
+  padding-bottom: 0;
+  background-color: transparent;
+  border-radius: 0;
+  margin-top: 2rem;
+}
+
+.section-color:first-of-type {
+  border-top: none;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .animations {
@@ -85,147 +157,218 @@ a {
   max-width: 800px;
   height: auto;
   border-radius: 12px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 18px 40px rgba(67, 47, 30, 0.08);
 }
 
-/* HELE SIDEN */
 .content-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem 1rem;
+  max-width: 1040px;
+  margin: 1rem auto;
+  padding: 2.5rem 2rem;
   box-sizing: border-box;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.content-container > * + * {
+  margin-top: 2rem;
 }
 
 .content-container > p {
-  max-width: 1000px;
-  margin: 0 auto;
-  line-height: 1.6;
-  padding: 1rem;
-  box-sizing: border-box;
+  max-width: 860px;
+  margin: 0 auto 2.25rem;
+  line-height: 2;
+  padding: 0;
 }
 
-.double-text-section {
+.double-text-section,
+.double-image-section,
+.five-image-section {
   display: flex;
-  gap: 2vw;
-  justify-content: center;
-  align-items: flex-start;
-  margin: 1rem;
+  gap: 2.75rem;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: 2rem 0;
   flex-direction: row;
 }
 
-/* Seksjon med tekst og bilde ved siden av hverandre */
 .text-image-section {
-  display: flex;
-  flex-wrap: nowrap; /* IKKE la innholdet wrappe til ny linje */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 2rem;
-  align-items: stretch; /* Fyll høyden likt */
+  align-items: start;
+  margin: 1.5rem 0;
 }
 
-.double-text-section > .text,
-.text-image-section > .text,
+@media (max-width: 767px) {
+  .text-image-section {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    margin: 1.25rem 0;
+  }
+}
+
+.text-image-section > .text {
+  min-width: 0;
+  padding: 0;
+}
+
 .text-image-section > .image {
-  flex: 1 1 50%;
-  padding: 1rem;
-  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  min-width: 280px;
 }
 
 .text-image-section > .image img {
-  width: 100%; /* Fyll containerens bredde */
+  width: 100%;
+  max-height: 520px;
   height: auto;
-  border-radius: 12px;
+  border-radius: 18px;
   object-fit: cover;
 }
 
-.double-image-section {
-  display: flex;
-  gap: 2vw;
-  justify-content: center;
-  align-items: flex-start;
-  margin: 1rem;
-  flex-direction: row;
+.double-image-section img,
+.five-image-section img {
+  border-radius: 18px;
+  width: auto;
+  object-fit: cover;
+  margin: 0;
 }
 
 .double-image-section img {
-  border-radius: 8px;
   height: 30vw;
-  width: auto; /* Bredde justeres automatisk etter proporsjoner */
-  object-fit: cover; /* Beskjær bildet til å passe rammen pent */
-  margin: 0;
-}
-
-.five-image-section {
-  display: flex;
-  gap: 2vw;
-  justify-content: center;
-  align-items: flex-start;
-  margin: 20px;
-  flex-direction: row;
 }
 
 .five-image-section img {
-  border-radius: 8px;
   height: 25vw;
-  width: auto; /* Bredde justeres automatisk etter proporsjoner */
-  object-fit: cover; /* Beskjær bildet til å passe rammen pent */
-  margin: 0;
 }
 
-/* Små skjermer - mobilportrett, under 767px */
-@media (max-width: 767px) {
+/* Små skjermer - mobilportrett, under 480px */
+@media (max-width: 479px) {
+  body {
+    background-image: none;
+  }
+
   h1 {
     font-size: 2rem;
-    margin-bottom: 30px;
+    margin-bottom: 1.5rem;
   }
 
   h2 {
     font-size: 1.5rem;
-    margin-bottom: 30px;
+    margin-bottom: 1.2rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  p,
+  li,
+  a {
+    font-size: 0.95rem;
+  }
+
+  .content-container {
+    margin: 0.75rem;
+    padding: 1.2rem;
+  }
+
+  .double-text-section,
+  .text-image-section,
+  .double-image-section,
+  .five-image-section {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .double-text-section > .text,
+  .text-image-section > .text,
+  .text-image-section > .image,
+  .double-image-section img,
+  .five-image-section img {
+    flex-basis: 100%;
+    max-width: 100%;
+    min-width: auto;
+  }
+
+  .section-color {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+  }
+}
+
+/* Små skjermer - mobillandskap og små tablets, 480px - 767px */
+@media (min-width: 480px) and (max-width: 767px) {
+  body {
+    background-image: none;
+  }
+
+  h1 {
+    font-size: 2.3rem;
+    margin-bottom: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.65rem;
+    margin-bottom: 1.4rem;
   }
 
   h3 {
     font-size: 1.1rem;
-    margin-bottom: 30px;
+    margin-bottom: 0.6rem;
   }
 
   p,
-  li {
+  li,
+  a {
     font-size: 1rem;
   }
 
-  .double-text-section,
-  .text-image-section {
-    flex-direction: column-reverse;
+  .content-container {
+    margin: 1.5rem;
+    padding: 1.8rem;
   }
+
+  .double-text-section,
+  .text-image-section,
   .double-image-section,
   .five-image-section {
-    flex-direction: column-reverse;
-    gap: 5vw;
+    flex-direction: column;
+    gap: 1.8rem;
   }
 
-  /* textclass som er inni en textimgsection */
   .double-text-section > .text,
-  .text-image-section > img .text,
+  .text-image-section > .text,
   .text-image-section > .image,
-  .double-image-section > img,
-  .five-image-section > img {
-    flex-basis: 100%; /* 1 element per rad på små skjermer */
+  .double-image-section img,
+  .five-image-section img {
+    flex-basis: 100%;
     max-width: 100%;
     min-width: auto;
   }
 
-  .content-container > div {
-    flex-basis: 100%; /* 1 element per rad på små skjermer */
-    max-width: 100%;
-    min-width: auto;
+  .section-color {
+    margin-top: 2rem;
+    padding-top: 2rem;
   }
 }
 
-/* Store skjermer - desktop, over 768px */
+/* Tablets, 768px og oppover */
 @media (min-width: 768px) {
   .content-container > div,
   .about-text,
   .about-image {
     flex-basis: calc(50% - 1rem);
     min-width: 280px;
+  }
+}
+
+/* Store skjermer, 1024px og oppover */
+@media (min-width: 1024px) {
+  .content-container {
+    max-width: 1040px;
   }
 }

@@ -1,125 +1,284 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .container {
-    margin: 0rem; /* rettet fra 'rem' */
-    text-align: center;
-    align-items: center;
+  margin: 0;
+  text-align: center;
+  align-items: center;
 }
 
 .nav {
-    background-color: #2a2a3f;
-    display: flex;
-    flex-wrap: nowrap; /* Forhindrer wrapping og dermed ingen vertikal utvidelse */
-    justify-content: space-between;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 1rem;
-    margin: 1rem;
-    border-radius: 10px;
-    border: 2px solid #f698bf;
-    /* Fjernet overflow-x: auto for å fjerne scrollbar */
-    white-space: nowrap; /* Hindrer linjebryting */
-    position: relative;
-    z-index: 10;
-    height: 60px; /* Sikrer høyde slik at tekst ikke skjules */
-    box-sizing: border-box;
+  background: rgba(255, 251, 245, 0.9);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem 2rem;
+  margin: 1.5rem auto;
+  max-width: 1200px;
+  border-radius: 18px;
+  border: 1px solid rgba(120, 84, 50, 0.14);
+  box-shadow: 0 26px 50px rgba(70, 42, 24, 0.08);
+  backdrop-filter: blur(12px);
+  position: relative;
+  z-index: 10;
 }
 
 .site-title {
-    font-size: 3rem;
-    font-weight: bold;
-    text-decoration: none;
-    font-family: "Courier New", Courier, monospace;
-    padding: 0rem;
-    line-height: 60px; /* Vertikal sentrering */
-    white-space: nowrap;
-    flex-shrink: 1; /* Tillater at tittelen skaleres ned for plass */
-    overflow: hidden; /* Skjuler overflødig tekst */
-    text-overflow: ellipsis; /* Viser ... hvis teksten er for lang */
+  font-size: 1.75rem;
+  font-weight: 800;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  padding: 0;
+  line-height: 1;
+  color: #1e1410;
+  letter-spacing: -0.03em;
+  white-space: nowrap;
+  flex-shrink: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  gap: 0.4rem;
+  z-index: 11;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: #544339;
+  border-radius: 2px;
+  transition: all 0.3s ease;
 }
 
 .nav ul {
-    padding: 0rem;
-    margin: 0rem;
-    list-style: none;
-    display: flex;
-    flex-wrap: nowrap; /* Holder elementer på én linje */
-    gap: 1rem;
-    justify-content: flex-end;
-    width: 100%;
-    /* Fjernet overflow-x: auto for å fjerne scrollbar */
-    align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .nav a {
-    color: #ffffff;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    font-size: 1.5rem;
-    display: inline-block;
-    white-space: nowrap;
-    line-height: 60px; /* Vertikal sentrering */
-    flex-shrink: 0; /* Hindrer at lenkene krymper for mye */
-    overflow: hidden;
-    text-overflow: ellipsis; /* Hvis teksten blir for lang */
+  color: #544339;
+  padding: 0.35rem 0.65rem;
+  font-family: "Inter", sans-serif;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  display: inline-block;
+  white-space: nowrap;
+  line-height: 1.2;
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
 }
 
 .nav li {
-    border-radius: 20px;
-    transition: box-shadow 1s ease;
+  border-radius: 999px;
 }
 
-.nav li:hover {
-    background-color: transparent;
-}
-
+.nav li:hover a,
 .nav li.active a {
-    color: #f698bf;
+  color: #ad7244;
 }
 
-.nav li:not(.active):hover {
-    background-color: transparent;
-    border-radius: 20px;
+.nav li:hover a {
+  transform: translateY(-1px);
 }
 
-.nav li:not(.active):hover a {
-    color: #f698bf;
+.sidebar-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.03);
+  z-index: 5;
 }
 
-/* Responsivt for små skjermer */
-@media (max-width: 768px) {
-    .nav {
-        flex-direction: column; /* Stabler elementer vertikalt */
-        align-items: center;
-        height: auto; /* Fjerner fast høyde for å tilpasse layout */
-        white-space: normal; /* Tillater tekst å brytes på små skjermer */
-    }
+/* Desktop: 768px and up */
+@media (min-width: 768px) {
+  .nav {
+    padding: 1.25rem 2rem;
+  }
 
-    .nav ul {
-        flex-wrap: wrap; /* Tillater wrapping */
-        justify-content: center;
-        gap: 0.5rem;
-        width: auto; /* Tillater fleksibilitet */
-    }
+  .hamburger {
+    display: none !important;
+  }
 
-    .site-title {
-        font-size: 2rem;
-        text-align: center;
-        line-height: normal; /* Normal linjehøyde på små skjermer */
-        max-width: 100%; /* Sikrer at den ikke overskrider skjermbredde */
-        overflow: visible;
-        text-overflow: clip;
-        flex-shrink: 0; /* Ikke krymp */
-    }
+  .nav-menu {
+    display: flex !important;
+    position: static !important;
+    width: auto !important;
+    flex-direction: row !important;
+    background: none !important;
+    border: none !important;
+  }
 
-    .nav a {
-        font-size: 1.2rem;
-        line-height: normal;
-        padding: 0.5rem;
-        max-width: none; /* Fjern begrensning på bredde */
-        flex-shrink: 0;
-    }
+  .sidebar-overlay {
+    display: none !important;
+  }
+}
+
+/* Tablet: 480px - 767px */
+@media (min-width: 480px) and (max-width: 767px) {
+  .nav {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 1.25rem;
+  }
+
+  .site-title {
+    font-size: 1.55rem;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 70%;
+    height: auto;
+    background: rgba(255, 251, 245, 0.98);
+    flex-direction: column;
+    padding-top: 0;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.5rem;
+    list-style: none;
+    gap: 0.5rem;
+    transition: left 0.3s ease;
+    z-index: 9;
+    border-right: 1px solid rgba(120, 84, 50, 0.14);
+    backdrop-filter: blur(12px);
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav a {
+    font-size: 1.1rem;
+    padding: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    display: block;
+  }
+
+  .nav li {
+    border-radius: 8px;
+    padding: 0;
+  }
+
+  .nav li:first-child {
+    margin-top: 0.5rem;
+  }
+
+  .nav li:hover a,
+  .nav li.active a {
+    background: rgba(168, 100, 47, 0.08);
+    color: #ad7244;
+  }
+
+  .sidebar-overlay.active {
+    display: block;
+  }
+}
+
+/* Mobile: under 480px */
+@media (max-width: 479px) {
+  .nav {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    margin: 1rem;
+    gap: 0;
+  }
+
+  .site-title {
+    font-size: 1.35rem;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .hamburger span {
+    width: 22px;
+    height: 2.5px;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 80%;
+    max-width: 280px;
+    height: auto;
+    background: rgba(255, 251, 245, 0.98);
+    flex-direction: column;
+    padding-top: 0;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    padding-bottom: 1.2rem;
+    list-style: none;
+    gap: 0.25rem;
+    transition: left 0.3s ease;
+    z-index: 9;
+    border-right: 1px solid rgba(120, 84, 50, 0.14);
+    backdrop-filter: blur(12px);
+    overflow-y: auto;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav a {
+    font-size: 0.95rem;
+    padding: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    display: block;
+  }
+
+  .nav li {
+    border-radius: 6px;
+  }
+
+  .nav li:first-child {
+    margin-top: 0.5rem;
+  }
+
+  .nav li:hover a,
+  .nav li.active a {
+    background: rgba(168, 100, 47, 0.08);
+    color: #ad7244;
+  }
+
+  .sidebar-overlay {
+    display: none;
+  }
+
+  .sidebar-overlay.active {
+    display: block;
+  }
 }

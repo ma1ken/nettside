@@ -1,38 +1,100 @@
 .cards-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-  margin-top: 0rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.75rem;
+  justify-items: center;
+  align-items: start;
+  grid-auto-rows: minmax(0, auto);
+  width: 100%;
+  margin-top: 2.5rem;
 }
 
 .card {
-  background-color: #201f35;
-  border: 2px solid #f698bf;
-  border-radius: 15px;
-  width: 280px;
-  padding: 1rem;
+  background: #fdf6ef;
+  border: 1px solid rgba(145, 100, 61, 0.22);
+  border-radius: 14px;
+  width: 100%;
+  max-width: 340px;
+  padding: 1.75rem;
   text-decoration: none;
+  box-shadow: 0 18px 40px rgba(88, 63, 41, 0.08);
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
 }
 
 .card img {
   width: 100%;
-  height: 160px;
+  height: 190px;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 12px;
+  margin-bottom: 1.25rem;
 }
 
 .card h2 {
-  margin: 0.5rem 0;
-  color: #f388b7;
-  text-align: center;
+  margin: 0 0 0.75rem;
+  color: #2d2118;
+  text-align: left;
+  font-family: "Inter", sans-serif;
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: -0.015em;
 }
 
 .card p {
-  text-align: center;
+  margin: 0;
+  color: #4d3f35;
+  text-align: left;
+  font-family: "Inter", sans-serif;
+  line-height: 1.95;
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(-6px);
+  box-shadow: 0 28px 70px rgba(88, 63, 41, 0.16);
+  border-color: rgba(145, 100, 61, 0.34);
+  background: #fffaf5;
+}
+
+/* Responsiv design for kort */
+@media (max-width: 479px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .card {
+    max-width: 100%;
+    padding: 1.25rem;
+  }
+
+  .card h2 {
+    font-size: 1.15rem;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.75rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cards-container {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
 }
