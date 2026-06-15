@@ -40,6 +40,7 @@ h2 {
   font-family: "Inter", sans-serif;
   font-weight: 800;
   letter-spacing: -0.02em;
+  justify-self:center;
 }
 
 h3 {
@@ -85,6 +86,7 @@ p {
   margin-top: 0.8rem;
   margin-bottom: 1.8rem;
   max-width: 70ch;
+  justify-self: center;
 }
 
 h2 + p {
@@ -227,10 +229,10 @@ img {
   /* height: auto; */
   border-radius: 18px;
   /* object-fit: cover; */
-  height: 0;            /* Helt kritisk: Hindrer bildet i å presse opp høyden på div-en */
-  min-height: 100%;     /* Tvinger bildet til å fylle den høyden teksten har laget */
-  width: auto;          /* Sørger for at bredden justerer seg automatisk etter den nye høyden */
-  object-fit: contain;  /* Bevarer bildets proporsjoner perfekt så det ikke blir strukket */
+  height: 0; /* Helt kritisk: Hindrer bildet i å presse opp høyden på div-en */
+  min-height: 100%; /* Tvinger bildet til å fylle den høyden teksten har laget */
+  width: auto; /* Sørger for at bredden justerer seg automatisk etter den nye høyden */
+  object-fit: contain; /* Bevarer bildets proporsjoner perfekt så det ikke blir strukket */
   flex-shrink: 0;
 }
 
