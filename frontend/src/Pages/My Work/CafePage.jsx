@@ -6,17 +6,16 @@ export default function CafePage() {
   return (
     <div className="content-container">
       <h1>Cafe App Prototype</h1>
+      <div className="gap"></div>
       <div className="text-image-section">
         <div className="text">
-          <h2 className="Grade">Grade:B</h2>
-          <h2>DS3302 Interaction Design</h2>
-          <h2>Semester: Fall 2023</h2>
-          <h2>
-            Prototype in Figma:{" "}
+          <p className="Grade">
+            Grade: B | DS3302 Interaction Design | Semester: Fall 2023 Prototype
+            in Figma:{" "}
             <a href="https://www.figma.com/file/DV5ZpdUi3nBLxc8fLWGW7d/Eksamen---interaksjonsdesign-(Copy)?node-id=0%3A1&t=6k31PnvIUG2Fu3Id-1">
               Click Here!
             </a>
-          </h2>
+          </p>
           <p>
             This project was developed as the final exam in Interaction Design.
             The assignment was to design a mobile app prototype that improves
@@ -32,6 +31,7 @@ export default function CafePage() {
           <img src={cafeAiLogo} alt="Ai generated of a coffee app" />
         </div>
       </div>
+      <div className="section-color"></div>
       <div>
         <div>
           <h2>Project Goals</h2>

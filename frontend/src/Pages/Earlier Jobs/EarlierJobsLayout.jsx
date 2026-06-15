@@ -11,10 +11,10 @@ export default function EarlierJobsLayout() {
       {onMainPage ? (
         <>
           <h1>Earlier Jobs</h1>
-          <p className="center">
+          <h2 className="center">
             Click on a card to read more about one of the jobs I've had in my
             life
-          </p>
+          </h2>
 
           {/* HER SER VI KORTENE */}
           <div className="cards-container">
