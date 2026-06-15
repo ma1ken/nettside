@@ -34,13 +34,13 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(1.85rem, 3vw, 2.4rem);
+  font-size: clamp(1.2rem, 1.5vw, 1.7rem);
   margin-bottom: 1.8rem;
   color: #8b5a2b;
   font-family: "Inter", sans-serif;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: -0.02em;
-  justify-self:center;
+  justify-self: center;
 }
 
 h3 {
@@ -50,6 +50,15 @@ h3 {
   font-family: "Inter", sans-serif;
   font-weight: 700;
   letter-spacing: -0.01em;
+}
+
+h4 {
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+  color: #6d4c32;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  justify-self: left;
 }
 
 p,
@@ -130,7 +139,7 @@ img {
 }
 
 .gap {
-  padding: 2rem;
+  padding: 1.0rem;
 }
 
 @media (max-width: 767px) {
