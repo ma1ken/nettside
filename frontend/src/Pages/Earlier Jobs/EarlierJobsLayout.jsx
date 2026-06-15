@@ -32,7 +32,7 @@ export default function EarlierJobsLayout() {
               {/* <img src="/images/fredriklouisa.jpg" alt="Fredrik og Louisa" /> */}
               <h2>Fredrik & Louisa</h2>
               <p>
-                Counter Manager and performing perfonalized beauty services for
+                Counter Manager and performing personalized beauty services for
                 costumers
               </p>
             </NavLink>

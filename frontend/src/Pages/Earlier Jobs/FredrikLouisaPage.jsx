@@ -7,22 +7,23 @@ import kiehlsLogo from "../../Images/kiehls-logo.jpg";
 export default function FredrikLouisaPage() {
   return (
     <div className="content-container">
+      <h1>Fredrik og Louisa 2021-2025</h1>
+          <p>Premium Department Store | Brand Ambassador & Counter Manager</p>
       <div className="text-image-section">
         <div className="text">
-          <h1>Fredrik og Louisa 2021-2025</h1>
-
           <p>
-            My third job that I started working at after The Bodyshop. This is
-            the job where I've gained most valueable experience that I can use
-            in other jobs, and I learned to connect my UX designer skills with
-            my work.
+            Timeline: Started 3 months prior to pursuing a Bachelor’s Degree at
+            Kristiania University College.
             <br />
-            <br />I started working here three months before I started my
-            bachelors degree at Kristiania. This was a department store, where
-            you usually represent a brand. I had the honor to represent Molton
-            Brown, L:A Bruket, Kiehl's Cosmetics and a few other brands. You
-            work at the whole store, so you have to guide the costumers through
-            all brands and not only your own.
+            <br />
+            This was my third job after The Body Shop, and it’s honestly where
+            I’ve gained the most valuable experience so far. It’s the place
+            where I really learned to connect my UX designer skills with my
+            everyday work. Since it’s a major department store, you don't just
+            stay at your own counter—you work across the whole store, guiding
+            customers through all the different brands. It taught me how to talk
+            to people, understand their needs, and map out a great customer
+            experience.
           </p>
         </div>
         <div className="image">
@@ -30,12 +31,12 @@ export default function FredrikLouisaPage() {
         </div>
       </div>
 
+      <h2>Molton Brown 20% Ambassador</h2>
       <div className="text-image-section">
         <div className="image">
           <img src={moltonbrownLogo} alt="Molton Brown Logo." />
         </div>
         <div className="text">
-          <h2>Molton Brown 20% Ambassador</h2>
           <p>
             A brand that I was very happy with, and a good jump from The Body
             Shop. I quickly learnt the products and routines and was very happy
