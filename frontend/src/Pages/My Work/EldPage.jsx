@@ -18,6 +18,7 @@ export default function EldPage() {
   return (
     <div className="content-container">
       <h1>ELD - A Bridge Connecting the Young with the Elderly</h1>
+      <div className="gap"></div>
 
       <div className="text-image-section">
         <div className="about-text">
@@ -43,7 +44,7 @@ export default function EldPage() {
       <div className="gap"></div>
       <div className="section-color">
         <h2>
-          PART 1 <br />
+          PART 1 -
           Idea and Conceptual Model
         </h2>
         <div className="text-image-section">
@@ -73,11 +74,12 @@ export default function EldPage() {
           </div>
         </div>
       </div>
-      <div className="gap"></div>
+      <div className="section-color"> </div>
+      {/* <div className="gap"></div> */}
 
       <div>
         <h2>
-          PART 2 <br />
+          PART 2 -
           Wireframes and Sitemaps
         </h2>
         <p>
@@ -127,7 +129,7 @@ export default function EldPage() {
       <div className="section-color">
         <div>
           <h2>
-            PART 3 <br />
+            PART 3 -
             Usability Test
           </h2>
           <p>
@@ -198,7 +200,7 @@ export default function EldPage() {
 
       <p>
         <h2>
-          PART 4 <br />
+          PART 4 -
           Final Solution
         </h2>
         The final solution was submitted alongside the previous three phases in
