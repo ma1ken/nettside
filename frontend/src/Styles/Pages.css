@@ -191,13 +191,14 @@ img {
   align-items: stretch;
   margin: 2rem 0;
   flex-direction: row;
+  vertical-align: middle;
 }
 
 .text-image-section {
-  display: grid;
+  display: flex;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
-  align-items: start;
+  align-items: stretch;
   margin: 1.5rem 0;
 }
 
@@ -221,11 +222,16 @@ img {
 }
 
 .text-image-section > .image img {
-  width: 100%;
+  /* width: 100%; */
   max-height: 520px;
-  height: auto;
+  /* height: auto; */
   border-radius: 18px;
-  object-fit: cover;
+  /* object-fit: cover; */
+  height: 0;            /* Helt kritisk: Hindrer bildet i å presse opp høyden på div-en */
+  min-height: 100%;     /* Tvinger bildet til å fylle den høyden teksten har laget */
+  width: auto;          /* Sørger for at bredden justerer seg automatisk etter den nye høyden */
+  object-fit: contain;  /* Bevarer bildets proporsjoner perfekt så det ikke blir strukket */
+  flex-shrink: 0;
 }
 
 .double-image-section img,

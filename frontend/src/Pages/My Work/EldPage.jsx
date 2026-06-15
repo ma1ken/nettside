@@ -28,11 +28,11 @@ export default function EldPage() {
                         Bachelors Degree in "IT and UX Design" at Kristiania
                         University of Applied Sciences.
                     </p>
-                    <h3>
+                    <h4>
                         Our project aimed to address challenges related to
                         student job opportunities and elderly loneliness by
                         developing an innovative digital platform.
-                    </h3>
+                    </h4>
                     <p>
                         The project was carried out as part of the course Design
                         Project DPR5100 at Kristiania University College during
