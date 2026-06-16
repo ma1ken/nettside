@@ -18,30 +18,28 @@ export default function EarlierJobsLayout() {
 
           {/* HER SER VI KORTENE */}
           <div className="cards-container">
-            
-            <NavLink to="/EarlierJobs/Ikea" className="card">
-              {/* <img src="/images/ikea.jpg" alt="IKEA" /> */}
-              <h2>IKEA</h2>
-              <p>
-                Costumerservice, play-area for children and order-pickup
-                coordination and logistics{" "}
-              </p>
-            </NavLink>
-
             <NavLink to="/EarlierJobs/FredrikLouisa" className="card">
               {/* <img src="/images/fredriklouisa.jpg" alt="Fredrik og Louisa" /> */}
-              <h2>Fredrik & Louisa</h2>
+              <h3>Fredrik & Louisa (2021–2025)</h3>
               <p>
-                Counter Manager and performing personalized beauty services for
-                costumers
+                Leading luxury beauty consultations and managing premium brand
+                counters
               </p>
             </NavLink>
-
             <NavLink to="/EarlierJobs/thebodyshop" className="card">
               {/* <img src="/images/fredriklouisa.jpg" alt="Fredrik og Louisa" /> */}
-              <h2>The Body Shop</h2>
+              <h3>The Body Shop (2020–2021)</h3>
               <p>
-                A job during the pandemic, after I finished my makeup studies.
+                Navigating boutique retail management and values-driven
+                consultative selling
+              </p>
+            </NavLink>
+            <NavLink to="/EarlierJobs/Ikea" className="card">
+              {/* <img src="/images/ikea.jpg" alt="IKEA" /> */}
+              <h3>IKEA (2016–2019)</h3>
+              <p>
+                Mastering high-volume retail operations, strict safety
+                protocols, and customer care
               </p>
             </NavLink>
           </div>

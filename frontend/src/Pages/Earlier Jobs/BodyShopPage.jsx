@@ -4,60 +4,97 @@ import bodyshopLogo from "../../Images/bodyshop-logo.png";
 export default function BodyShopPage() {
   return (
     <div className="content-container">
+      <h1>The Body Shop</h1>
       <div className="text-image-section">
         <div className="text">
-          <h1>The Body Shop</h1>
-          <h2>What made me start working here?</h2>
+          <h2>Why I joined the Body Shop</h2>
           <p>
-            It was the beginning of 2020 and I had just finished my makeup
-            degree, and was looking for a job in the beauty industry. I actively
-            looked for available jobs in the industry, and found an 80% position
-            for the next 6 months at The Body Shop.
+            At the beginning of 2020, freshly graduated with my makeup degree, I
+            was actively seeking my entry into the highly competitive beauty
+            industry. When an 80% contract opened up at The Body Shop, it felt
+            like the perfect match.
             <br />
             <br />
-            The Body Shop was a brand that I was very familiar with and had used
-            alot in the past through my teenage years. It is one of the few
-            giant brants that uses their platforms and following to promote
-            activism agains enviromental changes, animal cruelty, slave labor
-            etc. It aligned with my own values and felt very right to work with
-            them, and I could be proud of the products that I recommended.
-            <br />
-            <br />
+            This was a brand I had used and loved throughout my teenage years,
+            but more importantly, it was a global industry leader using its
+            platform for genuine activism—championing environmental
+            sustainability, animal welfare, and fair trade. Working for a
+            company whose ethical values aligned so closely with my own allowed
+            me to advocate for and recommend products with genuine pride and
+            authenticity.
           </p>
         </div>
         <div className="image">
           <img src={bodyshopLogo} alt="Bodyshop logo" />
         </div>
       </div>
+      <div className="section-color"></div>
+      {/* <div className="gap"></div> */}
+      <h2>Expanded Responsibilities and Administration</h2>
+      <p>
+        While my formal title was Beauty Consultant, I effectively operated as
+        the Assistant Store Manager for a large portion of my time there. During
+        the summer holiday season, I was given full operational charge of the
+        boutique. My responsibilities included:
+      </p>
+      <div className="double-text-section">
+        <div className="text">
+          <h3>Boutique Operations</h3>
+          <p>
+            Independently managing opening and closing procedures, daily
+            routines, and ensuring strict visual merchandising standards.
+          </p>
+        </div>
+        <div className="text">
+          <h3>Administrative Management</h3>
+          <p>
+            Compiling weekly performance reports, analyzing sales data, and
+            monitoring store KPIs and targets.
+          </p>
+        </div>
+      </div>
+      <div className="double-text-section">
+        <div className="text">
+          <h3>BInventory Control & Logistics: </h3>
+          <p>
+            Maintaining full oversight of stock levels, managing product intake,
+            handling discrepancies, and submitting weekly inventory orders to
+            ensure optimal stock rotation.
+          </p>
+        </div>
+        <div className="text">
+          <h3>Consultative Selling</h3>
+          <p>
+            Conducting consultation and personalized skin-care and makeup
+            recommendations based on customers' specific needs, skin types, and
+            the brand's unique ingredient stories. Stepping into this level of
+            responsibility so early on was a steep learning curve, but it
+            rapidly built my confidence in independent retail management.
+          </p>
+        </div>
+      </div>
+      <div className="section-color"></div>
+
       <div>
-        <h2>Responsibility</h2>
+        <h2>Crisis Management and Adaptability (The Pandemic)</h2>
         <p>
-          I was kind of an assisting store manager, even though it was not in
-          the title. During the summerholiday, I was the one in charge and had
-          to do weekly reports, keep up with routines and administrative work.
-          This was a lot for me to handle in the beginning, but I got used to
-          it. I opened and closed the shop by myself, cleaned and submintted
-          orders, kept full control over our storage, assisted costumers with
-          finding products suited for their needs and told them about the
-          products.
+          This role was meant to be my launchpad into the beauty industry,
+          specifically hired to boost cosmetics sales and perform live, in-store
+          makeup demonstrations. However, in March 2020 just two weeks after I
+          started, the pandemic hit, and Norway implemented strict retail and
+          safety restrictions. Suddenly, physical makeup applications and
+          consultations were completely banned.
+          <br />
+          <br />
+          Though it was disappointing not to use my newly acquired makeup
+          artistry skills right away, this situation forced me to become
+          incredibly adaptable. I quickly shifted my focus from application to
+          advanced consultative selling, focusing heavily on skincare education,
+          ingredient benefits, and building rapport without physical contact.
+          This resilience and ability to pivot under pressure ultimately laid a
+          strong foundation for my next role at Fredrik & Louisa in 2021.
         </p>
       </div>
-      <div>
-        <h2>The Pandemic</h2>
-        <p>
-          This job was temporary and it would be a great way for me to find a
-          way into the beauty industry, in a city where there is a big
-          competition for the best jobs. However, in march 2o20, two weeks after
-          I had started, the pandemic broke out. Norway was one of the countries
-          that took action and made restrictions that affected our jobs. One of
-          the reasons for why I was hired was to raise the makeupsales and do
-          demos on costumers, but that was no longer an option. I had just
-          finised my studies and had a lot of motivation to play with makeup on
-          costumers, but instead I was out of training for over a year, until I
-          started working at Fredrik & Louisa 2021.
-        </p>
-      </div>
-      <p>more info coming asap..</p>
     </div>
   );
 }

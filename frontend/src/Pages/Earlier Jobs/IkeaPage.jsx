@@ -7,9 +7,10 @@ export default function IkeaPage() {
       <div className="text-image-section">
         <div className="text">
           <p>
-            <h1>Ikea - My First Job</h1>I got my first job at IKEA when I was
-            18. It started as a summerjob, then turned into a job I had through
-            rest of highschool and two years after (2016-2019).
+            <h1>Ikea - My First Job</h1>I landed my very first job at IKEA when
+            I was 18. What started as a summer job turned into a permanent
+            part-time position that I held throughout the rest of high school
+            and for two years afterward.
           </p>
         </div>
         <div className="image">
@@ -22,101 +23,101 @@ export default function IkeaPage() {
           <h2>Childrens Playroom</h2>
           <div>
             <p>
-              I really enjoyed working in the playroom at Ikea. It was fun and
-              it allowed me to socialize and play with children, which i really
-              enjoyed. A part of the job is organizing activities for children,
-              while their parents are working. We would watch movies, read
-              books, draw and play puzzle together. There was always a lot of
-              fun to do at work and it gave me a lot of joy, especially when I
-              had regular children visiting to hang out with me, even when their
-              parents weren't shopping that day. I even have some drawing I got
-              from the kids saved. :)
+              Working in the playroom was one of my absolute favorite
+              responsibilities. It was incredibly rewarding because it allowed
+              me to socialize, engage, and play with the children while their
+              parents shopped. A big part of the role involved organizing
+              activities such as movie screenings, reading books aloud, drawing,
+              and doing puzzles. Creating a fun and welcoming environment
+              brought me so much joy, especially when regular children would come
+              by just to hang out with me, even on days when their parents
+              weren't actually shopping. I’ve even saved some of the drawings
+              the kids gave me over the years.:)
             </p>
           </div>
           <div>
             <h3>Safety and Routines</h3>
             <p>
-              I had to follow certain routines in the playroom. Every morning
-              before opening up, I had to spend an hour going through a safety
-              checklist, to ensure the safety of the children in the room
-              throughout the day. There was also a certain practices that had to
-              be followed, especially when checking children in and out of the
-              room. It was important that the right kid came back to the right
-              parent, and that we followed and had a good queue system. No
-              children could be let in without any parental contact information,
-              and that we had communication with the parent in case of an
+              Maintaining a high standard of safety and strict adherence to
+              routines was vital in the playroom. Every morning before opening,
+              I spent an hour going through a rigorous safety checklist to
+              ensure the room and play equipment were perfectly safe. We also
+              followed strict protocols for checking children in and out. It was
+              critical that the right child was returned to the right parent and
+              that we maintained an organized queue system. No child could be
+              admitted without registered parental contact information, ensuring
+              we could communicate instantly with the guardians in case of an
               emergency.
             </p>
           </div>
         </div>
       </div>
       <div className="gap"></div>
+      <div className="section-color"></div>
       <div>
         <div>
-          <h2>External Goods Pickup & Costumer Service Host</h2>
+          <h2>External Goods Pickup & Customer Service Host</h2>
           <p>
-            While I mostly worked in the playroom, I had other areas I worked
-            at:
+            While the playroom was my main hub, I also rotated through several
+            other departments across the store:
           </p>
           <div className="double-text-section">
             <div className="text">
               <h3>External Goods Pickup</h3>
               <p>
-                While most products were available at the store, the bigger good
-                had to be delivered at home or picked up from an external
-                storage. I was in the frontdesk, checking in orders and papers
-                from the costumers. When everything was picked up by another
-                worker, I controlled each item they had ordered and delivered it
-                to the costumer.{" "}
+                For larger items that required home delivery or collection from
+                external storage, I managed the front desk. My responsibilities
+                included checking customer orders and documentation, verifying
+                that the warehouse team had picked the correct items, and
+                ensuring a smooth final handover to the customer.
               </p>
             </div>
             <div className="text">
-              <h3>Costumer Service Host</h3>
+              <h3>Customer Service Host</h3>
               <p>
-                Have you ever walked into Ikea and been greeted by a worker?
-                That was me. One of the jobs is to welcome costumers and help
-                them navigate their way through the store. They would sometimes
-                have questions about products, and my job was to help them the
-                best way I could. Restocking and filling up bags and tidy the
-                area was also a part of the job.
+                As a greeter at the entrance, I was the face of IKEA. My role
+                was to welcome customers, help them navigate the store, and
+                assist with any product inquiries. I also took pride in keeping
+                the entrance area tidy, organized, and well-stocked with
+                shopping bags.
               </p>
             </div>
           </div>
+          <h3>Self-Checkout & Cashier</h3>
           <p>
-            I also worked in the self-checkout area, making sure there were no
-            errors or problems for the costumers. I would also work at the
-            registry for cash a few times, but it was not a big part of the job.
+            I monitored the self-checkout area, proactively assisting customers
+            with error messages or technical issues to ensure a seamless
+            checkout experience. On occasion, I also operated the traditional
+            cash registers.
           </p>
         </div>
       </div>
       <div className="gap"></div>
       <div className="section-color">
         <div>
-          <h2>Courses and Training</h2>
+          <h2>Training and Certifications</h2>
           <p>
-            Through the years I worked there, I had to go through some training
-            to be qualified for working in certain areas, like the playroom.
+            Throughout my time at IKEA, I completed several mandatory training
+            courses to qualify for my various responsibilities:
           </p>
           <div className="double-text-section">
             <div className="text">
               <h3>Basic First Aid Course</h3>
               <p>
-                Training that was needed in order to work with children. I was
-                in charge of the kids safety, and it was my responsibility to
-                understand when a child was in danger, and take action. It was
-                also useful knowledge to have in life, as you never know what
-                situations you might end up in.
+                A required certification for working with children. This
+                training equipped me with the skills to recognize when a child
+                is in distress, take immediate action, and administer
+                life-saving first aid—a valuable skill set that I am incredibly
+                grateful to have in everyday life as well.
               </p>
             </div>
             <div className="text">
               <h3>Fire Safety Course</h3>
               <p>
-                {" "}
-                A course that was needed in order to work at IKEA. All workers
-                had to know the right protocols in case of a fire and which
-                actiomn to take. The playroom even had special training in
-                handling the situation to ensure the safety of children in case
-                of an evacuation.
+                Standard training for all IKEA co-workers covering evacuation
+                protocols and firefighting basics. For those of us in the
+                playroom, this included specialized training on how to safely,
+                calmly, and efficiently evacuate groups of young children.
               </p>
             </div>
           </div>
