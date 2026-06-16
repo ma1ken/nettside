@@ -12,8 +12,8 @@ export default function EarlierJobsLayout() {
         <>
           <h1>Earlier Jobs</h1>
           <h2 className="center">
-            Click on a card to read more about one of the jobs I've had in my
-            life
+            Explore a timeline of my professional experience. Click a card to
+            read more about my responsibilities and growth in each position:
           </h2>
 
           {/* HER SER VI KORTENE */}

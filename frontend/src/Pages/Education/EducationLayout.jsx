@@ -11,22 +11,28 @@ export default function EducationLayout() {
       {onMainPage ? (
         <>
           <h1>Education</h1>
-          <p className="center">
-            Here you'll find information about my degrees. Click on a topic to
-            learn more about each degree:
-          </p>
+          <h2 className="center">
+            Explore my degrees and certifications. Click any card to view
+            detailed course work and key takeaways:
+          </h2>
 
           <div className="cards-container">
             <NavLink to="/Education/Bachelor" className="card">
               {/* <img src="/images/bachelor.jpg" alt="Bachelor" /> */}
-              <h2>Bachelor</h2>
-              <p>A bachelor in IT and UX Design</p>
+              <h3>Bachelor’s Degree Interactive Design (2021-2024)</h3>
+              <p>
+                A comprehensive Bachelor's degree bridging technology and user
+                experience design.
+              </p>
             </NavLink>
 
             <NavLink to="/Education/MakeupDegree" className="card">
               {/* <img src="/images/makeup.jpg" alt="Makeup Degree" /> */}
-              <h2>Makeup Degree</h2>
-              <p>A dregree as a Certified Beauty-Makeup Artist</p>
+              <h3>Makeup Artistry Certification (2019-2020)</h3>
+              <p>
+                A professional qualification as a Certified Beauty Makeup
+                Artist, specializing in editorial and commercial techniques.
+              </p>
             </NavLink>
           </div>
         </>
