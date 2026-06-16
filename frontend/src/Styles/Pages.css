@@ -139,7 +139,7 @@ img {
 }
 
 .gap {
-  padding: 1.0rem;
+  padding: 1rem;
 }
 
 @media (max-width: 767px) {
@@ -370,6 +370,27 @@ img {
   .section-color {
     margin-top: 2rem;
     padding-top: 2rem;
+  }
+}
+
+/* Dette gjelder kun for mobilskjermer (og mindre enheter) */
+@media (max-width: 768px) {
+  .text-image-section {
+    flex-direction: column; /* Stabler tekst og bilde under hverandre */
+    gap: 20px; /* Litt mindre mellomrom på mobil */
+  }
+
+  .text {
+    width: 100%; /* Teksten tar full bredde */
+  }
+
+  /* Her nullstiller vi bilde-triksene fra PC-visningen */
+  .image,
+  img {
+    max-width: 100% !important; /* Tillater bildet å bli større på mobil */
+    width: 100% !important; /* Tvinger bildet til å bruke plassen sin */
+    height: auto !important; /* Nullstiller "0-høyde"-trikset så det ikke kollapser */
+    min-height: auto !important;
   }
 }
 
