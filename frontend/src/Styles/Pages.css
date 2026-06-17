@@ -96,6 +96,7 @@ p {
   margin-bottom: 1.8rem;
   max-width: 70ch;
   justify-self: center;
+  text-align: left;
 }
 
 h2 + p {

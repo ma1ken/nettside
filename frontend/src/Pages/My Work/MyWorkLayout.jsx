@@ -12,7 +12,8 @@ export default function MyWorkLayout() {
         <>
           <h1>My Projects</h1>
           <h2 className="center">
-            Explore a selection of my projects, including graded university work and independent design concepts. Click any card to read the full case study:
+            Explore a selection of my projects, including graded university work
+            and independent design concepts. Read the full case study:
           </h2>
 
           <div className="cards-container">
@@ -46,7 +47,7 @@ export default function MyWorkLayout() {
                 A deep dive into mobile UX and interface design, built from
                 scratch as part of my third-semester curriculum.
               </p>
-              <br/>
+              <br />
               <p>GRADE: B</p>
             </NavLink>
             <NavLink to="/MyWork/Animations" className="card">
