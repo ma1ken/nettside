@@ -13,8 +13,7 @@ export default function MyWorkLayout() {
           <h1>My Projects</h1>
           <h2 className="center">
             Explore a selection of my projects, including graded university work
-            and independent design concepts. Read the full case study:
-          </h2>
+            and independent design concepts:
 
           <div className="cards-container">
             <NavLink to="/MyWork/UInMunch" className="card">

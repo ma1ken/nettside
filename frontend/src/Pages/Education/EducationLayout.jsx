@@ -12,8 +12,7 @@ export default function EducationLayout() {
         <>
           <h1>Education</h1>
           <h2 className="center">
-            Explore my degrees and certifications. View detailed course work and
-            key takeaways:
+            Explore my degrees and certifications:
           </h2>
 
           <div className="cards-container">
