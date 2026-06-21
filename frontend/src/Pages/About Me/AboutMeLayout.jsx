@@ -13,10 +13,8 @@ export default function AboutMeLayout() {
             Welcome to my website! To be honest, it’s a bit of a work in
             progress right now (and a little messy!), but hopefully, you’ll find
             your way to my portfolio and learn a bit more about me. Right now,
-            I’m living in Oslo, in maternity leave and interested in a full time
-            job after new years. I want a job where I can be more creative, and
-            use my UX and Frontend skills. I'm also open to moving to new
-            places, especially vestfold where I grew up.
+            I’m living in Oslo and interested in a full time job as a developer,
+            ui/ux-desinger.
           </p>
         </div>
 
