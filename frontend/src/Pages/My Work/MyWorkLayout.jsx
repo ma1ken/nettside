@@ -14,6 +14,7 @@ export default function MyWorkLayout() {
           <h2 className="center">
             Explore a selection of my projects, including graded university work
             and independent design concepts:
+          </h2>
 
           <div className="cards-container">
             <NavLink to="/MyWork/UInMunch" className="card">
