@@ -57,7 +57,7 @@ export default function AboutMeLayout() {
               <span>Design Systems</span>
               <span>Accessibility (WCAG)</span>
               <span>React</span>
-              <span>Frontend Development</span>
+              <span>AI-Assisted Design</span>
             </div>
           </div>
         </div>

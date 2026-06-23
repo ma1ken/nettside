@@ -44,22 +44,22 @@ export default function HomeLayout() {
 
           <div className="home-skill-chips">
             <div className="home-skill-chips-row">
-              <span>UX Design</span>
-              <span>UI Design</span>
+              <span>Service Design</span>
               <span>Interaction Design</span>
+              <span>Information Architecture</span>
               <span>Figma</span>
             </div>
             <div className="home-skill-chips-row">
               <span>User Research</span>
-              <span>User Testing</span>
+              <span>Usability Testing</span>
+              <span>Wireframing</span>
               <span>Prototyping</span>
-              <span>Information Architecture</span>
             </div>
             <div className="home-skill-chips-row">
               <span>Design Systems</span>
               <span>Accessibility (WCAG)</span>
-              <span>React</span>
               <span>Frontend Development</span>
+              <span>AI-Assisted Design</span>
             </div>
           </div>
         </div>
