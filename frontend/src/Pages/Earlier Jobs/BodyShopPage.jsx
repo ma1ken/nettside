@@ -5,7 +5,7 @@ export default function BodyShopPage() {
   return (
     <div className="content-container">
       <h1>The Body Shop</h1>
-      <div className="text-image-section">
+      <div className="text-image-section logo-intro-section">
         <div className="text">
           <h2>Why I joined the Body Shop</h2>
           <p>
@@ -25,7 +25,11 @@ export default function BodyShopPage() {
           </p>
         </div>
         <div className="image">
-          <img src={bodyshopLogo} alt="Bodyshop logo" />
+          <img
+            className="logo-intro-image"
+            src={bodyshopLogo}
+            alt="Bodyshop logo"
+          />
         </div>
       </div>
       <div className="section-color"></div>

@@ -17,23 +17,30 @@ import eldProto5 from "../../Images/eld-proto-5.png";
 export default function EldPage() {
   return (
     <div className="content-container">
-      <h1>ELD - A Bridge Connecting the Young with the Elderly</h1>
+      <h1>ELD</h1>
       <div className="gap"></div>
 
-      <div className="text-image-section">
+      <div className="text-image-section eld-intro-section">
         <div className="about-text">
-          <h2 className="grade">GRADE: A</h2>
-
+            <h2 className="grade">Grade: A | DPR5100 Design Project | Fall 2023</h2>
           <p>
-            A group project from my 5th semester course "Design Project"
-            (DPR5100) at Kristiania, Fall 2023. We developed a digital platform
-            to tackle two challenges at once: student job opportunities and
-            elderly loneliness. The project involved four phased submissions and
-            concluded with an oral exam where we presented and reflected on our
-            final solution.
+            A group project from my 5th semester, where we explored how a
+            digital service could connect students looking for meaningful
+            part-time work with older adults who need more social contact in
+            everyday life. Instead of treating this as only a "job platform," we
+            framed it as a service design challenge: creating safe, simple, and
+            human interactions between two groups with very different needs and
+            digital habits.
+            <br />
+            <br />
+            Through four project phases, we worked with concept development,
+            wireframing, usability testing with elderly participants, and
+            iterative prototyping. My focus was especially on UX structure,
+            accessibility choices, and translating test insights into practical
+            design improvements.
           </p>
         </div>
-        <div>
+        <div className="image">
           <img
             className="image-crop"
             src={eld1}
@@ -43,10 +50,7 @@ export default function EldPage() {
       </div>
       <div className="gap"></div>
       <div className="section-color">
-        <h2>
-          PART 1 -
-          Idea and Conceptual Model
-        </h2>
+        <h2>PART 1 - Idea and Conceptual Model</h2>
         <div className="text-image-section">
           <div className="about-text">
             <h3>Objective</h3>
@@ -78,10 +82,7 @@ export default function EldPage() {
       {/* <div className="gap"></div> */}
 
       <div>
-        <h2>
-          PART 2 -
-          Wireframes and Sitemaps
-        </h2>
+        <h2>PART 2 - Wireframes and Sitemaps</h2>
         <p>
           The pictures below showcased examples of the wireframes we created
           when designing a solution tailored to the elderly. These wireframes
@@ -128,10 +129,7 @@ export default function EldPage() {
       <div className="gap"></div>
       <div className="section-color">
         <div>
-          <h2>
-            PART 3 -
-            Usability Test
-          </h2>
+          <h2>PART 3 - Usability Test</h2>
           <p>
             Before continuing with further development, we conducted a usability
             test with our primary audience: elderly users. It was important for
@@ -199,10 +197,7 @@ export default function EldPage() {
       <div className="gap"></div>
 
       <p>
-        <h2>
-          PART 4 -
-          Final Solution
-        </h2>
+        <h2>PART 4 - Final Solution</h2>
         The final solution was submitted alongside the previous three phases in
         one complete package. In this section, we also described the changes we
         made after the usability test and explained the reasoning behind them.

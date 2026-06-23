@@ -4,7 +4,7 @@ import ikeaLogo from "../../Images/ikea-logo.png";
 export default function IkeaPage() {
   return (
     <div className="content-container">
-      <div className="text-image-section">
+      <div className="text-image-section logo-intro-section">
         <div className="text">
           <p>
             <h1>Ikea - My First Job</h1>I landed my very first job at IKEA when
@@ -14,7 +14,7 @@ export default function IkeaPage() {
           </p>
         </div>
         <div className="image">
-          <img src={ikeaLogo} alt="Ikea Logo" />
+          <img className="logo-intro-image" src={ikeaLogo} alt="Ikea Logo" />
         </div>
       </div>
       <div className="gap"></div>
@@ -29,8 +29,8 @@ export default function IkeaPage() {
               parents shopped. A big part of the role involved organizing
               activities such as movie screenings, reading books aloud, drawing,
               and doing puzzles. Creating a fun and welcoming environment
-              brought me so much joy, especially when regular children would come
-              by just to hang out with me, even on days when their parents
+              brought me so much joy, especially when regular children would
+              come by just to hang out with me, even on days when their parents
               weren't actually shopping. I’ve even saved some of the drawings
               the kids gave me over the years.:)
             </p>

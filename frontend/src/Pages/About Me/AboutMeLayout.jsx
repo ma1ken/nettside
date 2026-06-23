@@ -7,7 +7,7 @@ export default function AboutMeLayout() {
   return (
     <div className="content-container">
       <div className="text-image-section">
-        <div className="text">
+        <div className="text about-intro-text">
           <h1>Hi, I'm Maiken!</h1>
           <p>
             Welcome to my website! To be honest, it’s a bit of a work in
@@ -16,6 +16,50 @@ export default function AboutMeLayout() {
             I’m living in Oslo and interested in a full time job as a developer,
             ui/ux-desinger.
           </p>
+
+          <div className="about-contact-card">
+            <h3>Quick contact</h3>
+            <p>Email: maikenjed@hotmail.com</p>
+            <p>Location: Oslo, Norway</p>
+            <p>
+              <a
+                href="https://www.linkedin.com/in/maiken-jørgensen-edvardsen-853b5b203"
+                target="_blank"
+                rel="noreferrer"
+              >
+                LinkedIn
+              </a>{" "}
+              |{" "}
+              <a
+                href="https://github.com/ma1ken"
+                target="_blank"
+                rel="noreferrer"
+              >
+                GitHub
+              </a>
+            </p>
+          </div>
+
+          <div className="about-skill-chips">
+            <div className="about-skill-chips-row">
+              <span>UX Design</span>
+              <span>UI Design</span>
+              <span>Interaction Design</span>
+              <span>Figma</span>
+            </div>
+            <div className="about-skill-chips-row">
+              <span>User Research</span>
+              <span>User Testing</span>
+              <span>Prototyping</span>
+              <span>Information Architecture</span>
+            </div>
+            <div className="about-skill-chips-row">
+              <span>Design Systems</span>
+              <span>Accessibility (WCAG)</span>
+              <span>React</span>
+              <span>Frontend Development</span>
+            </div>
+          </div>
         </div>
 
         <div className="image">

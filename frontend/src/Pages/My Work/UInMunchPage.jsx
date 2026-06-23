@@ -1,81 +1,156 @@
 import "../../Styles/Pages.css";
 import uinmnchLogo from "../../Images/uinmnch-logo.png";
-import uinmnchPlan from "../../Images/uinmnch-plan.png";
-import uinmnchLogos from "../../Images/uinmnch-logos.png";
-import uinmnchInspoLogo from "../../Images/uinmnch-inspo-logo.png";
-import uinmnchFont from "../../Images/uinmnch-font.png";
-import uinmnchColors from "../../Images/uinmnch-colors.png";
-import uinmnchTour1 from "../../Images/uinmnchTour1.png";
-import uinmnchTour2 from "../../Images/uinmnchTour2.png";
-import uinmnchTour3 from "../../Images/uinmnchTour3.png";
-import uinmnchTour4 from "../../Images/uinmnchTour4.png";
-import uinmnchTour5 from "../../Images/uinmnchTour5.png";
+import uinmnchScreen1 from "../../Images/uinmunch/extracted/p05_xref136.jpeg";
+import uinmnchScreen2 from "../../Images/uinmunch/extracted/p05_xref138.jpeg";
+import uinmnchScreen3 from "../../Images/uinmunch/extracted/p06_xref141.png";
+import uinmnchScreen4 from "../../Images/uinmunch/extracted/p06_xref143.jpeg";
+import uinmnchScreen5 from "../../Images/uinmunch/extracted/p06_xref145.jpeg";
+import uinmnchScreen6 from "../../Images/uinmunch/extracted/p07_xref147.png";
+import uinmnchScreen7 from "../../Images/uinmunch/extracted/p07_xref149.jpeg";
+import uinmnchScreen8 from "../../Images/uinmunch/extracted/p07_xref151.jpeg";
+import uinmnchTask1 from "../../Images/uinmunch/extracted/p08_xref154.jpeg";
+import uinmnchTask2 from "../../Images/uinmunch/extracted/p08_xref156.png";
+import uinmnchTask3 from "../../Images/uinmunch/extracted/p08_xref158.png";
+import uinmnchStory1 from "../../Images/uinmunch/extracted/p09_xref161.jpeg";
+import uinmnchStory2 from "../../Images/uinmunch/extracted/p09_xref163.jpeg";
+import uinmnchStory3 from "../../Images/uinmunch/extracted/p09_xref165.jpeg";
+import uinmnchTask4 from "../../Images/uinmunch/extracted/p09_xref167.png";
+import uinmnchEnding1 from "../../Images/uinmunch/extracted/p09_xref169.jpeg";
+import uinmnchEnding2 from "../../Images/uinmunch/extracted/p10_xref186.jpeg";
+import uinmnchUi1 from "../../Images/uinmunch/extracted/p34_xref254.png";
+import uinmnchUi2 from "../../Images/uinmunch/extracted/p34_xref260.png";
+
 export default function UInMunchPage() {
   return (
     <div className="content-container">
+      <h1>U In MNCH</h1>
+      <div className="gap"></div>
+
       <div className="text-image-section">
         <div className="text">
+          <p className="grade">
+            Grade: B | PRO202 Design Sprint Project | 2023
+          </p>
           <p>
-            <h1>U In Mnch</h1>
-            An agile project during the fourth semester of my bachelor. In a
-            group of 7, our plan was to inspire the creators of the future
-            Munch-app, with our own app idea. The developers were happy with our
-            idea and sent us and email asking for permission to take inspiration
-            from our idea, when creating their own solution. There were only
-            5/35 groups chosen for this.
-            <h2>GRADE: B</h2>
+            U in MNCH was created from a case provided by MUNCH: how to engage
+            young adults (18-25) through innovative technology and physical art
+            interaction. In a group of 7, we designed a gamified museum
+            experience where users solve clues and tasks tied to exhibitions,
+            inspired by a real story related to Munchs paintings from WW2.
+            Instead of passive museum browsing, our concept focused on active
+            exploration, mystery-solving, and measurable engagement.
           </p>
         </div>
         <div className="image">
-          <img src={uinmnchLogo} alt="UInMNCH Logo" />
+          <img src={uinmnchLogo} alt="U In MNCH logo" />
+        </div>
+      </div>
+
+      <div className="section-color">
+        <h2>Concept and product direction</h2>
+        <p>
+          The app concept was built around an escape-room style game inside the
+          museum. Users register, select a game linked to an exhibition, and
+          solve tasks that reveal story fragments. The final reward concept was
+          designed to increase motivation and make users complete the full
+          experience. This gave us a clear product goal: combine curiosity, art,
+          and technology in a way that feels social, interactive, and memorable.
+        </p>
+
+        <h3>Registration and game selection flow</h3>
+        <p>
+          These screens show the first part of the journey: onboarding,
+          registration, and selecting an exhibition-based game.
+        </p>
+        <div className="uinmunch-image-grid uinmunch-grid-phones">
+          <img src={uinmnchScreen1} alt="U In MNCH app screen 1" />
+          <img src={uinmnchScreen2} alt="U In MNCH app screen 2" />
+          <img src={uinmnchScreen3} alt="U In MNCH app screen 3" />
+        </div>
+
+        <h3>Task and story progression</h3>
+        <p>
+          Here is the task flow where users solve clues, move through the
+          narrative, and unlock more of the mystery.
+        </p>
+        <div className="uinmunch-image-grid uinmunch-grid-phones">
+          <img src={uinmnchScreen4} alt="U In MNCH app screen 4" />
+          <img src={uinmnchScreen5} alt="U In MNCH app screen 5" />
+          <img src={uinmnchScreen6} alt="U In MNCH app screen 6" />
+          <img src={uinmnchScreen7} alt="U In MNCH app screen 7" />
+          <img src={uinmnchScreen8} alt="U In MNCH app screen 8" />
         </div>
       </div>
 
       <div>
-        <h2>Inspiration, ideas and concept</h2>
+        <h2>Design system and UX choices</h2>
         <p>
-          The pictures underneath shows planning we did as a group from the
-          beginning, to figure out what kind of game we wanted to make. Our
-          design system was set up with inspiration from different colors and
-          fonts they use on the Munch Website. The designsystem and prototypes
-          were created in Figma, like the images below. However, we also coded
-          the final solution in android studio using kotlin and XLM, to make it
-          more interactive than in figma. It was also a great learning
-          experience for people that had not used either programs before, as our
-          group consisted of members from three different studies/classes.
+          During the sprint, we focused on consistency and recognizability.
+          Visual decisions were based on MUNCHs own brand direction, including
+          colors, typography, and icon style. We used Material Design icons and
+          built reusable templates in Figma for cleaner handoff between design
+          and implementation. UX priorities were simple navigation, clear visual
+          hierarchy, and gamification elements like progress indicators and
+          story-based progression inspired by familiar social patterns.
         </p>
 
-        <div className="double-image-section">
-          <img src={uinmnchPlan} alt="UInMnCH plan "></img>
-          <img src={uinmnchLogos} alt="UInMnCH Logos inspiration"></img>
-          <img src={uinmnchFont} alt="UInMnCH Font "></img>
+        <h3>Brand direction, icons, and visual consistency</h3>
+        <div className="uinmunch-image-grid uinmunch-grid-wide">
+          <img src={uinmnchUi1} alt="U In MNCH icon and UI element overview" />
+          <img src={uinmnchUi2} alt="U In MNCH color palette" />
         </div>
       </div>
 
-      <div className="double-image-section">
-        <img src={uinmnchInspoLogo} alt="UInMnCH inspo logo"></img>
-
-        <img src={uinmnchColors} alt="UInMnCH Colors "></img>
-      </div>
-      <div>
-        <h2>Tours</h2>
+      <div className="section-color">
+        <h2>Prototype evolution</h2>
         <p>
-          One of the goals for this project was for young people to visit, but
-          also return again. Thats why we created different tours and games they
-          could do, so they would return. All the tours were inspired by
-          different exhibits that already exists in the museum, and with colors
-          that are used by Munch on their website.
+          The prototype process started in Miro and moved to Figma, where we
+          iterated from wireframe to first prototype and then to a stronger
+          final concept. Based on sprint and product owner feedback, we removed
+          less essential features and prioritized the main game flow. The final
+          version emphasized creative tasks, a detective-guided narrative,
+          reward mechanics, and a more realistic mobile user journey.
         </p>
-        <div className="five-image-section">
-          <img src={uinmnchTour1} alt="UInMnCH first tour description "></img>
-          <img src={uinmnchTour2} alt="UInMnCH second tour description"></img>
-          <img src={uinmnchTour3} alt="UInMnCH third tour description"></img>
-          <img src={uinmnchTour4} alt="UInMnCH fourth tour description"></img>
-          <img src={uinmnchTour5} alt="UInMnCH fifth tour description"></img>
+
+        <h3>Task design in the prototype</h3>
+        <div className="uinmunch-image-grid uinmunch-grid-phones">
+          <img src={uinmnchTask1} alt="U In MNCH task screen code challenge" />
+          <img src={uinmnchTask2} alt="U In MNCH task screen observation" />
+          <img src={uinmnchTask3} alt="U In MNCH task screen puzzle" />
+          <img src={uinmnchTask4} alt="U In MNCH task screen disclosure" />
+        </div>
+
+        <h3>Story and ending flow</h3>
+        <div className="uinmunch-image-grid uinmunch-grid-phones">
+          <img src={uinmnchStory1} alt="U In MNCH story slide 1" />
+          <img src={uinmnchStory2} alt="U In MNCH story slide 2" />
+          <img src={uinmnchStory3} alt="U In MNCH story slide 3" />
+          <img src={uinmnchEnding1} alt="U In MNCH mystery result screen" />
+          <img src={uinmnchEnding2} alt="U In MNCH rewards screen" />
         </div>
       </div>
 
-      <h2>more coming asap..</h2>
+      <div className="section-color">
+        <h2>User testing and findings</h2>
+        <p>
+          We tested with 5 users to evaluate navigation, concept clarity, and
+          engagement. Feedback was positive on design and usability, but also
+          gave us clear improvements: better explanation of exhibitions and
+          tasks, clearer icon meaning, and more task variety. Some users wanted
+          competitive multiplayer elements and social visibility of progress,
+          which supported our original direction for future development.
+        </p>
+
+        <h2>What we learned</h2>
+        <p>
+          This project gave me valuable experience in agile teamwork, design to
+          development handoff, and balancing product owner feedback with user
+          insights. One of the biggest lessons was how important planning and
+          communication are when design and implementation run in parallel. It
+          also strengthened my skills in iterative prototyping and feature
+          prioritization under time constraints.
+        </p>
+      </div>
     </div>
   );
 }

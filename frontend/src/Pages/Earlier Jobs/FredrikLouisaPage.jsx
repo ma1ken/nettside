@@ -9,7 +9,7 @@ export default function FredrikLouisaPage() {
     <div className="content-container">
       <h1>Fredrik og Louisa 2021-2025</h1>
       <h2>Premium Department Store | Brand Ambassador & Counter Manager</h2>
-      <div className="text-image-section">
+      <div className="text-image-section fredrik-intro-section">
         <div className="text">
           <h3>
             Timeline: Started 3 months prior to pursuing a Bachelor’s Degree at
@@ -28,16 +28,24 @@ export default function FredrikLouisaPage() {
           </p>
         </div>
         <div className="image">
-          <img src={fredrikoglouisaLogo} alt="Fredrik og Louisa Logo" />
+          <img
+            className="fredrik-intro-logo"
+            src={fredrikoglouisaLogo}
+            alt="Fredrik og Louisa Logo"
+          />
         </div>
         <div classname="gap"></div>
       </div>
       <div className="section-color"></div>
       <h2>My Journey & The Brands I Represented</h2>
       <div className="gap"></div>
-      <div className="text-image-section">
+      <div className="text-image-section fredrik-molton-section">
         <div className="image">
-          <img src={moltonbrownLogo} alt="Molton Brown Logo." />
+          <img
+            className="fredrik-brand-logo"
+            src={moltonbrownLogo}
+            alt="Molton Brown Logo."
+          />
         </div>
         <div className="text">
           <h3>Molton Brown (20% Ambassador)</h3>
@@ -53,7 +61,7 @@ export default function FredrikLouisaPage() {
         </div>
       </div>
       <div className="gap"></div>
-      <div className="text-image-section">
+      <div className="text-image-section fredrik-labruket-section">
         <div className="text">
           <h3>L:A Bruket (40% Ambassador)</h3>
           <p>
@@ -66,7 +74,11 @@ export default function FredrikLouisaPage() {
           </p>
         </div>
         <div className="image">
-          <img src={labruketLogo} alt="Logo of La Bruket." />
+          <img
+            className="fredrik-brand-logo"
+            src={labruketLogo}
+            alt="Logo of La Bruket."
+          />
         </div>
       </div>
       <div>
@@ -85,17 +97,25 @@ export default function FredrikLouisaPage() {
       </div>
       <div className="gap"></div>
       <h2>Kiehl's Counter Manager 80%</h2>
-      <div className="text-image-section">
+      <div className="text-image-section fredrik-kiehls-section">
         <div className="text">
           <p>
             Stepping up to an 80% position as a Counter Manager for Kiehl's was
             a huge and exciting next step. Kiehl's is all about high-quality
             skincare and education, which meant taking on a lot more trust and
-            leadership.
+            leadership. I was not only responsible for sales, but also for
+            building routines, supporting the team, and making sure every client
+            got a consultation that felt personal and professional. This role
+            pushed me to combine product knowledge, communication, and structure
+            every single day.
           </p>
         </div>
         <div className="image">
-          <img src={kiehlsLogo} alt="Kiehls Logo." />
+          <img
+            className="fredrik-kiehls-logo"
+            src={kiehlsLogo}
+            alt="Kiehls Logo."
+          />
         </div>
       </div>
       <br />

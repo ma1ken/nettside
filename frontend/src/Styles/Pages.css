@@ -94,7 +94,7 @@ a {
 p {
   margin-top: 0.8rem;
   margin-bottom: 1.8rem;
-  max-width: 70ch;
+  max-width: 88ch;
   justify-self: center;
   text-align: left;
 }
@@ -173,7 +173,7 @@ img {
 }
 
 .content-container {
-  max-width: 1040px;
+  max-width: 1240px;
   margin: 1rem auto;
   padding: 2.5rem 2rem;
   box-sizing: border-box;
@@ -188,15 +188,13 @@ img {
 }
 
 .content-container > p {
-  max-width: 860px;
+  max-width: 1080px;
   margin: 0 auto 2.25rem;
   line-height: 2;
   padding: 0;
 }
 
-.double-text-section,
-.double-image-section,
-.five-image-section {
+.double-text-section {
   display: flex;
   gap: 2.75rem;
   justify-content: space-between;
@@ -211,20 +209,31 @@ img {
   flex-wrap: nowrap;
 }
 
-.double-image-section,
-.five-image-section {
-  flex-wrap: wrap;
-}
-
 .double-text-section > .text {
   flex: 1 1 0;
   min-width: 0;
 }
 
+.double-image-section,
+.five-image-section {
+  display: grid;
+  gap: 1.4rem;
+  margin: 2rem 0;
+  align-items: stretch;
+}
+
+.double-image-section {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.five-image-section {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .text-image-section {
   display: flex;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  gap: 1.5rem;
   align-items: stretch;
   margin: 1.5rem 0;
 }
@@ -238,26 +247,28 @@ img {
 }
 
 .text-image-section > .text {
+  flex: 1 1 0;
   min-width: 0;
   padding: 0;
 }
 
+.text-image-section > .text p {
+  max-width: none;
+}
+
 .text-image-section > .image {
+  flex: 1 1 0;
   width: 100%;
   max-width: 100%;
-  min-width: 280px;
+  min-width: 320px;
 }
 
 .text-image-section > .image img {
-  /* width: 100%; */
+  width: 100%;
   max-height: 520px;
-  /* height: auto; */
+  height: auto;
   border-radius: 18px;
-  /* object-fit: cover; */
-  height: 0; /* Helt kritisk: Hindrer bildet i å presse opp høyden på div-en */
-  min-height: 100%; /* Tvinger bildet til å fylle den høyden teksten har laget */
-  width: auto; /* Sørger for at bredden justerer seg automatisk etter den nye høyden */
-  object-fit: contain; /* Bevarer bildets proporsjoner perfekt så det ikke blir strukket */
+  object-fit: contain;
   flex-shrink: 0;
 }
 
@@ -265,19 +276,19 @@ img {
 .five-image-section img {
   border-radius: 18px;
   width: 100%;
-  max-width: 100%;
+  max-width: 560px;
+  max-height: 420px;
   object-fit: contain;
   margin: 0;
+  justify-self: center;
 }
 
 .double-image-section img {
-  flex: 1 1 320px;
-  max-width: 460px;
+  max-width: 500px;
   height: auto;
 }
 
 .five-image-section img {
-  flex: 1 1 230px;
   max-width: 320px;
   height: auto;
 }
@@ -319,6 +330,12 @@ img {
   .double-image-section,
   .five-image-section {
     flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .double-image-section,
+  .five-image-section {
+    grid-template-columns: 1fr;
     gap: 1.2rem;
   }
 
@@ -378,6 +395,12 @@ img {
     gap: 1.8rem;
   }
 
+  .double-image-section,
+  .five-image-section {
+    grid-template-columns: 1fr;
+    gap: 1.8rem;
+  }
+
   .double-text-section > .text,
   .text-image-section > .text,
   .text-image-section > .image,
@@ -425,10 +448,16 @@ img {
   }
 }
 
+@media (min-width: 768px) and (max-width: 1099px) {
+  .five-image-section {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 /* Store skjermer, 1024px og oppover */
 @media (min-width: 1024px) {
   .content-container {
-    max-width: 1040px;
+    max-width: 1240px;
   }
 }
 
@@ -476,4 +505,171 @@ img {
     flex-basis: 100%;
     max-width: 100%;
   }
+}
+
+/* UInMunch page specific image grids */
+.uinmunch-image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.35rem;
+  margin: 1.8rem 0;
+}
+
+.uinmunch-image-grid img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin: 0;
+  border-radius: 18px;
+}
+
+.uinmunch-grid-phones img {
+  flex: 1 1 190px;
+  max-width: 250px;
+}
+
+.uinmunch-grid-wide img {
+  flex: 1 1 440px;
+  max-width: 620px;
+}
+
+@media (max-width: 767px) {
+  .uinmunch-image-grid {
+    gap: 1rem;
+  }
+
+  .uinmunch-grid-phones img,
+  .uinmunch-grid-wide img {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Fredrik & Louisa page adjustments */
+.fredrik-kiehls-section {
+  gap: 1rem;
+  align-items: center;
+}
+
+.fredrik-kiehls-section > .text {
+  flex: 1.05 1 0;
+}
+
+.fredrik-kiehls-section > .text p {
+  max-width: 58ch;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.fredrik-kiehls-section > .image {
+  flex: 0.95 1 0;
+  min-width: 220px;
+}
+
+.fredrik-kiehls-logo {
+  max-width: 320px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fredrik-molton-section > .image,
+.fredrik-labruket-section > .image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fredrik-brand-logo {
+  max-width: 280px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fredrik-intro-section {
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.fredrik-intro-section > .text {
+  flex: 1.2 1 0;
+}
+
+.fredrik-intro-section > .image {
+  flex: 0.8 1 0;
+  min-width: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fredrik-intro-logo {
+  max-width: 340px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ELD page intro image balance */
+.eld-intro-section > .image {
+  flex: 0.8 1 0;
+  min-width: 220px;
+  max-width: 390px;
+  display: flex;
+  align-items: stretch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.eld-intro-section > .image img {
+  height: 100%;
+  max-height: none;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.eld-intro-section > .about-text {
+  flex: 0.9 1 0;
+  min-width: 0;
+  max-width: 560px;
+}
+
+.eld-intro-section > .about-text .grade {
+  text-align: left;
+  margin-left: -2px;
+}
+
+.eld-intro-section > .about-text p {
+  max-width: 52ch;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Reusable intro section for pages with brand logos */
+.logo-intro-section {
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.logo-intro-section > .text {
+  flex: 1.2 1 0;
+}
+
+.logo-intro-section > .image {
+  flex: 0.8 1 0;
+  min-width: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-intro-image {
+  max-width: 320px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
