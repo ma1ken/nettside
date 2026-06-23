@@ -451,18 +451,18 @@ img {
 }
 
 .unimate-grid-wide img {
-  flex: 1 1 340px;
-  max-width: 460px;
+  flex: 1 1 520px;
+  max-width: 680px;
 }
 
 .unimate-grid-personas img {
-  flex: 1 1 360px;
-  max-width: 480px;
+  flex: 1 1 500px;
+  max-width: 640px;
 }
 
 .unimate-grid-phones img {
   flex: 1 1 170px;
-  max-width: 210px;
+  max-width: 230px;
 }
 
 @media (max-width: 767px) {
