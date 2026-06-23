@@ -204,6 +204,21 @@ img {
   margin: 2rem 0;
   flex-direction: row;
   vertical-align: middle;
+  min-width: 0;
+}
+
+.double-text-section {
+  flex-wrap: nowrap;
+}
+
+.double-image-section,
+.five-image-section {
+  flex-wrap: wrap;
+}
+
+.double-text-section > .text {
+  flex: 1 1 0;
+  min-width: 0;
 }
 
 .text-image-section {
@@ -249,17 +264,22 @@ img {
 .double-image-section img,
 .five-image-section img {
   border-radius: 18px;
-  width: auto;
-  object-fit: cover;
+  width: 100%;
+  max-width: 100%;
+  object-fit: contain;
   margin: 0;
 }
 
 .double-image-section img {
-  height: 30vw;
+  flex: 1 1 320px;
+  max-width: 460px;
+  height: auto;
 }
 
 .five-image-section img {
-  height: 25vw;
+  flex: 1 1 230px;
+  max-width: 320px;
+  height: auto;
 }
 
 /* Små skjermer - mobilportrett, under 480px */
@@ -409,5 +429,51 @@ img {
 @media (min-width: 1024px) {
   .content-container {
     max-width: 1040px;
+  }
+}
+
+/* UniMate page specific image grids */
+.unimate-image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.4rem;
+  margin: 1.8rem 0;
+}
+
+.unimate-image-grid img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin: 0;
+  border-radius: 18px;
+}
+
+.unimate-grid-wide img {
+  flex: 1 1 340px;
+  max-width: 460px;
+}
+
+.unimate-grid-personas img {
+  flex: 1 1 360px;
+  max-width: 480px;
+}
+
+.unimate-grid-phones img {
+  flex: 1 1 170px;
+  max-width: 210px;
+}
+
+@media (max-width: 767px) {
+  .unimate-image-grid {
+    gap: 1rem;
+  }
+
+  .unimate-grid-wide img,
+  .unimate-grid-personas img,
+  .unimate-grid-phones img {
+    flex-basis: 100%;
+    max-width: 100%;
   }
 }
