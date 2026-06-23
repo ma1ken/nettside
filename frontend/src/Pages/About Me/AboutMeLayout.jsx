@@ -10,11 +10,14 @@ export default function AboutMeLayout() {
         <div className="text about-intro-text">
           <h1>Hi, I'm Maiken!</h1>
           <p>
-            Welcome to my website! To be honest, it’s a bit of a work in
-            progress right now (and a little messy!), but hopefully, you’ll find
-            your way to my portfolio and learn a bit more about me. Right now,
-            I’m living in Oslo and interested in a full time job as a developer,
-            ui/ux-desinger.
+            Interactive Design graduate with a strong interest in UX, UI, and
+            frontend development. I like building solutions that are not only
+            visually clean, but also useful and easy to navigate in real life.
+          </p>
+          <p>
+            Right now, Im focused on growing as a junior UX/UI and frontend
+            profile. This portfolio is where I collect projects, work
+            experience, and practical examples of how I solve problems.
           </p>
 
           <div className="about-contact-card">
