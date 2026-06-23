@@ -50,6 +50,16 @@ export default function MyWorkLayout() {
               <br />
               <p>GRADE: B</p>
             </NavLink>
+            <NavLink to="/MyWork/UniMate" className="card">
+              {/* <img src="/images/eld.jpg" alt="Eld" /> */}
+              <h3>UniMate</h3>
+              <p>
+                A mobile app to centralize your campus life and find your crowd, from
+                day one.
+              </p>
+              <br />
+              <p>GRADE: B</p>
+            </NavLink>
             <NavLink to="/MyWork/Animations" className="card">
               {/* <img src="/images/eld.jpg" alt="Eld" /> */}
               <h3>Animations</h3>

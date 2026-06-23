@@ -14,6 +14,7 @@ import EldPage from "./Pages/My Work/EldPage";
 import UInMunchPage from "./Pages/My Work/UInMunchPage";
 import AnimationsPage from "./Pages/My Work/AnimationsPage";
 import CafePage from "./Pages/My Work/CafePage";
+import UniMatePage from "./Pages/My Work/UniMatePage";
 
 import GamingPage from "./Pages/About Me/GamingPage";
 import AboutMeLayout from "./Pages/About Me/AboutMeLayout";
@@ -48,6 +49,7 @@ function App() {
             <Route path="Eld" element={<EldPage />} />
             <Route path="Animations" element={<AnimationsPage />} />
             <Route path="Cafe" element={<CafePage />} />
+            <Route path="UniMate" element={<UniMatePage />} />
           </Route>
 
           {/* EARLIER JOBS SIDEBAR */}
