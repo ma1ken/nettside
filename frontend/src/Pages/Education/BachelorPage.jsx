@@ -19,7 +19,11 @@ export default function BachelorPage() {
         </div>
 
         <div className="image">
-          <img className="logo-intro-image" src={hkLogo} alt="Høyskolen Kristiania logo" />
+          <img
+            className="logo-intro-image"
+            src={hkLogo}
+            alt="Høyskolen Kristiania logo"
+          />
         </div>
       </div>
 
@@ -30,14 +34,14 @@ export default function BachelorPage() {
           <div className="text">
             <h3>Programming, Web Technologies, and Agile Collaboration</h3>
             <p>
-              Even though we specialized in UX, we had many of the same subjects as
-              other IT programs. We worked with JavaScript, HTML5, CSS, and React,
-              and also covered Java, information technology and security, animation,
-              and databases. This gave us flexibility across both design and
-              development disciplines. The program also strengthened my collaboration
-              skills through agile team projects, where we used tools like Miro and
-              Scrum practices to structure work, plan timelines, and deliver results
-              effectively.
+              Even though we specialized in UX, we had many of the same subjects
+              as other IT programs. We worked with JavaScript, HTML5, CSS, and
+              React, and also covered Java, information technology and security,
+              animation, and databases. This gave us flexibility across both
+              design and development disciplines. The program also strengthened
+              my collaboration skills through agile team projects, where we used
+              tools like Miro and Scrum practices to structure work, plan
+              timelines, and deliver results effectively.
             </p>
           </div>
 
@@ -45,11 +49,12 @@ export default function BachelorPage() {
             <h3>UX, UI, and Visual Communication</h3>
             <p>
               Through the program, I planned and executed user tests, analyzed
-              findings, created user stories and personas, and built wireframes and
-              prototypes in Figma. This helped me validate ideas and improve
-              solutions based on actual user feedback. I also developed a sharper
-              eye for visual quality and usability, with a strong focus on
-              accessibility and WCAG so designs are both effective and inclusive.
+              findings, created user stories and personas, and built wireframes
+              and prototypes in Figma. This helped me validate ideas and improve
+              solutions based on actual user feedback. I also developed a
+              sharper eye for visual quality and usability, with a strong focus
+              on accessibility and WCAG so designs are both effective and
+              inclusive.
             </p>
           </div>
         </div>
@@ -62,8 +67,8 @@ export default function BachelorPage() {
           psychology and segmentation to better understand customer needs. I
           also kept improving my frontend skills in React, and this portfolio
           has been one of the ways I have turned academic learning into
-          practical work. This degree gave me a strong foundation in both UX
-          and development. It helped me grow from curiosity to confidence, and
+          practical work. This degree gave me a strong foundation in both UX and
+          development. It helped me grow from curiosity to confidence, and
           confirmed that I enjoy building digital solutions that combine user
           needs, structure, and visual clarity.
         </p>

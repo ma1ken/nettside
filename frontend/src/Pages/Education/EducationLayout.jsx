@@ -11,7 +11,6 @@ export default function EducationLayout() {
       {onMainPage ? (
         <>
           <h1>Education</h1>
-          
 
           <div className="cards-container education-cards">
             <NavLink to="/Education/Bachelor" className="card">

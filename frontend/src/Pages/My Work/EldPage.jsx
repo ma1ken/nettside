@@ -22,7 +22,9 @@ export default function EldPage() {
 
       <div className="text-image-section eld-intro-section">
         <div className="about-text">
-            <h2 className="grade">Grade: A | DPR5100 Design Project | Fall 2023</h2>
+          <h2 className="grade">
+            Grade: A | DPR5100 Design Project | Fall 2023
+          </h2>
           <p>
             A group project from my 5th semester, where we explored how a
             digital service could connect students looking for meaningful
@@ -198,7 +200,6 @@ export default function EldPage() {
 
       <div>
         <h2>PART 4 - Final Solution</h2>
-      
 
         <h3>The Double Diamond Model</h3>
         <p>
@@ -238,8 +239,8 @@ export default function EldPage() {
           <h3>Develop</h3>
           <p>
             We wrote a detailed user story describing the users' goals, needs,
-            and how the solution would address them. We used the “How might
-            we…” method to frame and explore design challenges.
+            and how the solution would address them. We used the “How might we…”
+            method to frame and explore design challenges.
           </p>
         </div>
 

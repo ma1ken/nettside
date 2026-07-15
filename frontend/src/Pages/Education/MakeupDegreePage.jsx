@@ -44,9 +44,9 @@ export default function MakeupDegreePage() {
             We studied the evolution of beauty and hair trends across decades to
             understand how societal shifts and economic events (such as the
             Great Depression impacting 1920s aesthetics) influenced fashion.
-            This allowed me to accurately replicate period-correct looks, such as
-            a classic 1950s bridal style, while adapting the techniques to fit
-            modern facial symmetry.
+            This allowed me to accurately replicate period-correct looks, such
+            as a classic 1950s bridal style, while adapting the techniques to
+            fit modern facial symmetry.
           </p>
         </div>
 

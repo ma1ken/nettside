@@ -55,10 +55,10 @@ export default function CafePage() {
               Our primary groups were Zoomers (18-30), who often expect speed,
               personalization, and convenience, and Boomers (30-50), who tend to
               value clarity, trust, and simpler interaction patterns. We also
-              benchmarked existing café apps and noticed a recurring issue:
-              many solutions handled only loyalty or only ordering, forcing
-              users to switch between multiple apps. This led us to define a
-              clear concept from the start: one shared café platform combining
+              benchmarked existing café apps and noticed a recurring issue: many
+              solutions handled only loyalty or only ordering, forcing users to
+              switch between multiple apps. This led us to define a clear
+              concept from the start: one shared café platform combining
               loyalty, campaigns, ordering, and accessible navigation.
             </p>
           </div>
@@ -97,13 +97,13 @@ export default function CafePage() {
             <h3>4. Visual Design</h3>
             <p>
               We began visual design in monochrome to keep attention on layout
-              and hierarchy before introducing branding elements. Later, we added
-              a five-color system where each color represented a favorite café,
-              but we deliberately combined icons with text labels so interaction
-              did not depend on color alone. We validated palettes with
-              Colorblind Goggles to improve accessibility, and we designed for
-              both light and dark mode from the beginning to support different
-              user preferences and contexts.
+              and hierarchy before introducing branding elements. Later, we
+              added a five-color system where each color represented a favorite
+              café, but we deliberately combined icons with text labels so
+              interaction did not depend on color alone. We validated palettes
+              with Colorblind Goggles to improve accessibility, and we designed
+              for both light and dark mode from the beginning to support
+              different user preferences and contexts.
             </p>
           </div>
 
@@ -111,13 +111,14 @@ export default function CafePage() {
             <h3>5. Prototyping in Figma</h3>
             <p>
               We collaborated in a shared Figma file, which made parallel design
-              work and real-time feedback loops efficient throughout the project.
-              The prototype included all core user flows: login/logout,
+              work and real-time feedback loops efficient throughout the
+              project. The prototype included all core user flows: login/logout,
               favorites with color coding (up to five cafés), settings for
               profile and accessibility options, menu browsing and ordering,
-              campaign and news updates, and a cart with total price plus loyalty
-              stamp progression. We also included digital coupon cards that
-              updated automatically to simulate a complete customer journey.
+              campaign and news updates, and a cart with total price plus
+              loyalty stamp progression. We also included digital coupon cards
+              that updated automatically to simulate a complete customer
+              journey.
             </p>
           </div>
         </div>
@@ -143,8 +144,8 @@ export default function CafePage() {
         <p>
           We designed for visibility by keeping important functions (favorites,
           cart, and campaigns) consistently available across key screens. We
-          added clear feedback through button states and interaction responses so
-          users always understood what happened after input. We also used
+          added clear feedback through button states and interaction responses
+          so users always understood what happened after input. We also used
           constraints intentionally, such as limiting favorites to five cafés,
           to reduce cognitive load. Consistency in navigation patterns and
           interaction logic across screens made the app easier to learn and use.
@@ -156,7 +157,7 @@ export default function CafePage() {
       </div>
       <div>
         <h2>Reflection, Learnings & Final Thoughts</h2>
-     
+
         <p>
           The project reinforced that accessibility should be integrated from
           the beginning rather than added at the end. Working with personas
@@ -174,7 +175,6 @@ export default function CafePage() {
           working prototype that addresses both user needs and business goals.
         </p>
       </div>
- 
     </div>
   );
 }

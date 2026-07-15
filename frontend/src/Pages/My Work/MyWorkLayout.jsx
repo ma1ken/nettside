@@ -11,7 +11,6 @@ export default function MyWorkLayout() {
       {onMainPage ? (
         <>
           <h1>My Projects</h1>
-          
 
           <div className="cards-container">
             <NavLink to="/MyWork/UInMunch" className="card">
@@ -51,8 +50,8 @@ export default function MyWorkLayout() {
               {/* <img src="/images/eld.jpg" alt="Eld" /> */}
               <h3>UniMate</h3>
               <p>
-                A mobile app to centralize your campus life and find your crowd, from
-                day one.
+                A mobile app to centralize your campus life and find your crowd,
+                from day one.
               </p>
               <br />
               <p>GRADE: B</p>

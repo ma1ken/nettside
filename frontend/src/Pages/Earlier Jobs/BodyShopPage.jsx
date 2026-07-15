@@ -62,8 +62,8 @@ export default function BodyShopPage() {
             ensure healthy stock rotation. At the same time, I conducted
             consultations and personalized skincare and makeup recommendations
             based on customer needs, skin types, and The Body Shop’s ingredient
-            stories. Taking on this broad level of responsibility early on was
-            a steep learning curve, but it rapidly built my confidence in
+            stories. Taking on this broad level of responsibility early on was a
+            steep learning curve, but it rapidly built my confidence in
             independent retail management.
           </p>
         </div>
