@@ -11,9 +11,7 @@ export default function EarlierJobsLayout() {
       {onMainPage ? (
         <>
           <h1>Earlier Jobs</h1>
-          <h2 className="center">
-            Explore a timeline of my professional experience:
-          </h2>
+         
 
           {/* HER SER VI KORTENE */}
           <div className="cards-container">

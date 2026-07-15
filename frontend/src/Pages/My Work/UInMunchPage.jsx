@@ -22,7 +22,7 @@ import uinmnchUi2 from "../../Images/uinmunch/extracted/p34_xref260.png";
 
 export default function UInMunchPage() {
   return (
-    <div className="content-container">
+    <div className="content-container my-work-page uinmunch-page">
       <h1>U In MNCH</h1>
       <div className="gap"></div>
 
@@ -73,7 +73,7 @@ export default function UInMunchPage() {
           Here is the task flow where users solve clues, move through the
           narrative, and unlock more of the mystery.
         </p>
-        <div className="uinmunch-image-grid uinmunch-grid-phones">
+        <div className="uinmunch-image-grid uinmunch-grid-phones uinmunch-grid-five">
           <img src={uinmnchScreen4} alt="U In MNCH app screen 4" />
           <img src={uinmnchScreen5} alt="U In MNCH app screen 5" />
           <img src={uinmnchScreen6} alt="U In MNCH app screen 6" />
@@ -121,7 +121,7 @@ export default function UInMunchPage() {
         </div>
 
         <h3>Story and ending flow</h3>
-        <div className="uinmunch-image-grid uinmunch-grid-phones">
+        <div className="uinmunch-image-grid uinmunch-grid-phones uinmunch-grid-five">
           <img src={uinmnchStory1} alt="U In MNCH story slide 1" />
           <img src={uinmnchStory2} alt="U In MNCH story slide 2" />
           <img src={uinmnchStory3} alt="U In MNCH story slide 3" />

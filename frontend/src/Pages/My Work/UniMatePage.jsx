@@ -22,11 +22,11 @@ import unimateApp7 from "../../Images/unimate/extracted/p31_xref136.jpeg";
 
 export default function UniMatePage() {
   return (
-    <div className="content-container">
+    <div className="content-container my-work-page">
       <h1>UniMate</h1>
       <div className="gap"></div>
 
-      <div className="text-image-section">
+      <div className="text-image-section unimate-intro-section">
         <div className="text">
           <p className="grade">
             Grade: B | DS4800 Innovation &amp; Prototyping | Fall 2023

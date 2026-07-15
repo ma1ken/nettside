@@ -7,14 +7,11 @@ export default function MyWorkLayout() {
   const onMainPage = location.pathname === "/MyWork";
 
   return (
-    <div className="content-container">
+    <div className="content-container my-work-page">
       {onMainPage ? (
         <>
           <h1>My Projects</h1>
-          <h2 className="center">
-            Explore a selection of my projects, including graded university work
-            and independent design concepts:
-          </h2>
+          
 
           <div className="cards-container">
             <NavLink to="/MyWork/UInMunch" className="card">

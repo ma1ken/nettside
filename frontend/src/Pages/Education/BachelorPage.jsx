@@ -1,111 +1,73 @@
 import "../../Styles/Pages.css";
-// import hkLogoFull from "../../Images/hk-logo-full.png";
 import hkLogo from "../../Images/hk-logo.png";
+
 export default function BachelorPage() {
   return (
-    <div>
-      <h2>
-        <div className="content-container">
-          <h1>Bachelor’s Degree in IT – Interactive Design</h1>
-          <div className="text-image-section logo-intro-section">
-            <div className="text">
-              <h2>Høyskolen Kristiania, 2021–2024</h2>
-              <p>
-                I completed a three-year Bachelor at Høyskolen Kristiania, in
-                the program "IT-Interactive Design" One of my motivations for
-                this program was that I used to edit my own CSS at my blog when
-                I was 12, and wanted to work with it after I learned more about
-                IT. During this time, I developed a set of skills that makes me
-                an exellent problem solver, with technical expertise. The course
-                allowed me and other students to find creative ways to engange
-                in current and future problems, when it comes to UX and
-                technology.
-              </p>
-            </div>
+    <div className="content-container">
+      <h1>Bachelor’s Degree in IT – Interactive Design</h1>
 
-            <div className="image">
-              <img
-                className="logo-intro-image"
-                src={hkLogo}
-                alt="College Kristiania Full Logo"
-              />
-            </div>
-          </div>
-          <div className="gap"></div>
-          <div className="section-color">
-            <div className="about-text">
-              <h2>Core Curriculum and Skills</h2>
-              <h3>Programming and Web Technologies:</h3>
-              <p>
-                Even though we specialized in UX, we had a lot of the same
-                subjects as other IT courses, and we were tested and evaluated
-                in subjects that could qualify us as "Fullstack Developers". We
-                learned Javascript, HTML5, CSS like other Front-end students,
-                but we worked a lot with react. Some of the other subjects I
-                learnt about were Java, Informationtechnology + security,
-                Animation, databases etc. This made us equipped to jump between
-                specialities and gave us more options with future work. Gaining
-                knowledge about other specialities allowed us to understand the
-                impact of UX design in the field.
-              </p>
-              <h3>User Experience (UX) Design:</h3>
-              <p>
-                I gained a lot of knowledge in UX and I do feel most comfortable
-                and wise with my own speciality. Through the program, I've
-                planned and executed usertests, learned how to read data,
-                created userstorys and personas, including targeted products for
-                the right audience. This has helped me to determine if we have
-                been on the right path, by creating wireframes and prototypes in
-                Figma to test our audience, to ensure their satisfaction with
-                the product.
-              </p>
-              <h3>User Interface (UI) Design and Visual Communication:</h3>
-              <p>
-                I got a sharper eye for colors and shapes, and can distinguish
-                between a visually pleasing and userfriendly design, more than
-                before. Our teachers taught us the importance of WCAG and to
-                ensure accesibility on the websites/apps.
-              </p>
-              <h3>Project Management and Agile Development:</h3>
-              <p>
-                I've always enjoyed being responsible and working by myself, but
-                this program taught me the importance of collaborating with
-                other studuents, and how we can use each others strenghts to
-                build our product. We worked in agile teams and used other
-                programs like "Miro", which has helped us planning. We also used
-                scrum to set up tasks withing a timeline.
-              </p>
-            </div>
-          </div>
-          <div className="double-text-section">
-            <div className="text">
-              <h2>Practical Experience</h2>
-              <p>
-                I applied my knowledge in UX with my previous work, as a Counter
-                Manager in a fragrance store. With user psychology and
-                segmentation, I learned how to approach each costumer, what
-                brands are targeted for their audience and analyzed their needs.
-                I wanted to become better in react to become a future
-                Front-end/Fullstack developer, and building this website with
-                the knowledge I have from previous subjects has really helped
-                me.
-              </p>
-            </div>
+      <div className="text-image-section">
+        <div className="text">
+          <p className="education-meta">Høyskolen Kristiania, 2021–2024</p>
+          <p>
+            I completed a three-year Bachelor at Høyskolen Kristiania in the
+            IT-Interactive Design program. One of my motivations for this
+            program was my early interest in web design and CSS. During this
+            time, I developed strong problem-solving skills, technical
+            confidence, and a user-centered mindset.
+          </p>
+        </div>
 
-            <div className="text">
-              <h2>Summary</h2>
-              <p>
-                This program taught me alot about things I struggeled with
-                earlier, especially coding, but I learned that I loved it and I
-                kept on learning it after I was done studying. I proved myself
-                that I am very skilled in UX design and that I aquire knowledge
-                about this topic very easily. I am able to put myself in the
-                users position and continuously improve my products.
-              </p>
-            </div>
+        <div className="image">
+          <img className="logo-intro-image" src={hkLogo} alt="Høyskolen Kristiania logo" />
+        </div>
+      </div>
+
+      <div className="section-color">
+        <h2>Core Curriculum and Skills</h2>
+
+        <div className="double-text-section">
+          <div className="text">
+            <h3>Programming, Web Technologies, and Agile Collaboration</h3>
+            <p>
+              Even though we specialized in UX, we had many of the same subjects as
+              other IT programs. We worked with JavaScript, HTML5, CSS, and React,
+              and also covered Java, information technology and security, animation,
+              and databases. This gave us flexibility across both design and
+              development disciplines. The program also strengthened my collaboration
+              skills through agile team projects, where we used tools like Miro and
+              Scrum practices to structure work, plan timelines, and deliver results
+              effectively.
+            </p>
+          </div>
+
+          <div className="text">
+            <h3>UX, UI, and Visual Communication</h3>
+            <p>
+              Through the program, I planned and executed user tests, analyzed
+              findings, created user stories and personas, and built wireframes and
+              prototypes in Figma. This helped me validate ideas and improve
+              solutions based on actual user feedback. I also developed a sharper
+              eye for visual quality and usability, with a strong focus on
+              accessibility and WCAG so designs are both effective and inclusive.
+            </p>
           </div>
         </div>
-      </h2>
+      </div>
+
+      <div>
+        <h2>Practical Experience and Summary</h2>
+        <p>
+          I applied UX methods in my previous retail role, where I used user
+          psychology and segmentation to better understand customer needs. I
+          also kept improving my frontend skills in React, and this portfolio
+          has been one of the ways I have turned academic learning into
+          practical work. This degree gave me a strong foundation in both UX
+          and development. It helped me grow from curiosity to confidence, and
+          confirmed that I enjoy building digital solutions that combine user
+          needs, structure, and visual clarity.
+        </p>
+      </div>
     </div>
   );
 }

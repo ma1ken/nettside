@@ -98,3 +98,15 @@
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   }
 }
+
+/* Education page: keep cards closer together and centered */
+.education-cards {
+  justify-content: center;
+}
+
+@media (min-width: 1024px) {
+  .education-cards {
+    grid-template-columns: repeat(2, minmax(280px, 340px));
+    gap: 2rem;
+  }
+}

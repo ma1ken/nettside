@@ -11,11 +11,9 @@ export default function EducationLayout() {
       {onMainPage ? (
         <>
           <h1>Education</h1>
-          <h2 className="center">
-            Explore my degrees and certifications:
-          </h2>
+          
 
-          <div className="cards-container">
+          <div className="cards-container education-cards">
             <NavLink to="/Education/Bachelor" className="card">
               {/* <img src="/images/bachelor.jpg" alt="Bachelor" /> */}
               <h3>Bachelor’s Degree Interactive Design (2021-2024)</h3>

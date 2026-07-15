@@ -1,0 +1,56 @@
+.eld-page .double-text-section > .text {
+  display: flex;
+  flex-direction: column;
+}
+
+.eld-page .double-text-section > .text h3,
+.eld-page .text-image-section > .about-text h3,
+.eld-page .text-image-section > .text h3 {
+  margin-bottom: 0.65rem;
+  text-align: left;
+  width: 100%;
+}
+
+.eld-page .double-text-section > .text p,
+.eld-page .text-image-section > .about-text p,
+.eld-page .text-image-section > .text p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.05rem;
+  line-height: 1.9;
+  max-width: none;
+}
+
+@media (max-width: 767px) {
+  .eld-page .double-text-section > .text p,
+  .eld-page .text-image-section > .about-text p,
+  .eld-page .text-image-section > .text p {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+}
+
+.eld-wireframe-grid {
+  grid-template-columns: repeat(2, minmax(240px, 340px));
+  justify-content: center;
+  gap: 0.9rem;
+}
+
+.eld-wireframe-grid img {
+  width: 100%;
+  max-width: none;
+  max-height: 620px;
+  object-fit: contain;
+}
+
+@media (max-width: 900px) {
+  .eld-wireframe-grid {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+
+  .eld-wireframe-grid img {
+    max-width: 360px;
+    justify-self: center;
+  }
+}

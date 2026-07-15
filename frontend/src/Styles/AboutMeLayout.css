@@ -1,24 +1,119 @@
-h2 {
-  margin-top: 2.5rem;
-  text-align: left;
+.about-page {
+  --about-border: rgba(145, 100, 61, 0.17);
+  --about-surface: rgba(255, 255, 255, 0.2);
+  --about-text: #463a32;
 }
 
-.about-intro-text p {
+.about-hero-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(300px, 420px);
+  gap: 2.2rem;
+  align-items: start;
+}
+
+.about-main-column {
+  min-width: 0;
+}
+
+.about-main-column > * + * {
+  margin-top: 2.3rem;
+}
+
+.about-page h2 {
+  margin: 0 0 1.1rem;
+  text-align: left;
+  justify-self: start;
+  width: 100%;
+  font-size: clamp(1.3rem, 1.45vw, 1.65rem);
+  letter-spacing: -0.01em;
+}
+
+.about-page .about-intro-text p,
+.about-page .about-story-section p,
+.about-page .about-purpose-section p {
+  font-size: 1.06rem;
+  line-height: 1.85;
+  color: var(--about-text);
+  margin-bottom: 1.25rem;
+}
+
+.about-main-column p {
+  max-width: 67ch;
+}
+
+.about-contact-card,
+.about-skill-chips {
+  border: 1px solid var(--about-border);
+  border-radius: 14px;
+  background: var(--about-surface);
+  padding: 0.95rem 1rem;
+}
+
+.about-intro-text,
+.about-section-card,
+.about-purpose-section {
+  border: none;
+  border-radius: 0;
+  background: transparent;
+}
+
+.about-intro-text,
+.about-section-card,
+.about-purpose-section {
+  padding: 0;
+}
+
+.about-intro-text {
+  padding-bottom: 1.7rem;
+  border-bottom: none;
+}
+
+.about-purpose-section {
+  padding-top: 2.2rem;
+  border-top: none;
+}
+
+.about-purpose-section p {
   max-width: 72ch;
 }
 
-.about-contact-card {
-  margin-top: 0.75rem;
-  margin-bottom: 1rem;
-  padding: 0.8rem 0.95rem;
-  border: 1px solid rgba(145, 100, 61, 0.16);
-  border-radius: 12px;
-  background: rgba(255, 255, 255, 0.2);
-  max-width: 560px;
+.about-section-card + .about-section-card {
+  margin-top: 0;
 }
 
-.about-contact-card h3 {
-  margin: 0 0 0.4rem;
+.about-intro-text p:last-child,
+.about-section-card p:last-child,
+.about-purpose-section p:last-child {
+  margin-bottom: 0;
+}
+
+.about-profile-column {
+  min-width: 300px;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.95rem;
+}
+
+.about-profile-frame {
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 12px 28px rgba(67, 47, 30, 0.1);
+}
+
+.about-profile-image {
+  width: 100%;
+  max-width: 100%;
+  max-height: 560px;
+  object-fit: cover;
+  border-radius: 22px;
+  display: block;
+}
+
+.about-contact-card h3,
+.about-skill-chips h3 {
+  margin: 0 0 0.35rem;
+  text-align: center;
 }
 
 .about-contact-card p {
@@ -26,19 +121,30 @@ h2 {
   line-height: 1.45;
 }
 
+.about-story-section {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.6rem;
+  margin-top: 0;
+}
+
+.about-section-card h2 {
+  margin-top: 0.6rem;
+}
+
 .about-skill-chips {
   display: flex;
   flex-direction: column;
-  gap: 0.45rem;
-  max-width: 820px;
+  gap: 0.6rem;
+  max-width: 100%;
 }
 
 .about-skill-chips-row {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   width: 100%;
-  justify-content: center;
-  gap: 0.45rem;
+  justify-content: flex-start;
+  gap: 0.5rem;
 }
 
 .about-skill-chips span {
@@ -53,24 +159,67 @@ h2 {
   font-weight: 500;
 }
 
-/* Responsiv design for about-siden */
-@media (max-width: 479px) {
-  .about-contact-card,
-  .about-skill-chips {
+@media (max-width: 1023px) {
+  .about-hero-layout {
+    grid-template-columns: 1fr;
+    gap: 1.7rem;
+  }
+
+  .about-story-section {
+    grid-template-columns: 1fr;
+    gap: 1.35rem;
+  }
+
+  .about-profile-column {
+    min-width: 0;
     max-width: 100%;
   }
 
-  .about-skill-chips-row {
-    flex-wrap: wrap;
+  .about-profile-image {
+    max-height: none;
   }
+}
 
-  h2 {
-    margin-top: 1.5rem;
+@media (max-width: 1180px) {
+  .about-story-section {
+    grid-template-columns: 1fr;
+    gap: 1.35rem;
   }
 }
 
 @media (max-width: 767px) {
-  h2 {
-    margin-top: 2rem;
+  .about-main-column > * + * {
+    margin-top: 1.9rem;
+  }
+
+  .about-contact-card,
+  .about-skill-chips {
+    padding: 0.95rem 0.9rem;
+  }
+
+  .about-intro-text,
+  .about-section-card,
+  .about-purpose-section {
+    padding: 0;
+  }
+
+  .about-intro-text {
+    padding-bottom: 1.2rem;
+  }
+
+  .about-purpose-section {
+    padding-top: 1.6rem;
+  }
+
+  .about-page h2 {
+    font-size: 1.22rem;
+    margin-bottom: 0.85rem;
+  }
+
+  .about-page .about-intro-text p,
+  .about-page .about-story-section p,
+  .about-page .about-purpose-section p {
+    font-size: 1rem;
+    line-height: 1.78;
   }
 }

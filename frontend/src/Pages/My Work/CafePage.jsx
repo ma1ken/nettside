@@ -4,7 +4,7 @@ import cafeAiLogo from "../../Images/Coffee App/cafe_ai_logo.png";
 
 export default function CafePage() {
   return (
-    <div className="content-container">
+    <div className="content-container my-work-page cafe-page">
       <h1>Cafe App Prototype</h1>
       <div className="gap"></div>
       <div className="text-image-section">
@@ -36,12 +36,14 @@ export default function CafePage() {
         <div>
           <h2>Project Goals</h2>
           <p>
-            Project Goals Create a user-friendly café app that is intuitive for
-            both younger and older users. Ensure the design follows universal
-            design principles with a focus on accessibility. Prototype core
-            features: ordering, favorites, campaigns, and digital loyalty cards.
-            Use iterative design methods (sketching → prototyping → testing →
-            refining).
+            The main goal was to design a user-friendly café app that felt
+            intuitive for both younger and older users, while still supporting
+            real business needs. We focused on universal design and
+            accessibility from the beginning, and prioritized core features such
+            as ordering, favorites, campaigns, and digital loyalty cards. The
+            full process was iterative from start to finish, moving from
+            sketching and wireframing to prototyping, usability testing, and
+            continuous refinement based on feedback.
           </p>
         </div>
         <h2>Design Process</h2>
@@ -49,28 +51,30 @@ export default function CafePage() {
           <div className="text">
             <h3>1. Research and Analysis</h3>
             <p>
-              We began by identifying user needs and business requirements:
-              Target groups: Zoomers (18-30): Digitally native, expect speed,
-              personalization, and convenience. Boomers (30-50): Less
-              app-experienced, need simplicity, clarity, and trust.
-              Benchmarking: We analyzed existing apps from popular cafés. Many
-              focused only on loyalty or only on ordering, which made them
-              fragmented and repetitive. Our insight: users want one app instead
-              of five. Concept: A shared café app with loyalty, campaigns, and
-              universal usability.
+              We started by mapping both user needs and business requirements.
+              Our primary groups were Zoomers (18-30), who often expect speed,
+              personalization, and convenience, and Boomers (30-50), who tend to
+              value clarity, trust, and simpler interaction patterns. We also
+              benchmarked existing café apps and noticed a recurring issue:
+              many solutions handled only loyalty or only ordering, forcing
+              users to switch between multiple apps. This led us to define a
+              clear concept from the start: one shared café platform combining
+              loyalty, campaigns, ordering, and accessible navigation.
             </p>
           </div>
 
           <div className="text">
             <h3>2. Ideation & Sketching</h3>
             <p>
-              We used Crazy 8s to explore a wide range of interface ideas
-              quickly. Key principles guiding us: Function before style (Jeff
-              Johnson, Designing with the Mind in Mind). Simplicity: avoid
-              unnecessary decoration. Accessibility: all functions must be
-              visible and understandable at first glance. We created
-              low-fidelity sketches to test flows before investing in visual
-              details.
+              In the ideation phase, we used Crazy 8s to quickly explore many
+              possible interface directions before committing to one. We kept a
+              strong “function before style” mindset inspired by Jeff Johnson’s
+              principles, which helped us prioritize clarity over decorative
+              design choices. Every key function had to be visible and easy to
+              understand at first glance, especially for less experienced app
+              users. We then translated our strongest ideas into low-fidelity
+              sketches so we could test user flows early and reduce rework later
+              in the process.
             </p>
           </div>
         </div>
@@ -78,35 +82,42 @@ export default function CafePage() {
           <div className="text">
             <h3>3. Wireframing & Early Prototypes</h3>
             <p>
-              Wireframes focused on: Navigation bar with consistent icons.
-              Favorites carousel for quick access to cafés/products. Simple cart
-              and order flow. Feedback from peers helped us refine button
-              placements, text size, and navigation logic.
+              The wireframing stage focused on building a consistent navigation
+              system, a favorites carousel for quick access to cafés and
+              products, and a simplified cart and ordering flow. At this stage,
+              we tested structure more than aesthetics, making sure users could
+              complete tasks with minimal friction. Peer feedback was especially
+              useful for improving button placement, text sizing, and navigation
+              logic, and several of these adjustments carried directly into the
+              final prototype.
             </p>
           </div>
 
           <div className="text">
             <h3>4. Visual Design</h3>
             <p>
-              Our first versions were monochrome to keep focus on layout. Later,
-              we introduced five colors, each representing a favorite café.
-              Icons + text labels were added to reduce reliance on color alone.
-              Color palettes were tested with Colorblind Goggles to ensure
-              accessibility. Light/dark mode was integrated from the start.
+              We began visual design in monochrome to keep attention on layout
+              and hierarchy before introducing branding elements. Later, we added
+              a five-color system where each color represented a favorite café,
+              but we deliberately combined icons with text labels so interaction
+              did not depend on color alone. We validated palettes with
+              Colorblind Goggles to improve accessibility, and we designed for
+              both light and dark mode from the beginning to support different
+              user preferences and contexts.
             </p>
           </div>
 
           <div className="text">
-            <h3>5.Prototyping in Figma</h3>
+            <h3>5. Prototyping in Figma</h3>
             <p>
-              We collaborated in a shared Figma file, allowing parallel work and
-              real-time feedback. Key prototype features: Login Page: Simple
-              login/logout. Favorites: Up to five cafés with color coding.
-              Settings : Profile, support, dark/light mode, accessibility
-              options. Menu & Ordering: Carousel with favorite products, cart
-              integration. Campaigns & News: Promotions and seasonal updates.
-              Cart: With total price and loyalty stamps. Coupons: Digital stamp
-              cards updating automatically.
+              We collaborated in a shared Figma file, which made parallel design
+              work and real-time feedback loops efficient throughout the project.
+              The prototype included all core user flows: login/logout,
+              favorites with color coding (up to five cafés), settings for
+              profile and accessibility options, menu browsing and ordering,
+              campaign and news updates, and a cart with total price plus loyalty
+              stamp progression. We also included digital coupon cards that
+              updated automatically to simulate a complete customer journey.
             </p>
           </div>
         </div>
@@ -114,48 +125,47 @@ export default function CafePage() {
       <div>
         <h2>Usability Testing</h2>
         <p>
-          We tested with three participants (two Zoomers, one Boomer): User 1
-          (27): Found the app simple, preferred dark mode. User 2 (25):
-          Suggested a clearer cart overview. User 3 (50): Needed more time, but
-          appreciated the universal app idea. Main learning: The cart was too
-          hidden. We fixed this by adding a persistent cart overview.
+          We conducted usability testing with three participants (two Zoomers
+          and one Boomer) to validate whether the experience worked across
+          different expectations and digital habits. One participant described
+          the app as simple and intuitive and preferred dark mode, another
+          suggested improving the visibility of the cart, and the Boomer
+          participant needed more time but strongly appreciated the universal
+          app concept. The most important insight was that the cart was too
+          hidden, so we introduced a more persistent cart overview to make the
+          ordering flow easier to follow.
         </p>
       </div>
 
       <div>
         <h2>Accessibility & Universal Design</h2>
-        <h3>
-          We applied principles from Donald Norman and Jakob Nielsen’s
-          heuristics:
-        </h3>
+        <h3>Accessibility principles and implemented features</h3>
         <p>
-          Visibility: Important functions (favorites, cart, campaigns) always
-          visible. Feedback: Buttons provide visual confirmation. Constraints:
-          Limited favorites (max 5 cafés) to reduce complexity. Consistency:
-          Same navigation logic across all screens.
-        </p>
-        <h3>Accessibility features:</h3>
-        <p>
-          High-contrast mode. Larger text option. Slower transitions for users
-          with cognitive or motor challenges.
-        </p>
-      </div>
-      <div>
-        <h2>Reflection & Learnings</h2>
-        <h3>
-          This project strengthened my skills in user-centered design and
-          iterative prototyping. Key takeaways:
-        </h3>
-        <p>
-          Accessibility must be integrated from the start, not added as an
-          afterthought. Personas (Zoomers & Boomers) helped balance simplicity
-          with advanced features. Figma collaboration was new but very effective
-          for real-time teamwork. Iterative testing revealed insights we could
-          not have predicted (e.g., the need for a visible cart).
+          We designed for visibility by keeping important functions (favorites,
+          cart, and campaigns) consistently available across key screens. We
+          added clear feedback through button states and interaction responses so
+          users always understood what happened after input. We also used
+          constraints intentionally, such as limiting favorites to five cafés,
+          to reduce cognitive load. Consistency in navigation patterns and
+          interaction logic across screens made the app easier to learn and use.
+          Accessibility features included high-contrast mode, larger text
+          options, and slower transitions for users with cognitive or motor
+          challenges. These choices helped us support a broader range of users
+          without creating separate, fragmented flows.
         </p>
       </div>
       <div>
-        <h2>Final Thoughts</h2>{" "}
+        <h2>Reflection, Learnings & Final Thoughts</h2>
+     
+        <p>
+          The project reinforced that accessibility should be integrated from
+          the beginning rather than added at the end. Working with personas
+          (Zoomers and Boomers) helped us balance simplicity with richer feature
+          sets, and collaborative work in Figma proved very effective for
+          real-time teamwork and faster decision-making. Most importantly,
+          iterative testing revealed issues we would not have predicted early,
+          such as the need for a much more visible cart during checkout.
+        </p>
         <p>
           The café app prototype represents a practical, user-friendly, and
           accessible solution to a common everyday problem. While this is a
@@ -164,7 +174,7 @@ export default function CafePage() {
           working prototype that addresses both user needs and business goals.
         </p>
       </div>
-      <h1>MORE INFO AND IMAGES COMING ASAP!</h1>
+ 
     </div>
   );
 }

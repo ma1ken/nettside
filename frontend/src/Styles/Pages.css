@@ -135,6 +135,58 @@ img {
   line-height: 1.4;
 }
 
+.education-meta {
+  margin-top: -0.4rem;
+  margin-bottom: 1.35rem;
+  color: #6d4c32;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.ikea-page p {
+  justify-self: start;
+  max-width: none;
+}
+
+.cafe-page p {
+  justify-self: start;
+  max-width: none;
+}
+
+.eld-page p {
+  justify-self: start;
+  max-width: none;
+}
+
+.uinmunch-page p {
+  justify-self: start;
+  max-width: none;
+}
+
+.makeup-artist-page p {
+  justify-self: start;
+  max-width: none;
+}
+
+.my-work-page > h1 {
+  text-align: left;
+  justify-self: start;
+  width: 100%;
+}
+
+.animations-page > h1 {
+  text-align: center;
+  justify-self: center;
+}
+
+.animations-page .text-image-section > .text h2 {
+  text-align: left;
+  justify-self: start;
+  width: 100%;
+  margin-bottom: 0.9rem;
+}
+
 .center {
   text-align: center;
 }
@@ -530,6 +582,20 @@ img {
   max-width: 250px;
 }
 
+.uinmunch-grid-five {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 250px));
+  justify-content: center;
+  gap: 1rem;
+}
+
+.uinmunch-grid-five img {
+  width: 100%;
+  height: 520px;
+  max-width: none;
+  object-fit: contain;
+}
+
 .uinmunch-grid-wide img {
   flex: 1 1 440px;
   max-width: 620px;
@@ -538,6 +604,16 @@ img {
 @media (max-width: 767px) {
   .uinmunch-image-grid {
     gap: 1rem;
+  }
+
+  .uinmunch-grid-five {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .uinmunch-grid-five img {
+    height: auto;
+    max-height: none;
   }
 
   .uinmunch-grid-phones img,
@@ -640,6 +716,9 @@ img {
 
 .eld-intro-section > .about-text .grade {
   text-align: left;
+  justify-self: start;
+  width: 100%;
+  max-width: none;
   margin-left: -2px;
 }
 
@@ -647,6 +726,56 @@ img {
   max-width: 52ch;
   margin-left: 0;
   margin-right: 0;
+}
+
+.unimate-intro-section {
+  gap: 1.2rem;
+  align-items: flex-start;
+}
+
+.unimate-intro-section > .text {
+  flex: 1.05 1 0;
+}
+
+.unimate-intro-section > .image {
+  flex: 0.95 1 0;
+  min-width: 260px;
+  max-width: 460px;
+  display: flex;
+  align-items: flex-start;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.unimate-intro-section > .image img {
+  width: 100%;
+  height: auto;
+  max-height: 380px;
+  object-fit: contain;
+}
+
+.makeup-intro-section {
+  align-items: flex-start;
+  gap: 1.2rem;
+}
+
+.makeup-intro-section > .text {
+  flex: 1.05 1 0;
+}
+
+.makeup-intro-section > .image {
+  flex: 0.95 1 0;
+  min-width: 260px;
+  max-width: 460px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.makeup-intro-section > .image img {
+  width: 100%;
+  height: auto;
+  max-height: 460px;
+  object-fit: contain;
 }
 
 /* Reusable intro section for pages with brand logos */

@@ -2,12 +2,12 @@ import "../../Styles/Pages.css";
 
 export default function AnimationsPage() {
   return (
-    <div className="content-container">
+    <div className="content-container my-work-page animations-page">
       <h1>Animations</h1>
       <div className="gap"></div>
-      <h2>Bouncing Ball</h2>
       <div className="text-image-section">
         <div className="text">
+          <h2>Bouncing Ball</h2>
           <p>
             1/3 of my submission for the exam in "Animation". This was the
             animation i spent the longest time on. I learned a lot of teqniques
@@ -29,9 +29,9 @@ export default function AnimationsPage() {
       </div>
       <div className="gap"></div>
 
-      <h2>Netflix Logo</h2>
       <div className="text-image-section">
         <div className="text">
+          <h2>Netflix Logo</h2>
           <p>
             2/3 of my submission for the exam in "Animation". I've watched alot
             of TV through the years, and we are all familiar with the classic
@@ -52,9 +52,9 @@ export default function AnimationsPage() {
       </div>
       <div className="gap"></div>
       <div>
-        <h2>Loading Bar</h2>
         <div className="text-image-section">
           <div className="text">
+            <h2>Loading Bar</h2>
             <p>
               3/3 of my submission for the exam in "Animation". A very simple,
               but clean loading bar that loops, and there is an fade in-out
@@ -75,9 +75,9 @@ export default function AnimationsPage() {
         </div>
       </div>
       <div className="gap"></div>
-      <h2>UinMunch Group Porto</h2>
       <div className="text-image-section">
         <div className="text">
+          <h2>UinMunch Group Porto</h2>
           <p>
             An intro for the videopresentation for our exam in Agile Project,
             when we created the app UInMunch. I designet it myself and kept the

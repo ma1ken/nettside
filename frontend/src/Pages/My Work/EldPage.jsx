@@ -16,7 +16,7 @@ import eldProto5 from "../../Images/eld-proto-5.png";
 
 export default function EldPage() {
   return (
-    <div className="content-container">
+    <div className="content-container my-work-page eld-page">
       <h1>ELD</h1>
       <div className="gap"></div>
 
@@ -90,7 +90,7 @@ export default function EldPage() {
           phase.
         </p>
       </div>
-      <div className="double-image-section">
+      <div className="double-image-section eld-wireframe-grid">
         <img
           src={eldprofil1}
           alt="Two people holding a tablet with the eld logo in the center."
@@ -196,75 +196,88 @@ export default function EldPage() {
       </div>
       <div className="gap"></div>
 
-      <p>
+      <div>
         <h2>PART 4 - Final Solution</h2>
-        The final solution was submitted alongside the previous three phases in
-        one complete package. In this section, we also described the changes we
-        made after the usability test and explained the reasoning behind them.
-      </p>
-      <p>
-        <h3>The Double Diamond Model:</h3>
-        We were introduced to the Double Diamond design model later in the
-        course, and ideally, we would have applied it from the beginning.
-        However, we retroactively implemented its framework as much as possible
-        to improve user experience and problem-solving. The model consists of
-        four stages: Discover, Define, Develop, and Deliver.
-      </p>
-      <div className="text-image-section">
-        {/* <h3 className="ddHeader">Discover</h3> */}
+      
+
+        <h3>The Double Diamond Model</h3>
         <p>
-          <h3>Discover:</h3>
-          In this phase, we identified the target group and defined key user
-          needs. We supported our problem definition using statistics from
-          sources like SSB. We also created a persona named Bodil, which helped
-          us understand the challenges of our main user in her case, the need
-          for simple social interaction.
-        </p>
-        {/* <h3 className="ddHeader">Define</h3> */}
-        <p>
-          <h3>Define:</h3>
-          We created an empathy map and user journey to analyze pain points. The
-          three main challenges we identified were loneliness and social
-          isolation, the need for physical activity, and limited technical
-          competence among seniors.
+          We were introduced to the Double Diamond design model later in the
+          course, and ideally, we would have applied it from the beginning.
+          However, we retroactively implemented its framework as much as
+          possible to improve user experience and problem-solving. The model
+          consists of four stages: Discover, Define, Develop, and Deliver.
         </p>
       </div>
-      {/* TODO: HER MÅ VI FIKSE NAVN TIL DOUBLE-TEXT-SECTION OG FIKSE MEDIA SÅ DET PASSER PÅ ALLE SKJERMER. SER BRA UT FOR NÅ PÅ DATA */}
-      <div className="text-image-section">
-        {/* <h3 className="ddHeader">Develop</h3> */}
-        <p>
-          <h3>Develop:</h3>
-          We wrote a detailed user story describing the users' goals, needs, and
-          how the solution would address them. We used the “How might we…”
-          method to frame and explore design challenges.
-        </p>
-        {/* <h3 className="ddHeader">Deliver</h3> */}
-        <p>
-          <h3>Deliver:</h3>
-          We implemented several core design principles such as visibility,
-          feedback, affordances, constraints, and consistency. It was important
-          to us that the app felt intuitive, accessible, and user-friendly for
-          the elderly audience, while also meeting their functional needs.
-        </p>
+
+      <div className="double-text-section">
+        <div className="text">
+          <h3>Discover</h3>
+          <p>
+            In this phase, we identified the target group and defined key user
+            needs. We supported our problem definition using statistics from
+            sources like SSB. We also created a persona named Bodil, which
+            helped us understand the challenges of our main user in her case,
+            the need for simple social interaction.
+          </p>
+        </div>
+
+        <div className="text">
+          <h3>Define</h3>
+          <p>
+            We created an empathy map and user journey to analyze pain points.
+            The three main challenges we identified were loneliness and social
+            isolation, the need for physical activity, and limited technical
+            competence among seniors.
+          </p>
+        </div>
+      </div>
+
+      <div className="double-text-section">
+        <div className="text">
+          <h3>Develop</h3>
+          <p>
+            We wrote a detailed user story describing the users' goals, needs,
+            and how the solution would address them. We used the “How might
+            we…” method to frame and explore design challenges.
+          </p>
+        </div>
+
+        <div className="text">
+          <h3>Deliver</h3>
+          <p>
+            We implemented several core design principles such as visibility,
+            feedback, affordances, constraints, and consistency. It was
+            important to us that the app felt intuitive, accessible, and
+            user-friendly for the elderly audience, while also meeting their
+            functional needs.
+          </p>
+        </div>
       </div>
 
       <div className="gap"></div>
       <div className="section-color">
-        <div className="text-image-section">
-          <p>
-            <h3>Changes After the Usability Test:</h3>
-            We made several adjustments when moving from wireframes to a more
-            finished prototype. Based on user feedback, we changed the
-            navigation structure, edited text for clarity, and refined the
-            visual elements to improve readability and reduce confusion.
-          </p>
-          <p>
-            <h3>Future Improvements:</h3>
-            We received useful suggestions from test participants and also
-            identified potential features for future development. These included
-            a beginner tutorial, an SOS emergency button, and the ability for
-            users to toggle the visibility of personal information.
-          </p>
+        <div className="double-text-section">
+          <div className="text">
+            <h3>Changes After the Usability Test</h3>
+            <p>
+              We made several adjustments when moving from wireframes to a more
+              finished prototype. Based on user feedback, we changed the
+              navigation structure, edited text for clarity, and refined the
+              visual elements to improve readability and reduce confusion.
+            </p>
+          </div>
+
+          <div className="text">
+            <h3>Future Improvements</h3>
+            <p>
+              We received useful suggestions from test participants and also
+              identified potential features for future development. These
+              included a beginner tutorial, an SOS emergency button, and the
+              ability for users to toggle the visibility of personal
+              information.
+            </p>
+          </div>
         </div>
         <div className="five-image-section">
           <img src={eldProto1} alt="Elderly Landingpage." />

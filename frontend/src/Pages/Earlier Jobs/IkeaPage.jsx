@@ -3,7 +3,7 @@ import ikeaLogo from "../../Images/ikea-logo.png";
 
 export default function IkeaPage() {
   return (
-    <div className="content-container">
+    <div className="content-container ikea-page">
       <div className="text-image-section logo-intro-section">
         <div className="text">
           <p>
@@ -57,10 +57,7 @@ export default function IkeaPage() {
       <div>
         <div>
           <h2>External Goods Pickup & Customer Service Host</h2>
-          <p>
-            While the playroom was my main hub, I also rotated through several
-            other departments across the store:
-          </p>
+
           <div className="double-text-section">
             <div className="text">
               <h3>External Goods Pickup</h3>
@@ -96,10 +93,7 @@ export default function IkeaPage() {
       <div className="section-color">
         <div>
           <h2>Training and Certifications</h2>
-          <p>
-            Throughout my time at IKEA, I completed several mandatory training
-            courses to qualify for my various responsibilities:
-          </p>
+
           <div className="double-text-section">
             <div className="text">
               <h3>Basic First Aid Course</h3>

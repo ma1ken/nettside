@@ -43,37 +43,28 @@ export default function BodyShopPage() {
       </p>
       <div className="double-text-section">
         <div className="text">
-          <h3>Boutique Operations</h3>
+          <h3>Boutique Operations and Administrative Management</h3>
           <p>
-            Independently managing opening and closing procedures, daily
-            routines, and ensuring strict visual merchandising standards.
+            I independently managed opening and closing procedures, daily
+            routines, and strict visual merchandising standards, while also
+            handling key administrative responsibilities. This included
+            compiling weekly performance reports, analyzing sales data, and
+            monitoring store KPIs and targets to keep daily operations aligned
+            with business goals.
           </p>
         </div>
+
         <div className="text">
-          <h3>Administrative Management</h3>
+          <h3>Inventory, Logistics, and Consultative Selling</h3>
           <p>
-            Compiling weekly performance reports, analyzing sales data, and
-            monitoring store KPIs and targets.
-          </p>
-        </div>
-      </div>
-      <div className="double-text-section">
-        <div className="text">
-          <h3>BInventory Control & Logistics: </h3>
-          <p>
-            Maintaining full oversight of stock levels, managing product intake,
-            handling discrepancies, and submitting weekly inventory orders to
-            ensure optimal stock rotation.
-          </p>
-        </div>
-        <div className="text">
-          <h3>Consultative Selling</h3>
-          <p>
-            Conducting consultation and personalized skin-care and makeup
-            recommendations based on customers' specific needs, skin types, and
-            the brand's unique ingredient stories. Stepping into this level of
-            responsibility so early on was a steep learning curve, but it
-            rapidly built my confidence in independent retail management.
+            I maintained full oversight of stock levels, managed product intake,
+            handled discrepancies, and submitted weekly inventory orders to
+            ensure healthy stock rotation. At the same time, I conducted
+            consultations and personalized skincare and makeup recommendations
+            based on customer needs, skin types, and The Body Shop’s ingredient
+            stories. Taking on this broad level of responsibility early on was
+            a steep learning curve, but it rapidly built my confidence in
+            independent retail management.
           </p>
         </div>
       </div>

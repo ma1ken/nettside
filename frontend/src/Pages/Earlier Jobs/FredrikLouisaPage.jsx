@@ -11,10 +11,7 @@ export default function FredrikLouisaPage() {
       <h2>Premium Department Store | Brand Ambassador & Counter Manager</h2>
       <div className="text-image-section fredrik-intro-section">
         <div className="text">
-          <h3>
-            Timeline: Started 3 months prior to pursuing a Bachelor’s Degree at
-            Kristiania University College.
-          </h3>
+    
 
           <p>
             This was my third job after The Body Shop, and it’s honestly where
