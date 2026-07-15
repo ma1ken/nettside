@@ -6,12 +6,11 @@ import kiehlsLogo from "../../Images/kiehls-logo.png";
 
 export default function FredrikLouisaPage() {
   return (
-    <div className="content-container">
+    <div className="content-container fredrik-page">
       <h1>Fredrik og Louisa 2021-2025</h1>
-      <h2>Premium Department Store | Brand Ambassador & Counter Manager</h2>
       <div className="text-image-section fredrik-intro-section">
         <div className="text">
-    
+          <h2>Premium Store | Brand Ambassador & Counter Manager</h2>
 
           <p>
             This was my third job after The Body Shop, and it’s honestly where
@@ -78,10 +77,10 @@ export default function FredrikLouisaPage() {
           />
         </div>
       </div>
-      <div>
+      <div className="fredrik-genz-section">
         <div className="gap"></div>
 
-        <h2>Gen-Z Area 40%</h2>
+        <h3>Gen-Z Area 40%</h3>
         <p>
           When the store remodeled and L:A Bruket no longer had a large counter,
           I was offered a spot in the Gen-Z area. It was the busiest spot in the
@@ -92,10 +91,9 @@ export default function FredrikLouisaPage() {
           skills every day on real clients.
         </p>
       </div>
-      <div className="gap"></div>
-      <h2>Kiehl's Counter Manager 80%</h2>
       <div className="text-image-section fredrik-kiehls-section">
         <div className="text">
+          <h3>Kiehl's Counter Manager 80%</h3>
           <p>
             Stepping up to an 80% position as a Counter Manager for Kiehl's was
             a huge and exciting next step. Kiehl's is all about high-quality
@@ -119,7 +117,7 @@ export default function FredrikLouisaPage() {
       <br />
       <div className="double-text-section">
         <div classname="text">
-          <h3>Running the Business</h3>
+          <h4>Running the Business</h4>
           <p>
             I was responsible for the daily life of the counter—managing stock
             levels, ordering products, keeping everything looking clean and
@@ -127,7 +125,7 @@ export default function FredrikLouisaPage() {
           </p>
         </div>
         <div>
-          <h3>Deep Consultations</h3>
+          <h4>Deep Consultations</h4>
           <p>
             Kiehl's is famous for its intensive skin consultations. I learned to
             do deep skin-analyses, figuring out exactly what a customer's skin
@@ -137,7 +135,7 @@ export default function FredrikLouisaPage() {
       </div>
       <div className="double-text-section">
         <div classname="text">
-          <h3>Team Leadership</h3>
+          <h4>Team Leadership</h4>
           <p>
             I managed the shift schedules, coordinated with brand reps, and
             coached my co-workers so everyone felt confident talking about the
@@ -145,7 +143,7 @@ export default function FredrikLouisaPage() {
           </p>
         </div>
         <div>
-          <h3> The UX Connection:</h3>
+          <h4> The UX Connection:</h4>
           <p>
             This role was pure UX in real life. I had to organize the physical
             space so it was easy to navigate, solve daily layout/operational

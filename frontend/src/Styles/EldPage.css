@@ -3,9 +3,9 @@
   flex-direction: column;
 }
 
-.eld-page .double-text-section > .text h3,
-.eld-page .text-image-section > .about-text h3,
-.eld-page .text-image-section > .text h3 {
+.eld-page .double-text-section > .text h2,
+.eld-page .text-image-section > .about-text h2,
+.eld-page .text-image-section > .text h2 {
   margin-bottom: 0.65rem;
   text-align: left;
   width: 100%;

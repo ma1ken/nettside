@@ -55,7 +55,7 @@ export default function EldPage() {
         <h2>PART 1 - Idea and Conceptual Model</h2>
         <div className="text-image-section">
           <div className="about-text">
-            <h3>Objective</h3>
+            <h2>Objective</h2>
             <p>
               We aimed to improve work opportunities and income for students
               while also addressing social needs. The collaboration between
@@ -66,7 +66,7 @@ export default function EldPage() {
           </div>
 
           <div className="about-text">
-            <h3>Problem Understanding:</h3>
+            <h2>Problem Understanding:</h2>
             <p>
               Students faced financial difficulties and declining health, with
               55% of full-time students needing to work to afford food and
@@ -153,7 +153,7 @@ export default function EldPage() {
         </div>
 
         <div>
-          <h3>Observer Sheet</h3>
+          <h2>Observer Sheet</h2>
           <p>
             To evaluate physical responses and task completion, the observers
             used a structured form to document whether tasks were completed with
@@ -168,7 +168,7 @@ export default function EldPage() {
 
         <div className="text-image-section">
           <div>
-            <h3>Findings and Insights</h3>
+            <h2>Findings and Insights</h2>
             <p>
               Observers recorded key comments and reactions for each task. We
               prioritized capturing meaningful feedback and created short
@@ -178,7 +178,7 @@ export default function EldPage() {
             </p>
           </div>
           <div>
-            <h3>Discussion/Conclusion:</h3>
+            <h2>Discussion/Conclusion:</h2>
             <p>
               The usability test gave us valuable insights into the specific
               needs and obstacles faced by this age group. As we had never
@@ -201,7 +201,7 @@ export default function EldPage() {
       <div>
         <h2>PART 4 - Final Solution</h2>
 
-        <h3>The Double Diamond Model</h3>
+        <h2>The Double Diamond Model</h2>
         <p>
           We were introduced to the Double Diamond design model later in the
           course, and ideally, we would have applied it from the beginning.
@@ -213,7 +213,7 @@ export default function EldPage() {
 
       <div className="double-text-section">
         <div className="text">
-          <h3>Discover</h3>
+          <h2>Discover</h2>
           <p>
             In this phase, we identified the target group and defined key user
             needs. We supported our problem definition using statistics from
@@ -224,7 +224,7 @@ export default function EldPage() {
         </div>
 
         <div className="text">
-          <h3>Define</h3>
+          <h2>Define</h2>
           <p>
             We created an empathy map and user journey to analyze pain points.
             The three main challenges we identified were loneliness and social
@@ -236,7 +236,7 @@ export default function EldPage() {
 
       <div className="double-text-section">
         <div className="text">
-          <h3>Develop</h3>
+          <h2>Develop</h2>
           <p>
             We wrote a detailed user story describing the users' goals, needs,
             and how the solution would address them. We used the “How might we…”
@@ -245,7 +245,7 @@ export default function EldPage() {
         </div>
 
         <div className="text">
-          <h3>Deliver</h3>
+          <h2>Deliver</h2>
           <p>
             We implemented several core design principles such as visibility,
             feedback, affordances, constraints, and consistency. It was
@@ -260,7 +260,7 @@ export default function EldPage() {
       <div className="section-color">
         <div className="double-text-section">
           <div className="text">
-            <h3>Changes After the Usability Test</h3>
+            <h2>Changes After the Usability Test</h2>
             <p>
               We made several adjustments when moving from wireframes to a more
               finished prototype. Based on user feedback, we changed the
@@ -270,7 +270,7 @@ export default function EldPage() {
           </div>
 
           <div className="text">
-            <h3>Future Improvements</h3>
+            <h2>Future Improvements</h2>
             <p>
               We received useful suggestions from test participants and also
               identified potential features for future development. These
